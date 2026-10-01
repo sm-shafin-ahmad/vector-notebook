@@ -11,14 +11,30 @@
 1. বলের একটি অংশ ব্যাগকে মাটির সমান্তরালে সোজা সামনে টেনে নিয়ে যায় (**অনুভূমিক উপাংশ**)।
 2. বলের আরেকটি অংশ ব্যাগকে ওপরের দিকে তুলে মাটি থেকে কিছুটা হালকা করে (**উলম্ব উপাংশ**)।
 
-```
-                  F sin θ ↑   ↗ F (প্রযুক্ত টান বল)
-                          │  /
-                          │ / θ
-        ──────────────────•──────────────────► F cos θ (সামনে নেওয়ার কার্যকর বল)
-                          │
-                          ↓ W = mg (ব্যাগের প্রকৃত ওজন)
-```
+<div class="diagram-box">
+<svg viewBox="0 0 460 180" class="physics-diagram">
+<defs>
+<marker id="bg-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="bg-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="bg-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+<marker id="bg-arr-mu" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#78716c"/></marker>
+</defs>
+<line x1="30" y1="130" x2="430" y2="130" stroke="var(--text-dim)" stroke-width="1.8"/>
+<circle cx="150" cy="130" r="5" fill="var(--text-main)"/>
+<text x="80" y="155" fill="var(--text-main)" font-weight="700" font-size="12">ট্রলি ব্যাগ (O)</text>
+<line x1="150" y1="130" x2="310" y2="35" stroke="#e11d48" stroke-width="3.5" marker-end="url(#bg-arr-rb)"/>
+<text x="320" y="30" fill="#e11d48" font-weight="800" font-size="14">F (প্রযুক্ত টান বল)</text>
+<line x1="150" y1="130" x2="310" y2="130" stroke="#0d9488" stroke-width="3" marker-end="url(#bg-arr-tl)"/>
+<text x="210" y="152" fill="#0d9488" font-weight="700" font-size="13">Fx = F cos θ (সামনে এগিয়ে নেওয়ার বল)</text>
+<line x1="150" y1="130" x2="150" y2="40" stroke="#d97706" stroke-width="3" marker-end="url(#bg-arr-amb)"/>
+<text x="45" y="55" fill="#d97706" font-weight="700" font-size="13">Fy = F sin θ (ওপরে তোলার বল)</text>
+<line x1="310" y1="35" x2="310" y2="130" stroke="var(--border-subtle)" stroke-width="1.5" stroke-dasharray="3,3"/>
+<line x1="150" y1="35" x2="310" y2="35" stroke="var(--border-subtle)" stroke-width="1.5" stroke-dasharray="3,3"/>
+<path d="M 210 130 A 60 60 0 0 0 198 102" fill="none" stroke="#e11d48" stroke-width="2"/>
+<text x="215" y="115" fill="#e11d48" font-weight="800" font-size="13">θ</text>
+</svg>
+<div class="diagram-caption">চিত্র ১.১: ট্রলি ব্যাগের ওপর তির্যক টানের অনুভূমিক ও উল্লম্ব উপাংশ বিভাজন</div>
+</div>
 
 - **ভেক্টরের বিভাজন (Resolution of Vectors):** একটি ভেক্টর রাশিকে দুই বা ততোধিক রাশিতে বিভক্ত করার প্রক্রিয়াকে ভেক্টরের বিভাজন বলে।
 - **উপাংশ (Components):** বিভক্ত অংশগুলোর প্রত্যেকটিকে মূল ভেক্টরের উপাংশ বলা হয়।
@@ -29,16 +45,34 @@
 
 যখন কোনো ভেক্টরকে এমন দুটি দিকে বিভক্ত করতে হয় যা পরস্পর সমকোণে ($90^\circ$) নেই।
 
-```
-                         Y ▲
-                          /
-                         /   . C
-                     Y  /   /
-                       /   /  R⃗ (মূল ভেক্টর)
-                      / β /
-                     O───┴───────────► X (১ম উপাংশ)
-                           α
-```
+<div class="diagram-box">
+<svg viewBox="0 0 520 250" class="physics-diagram">
+<defs>
+<marker id="no-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="no-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="no-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+</defs>
+<line x1="60" y1="200" x2="440" y2="200" stroke="#d97706" stroke-width="3" marker-end="url(#no-arr-amb)"/>
+<text x="240" y="225" fill="#d97706" font-weight="800" font-size="14">X-দিক (১ম উপাংশ: X = OA)</text>
+<line x1="60" y1="200" x2="220" y2="40" stroke="#0d9488" stroke-width="3" marker-end="url(#no-arr-tl)"/>
+<text x="110" y="90" fill="#0d9488" font-weight="800" font-size="14">Y-দিক (২য় উপাংশ: Y = OB)</text>
+<line x1="60" y1="200" x2="380" y2="70" stroke="#e11d48" stroke-width="3.5" marker-end="url(#no-arr-rb)"/>
+<text x="390" y="70" fill="#e11d48" font-weight="800" font-size="15">R⃗ = মূল ভেক্টর (OC)</text>
+<line x1="220" y1="40" x2="380" y2="70" stroke="var(--border-subtle)" stroke-width="1.8" stroke-dasharray="4,4"/>
+<line x1="440" y1="200" x2="380" y2="70" stroke="#0d9488" stroke-width="2" stroke-dasharray="4,4"/>
+<circle cx="60" cy="200" r="4.5" fill="var(--text-main)"/>
+<text x="45" y="215" fill="var(--text-main)" font-weight="800" font-size="14">O</text>
+<circle cx="380" cy="70" r="4.5" fill="#e11d48"/>
+<text x="375" y="55" fill="#e11d48" font-weight="800" font-size="14">C</text>
+<circle cx="300" cy="200" r="4" fill="var(--text-main)"/>
+<text x="295" y="220" fill="var(--text-main)" font-weight="700" font-size="13">A</text>
+<path d="M 130 200 A 70 70 0 0 0 120 170" fill="none" stroke="#e11d48" stroke-width="2"/>
+<text x="135" y="190" fill="#e11d48" font-weight="800" font-size="13">α</text>
+<path d="M 105 155 A 70 70 0 0 0 135 150" fill="none" stroke="#0d9488" stroke-width="2"/>
+<text x="110" y="135" fill="#0d9488" font-weight="800" font-size="13">β</text>
+</svg>
+<div class="diagram-caption">চিত্র ২.১: যেকোনো কোণে ভেক্টর বিভাজন (Non-orthogonal Resolution with Sine Rule)</div>
+</div>
 
 ### ২.১ কোণের পরিচয়
 - মূল ভেক্টর = $\vec{R}$
@@ -69,17 +103,35 @@ $$\mathbf{Y = \frac{R\sin\alpha}{\sin(\alpha + \beta)}}$$
 
 ## ৩. পরস্পর লম্ব উপাংশে বিভাজন (Orthogonal Resolution)
 
-```
-                Y ▲
-                  │          C (x, y)
-                  │         /│
-                  │        / │
-              Y⃗  │    R⃗  /  │ Y = R sin α
-                  │      /   │
-                  │     /α   │
-                  O────┴─────┴──────► X
-                   X = R cos α
-```
+<div class="diagram-box">
+<svg viewBox="0 0 460 220" class="physics-diagram">
+<defs>
+<marker id="or-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="or-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="or-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+<marker id="or-arr-mu" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#78716c"/></marker>
+</defs>
+<line x1="50" y1="180" x2="420" y2="180" stroke="var(--text-main)" stroke-width="2" marker-end="url(#or-arr-mu)"/>
+<text x="430" y="185" fill="var(--text-main)" font-weight="700" font-size="14">X</text>
+<line x1="50" y1="180" x2="50" y2="25" stroke="var(--text-main)" stroke-width="2" marker-end="url(#or-arr-mu)"/>
+<text x="45" y="15" fill="var(--text-main)" font-weight="700" font-size="14">Y</text>
+<circle cx="50" cy="180" r="4.5" fill="var(--text-main)"/>
+<text x="35" y="195" fill="var(--text-main)" font-weight="700" font-size="13">O</text>
+<line x1="50" y1="180" x2="330" y2="50" stroke="#e11d48" stroke-width="3.5" marker-end="url(#or-arr-rb)"/>
+<circle cx="330" cy="50" r="5" fill="#e11d48"/>
+<text x="340" y="45" fill="#e11d48" font-weight="800" font-size="15">C(x, y) → R⃗</text>
+<line x1="50" y1="180" x2="330" y2="180" stroke="#d97706" stroke-width="3.5" marker-end="url(#or-arr-amb)"/>
+<text x="140" y="205" fill="#d97706" font-weight="800" font-size="13">X = R cos α (সন্নিহিত অক্ষ)</text>
+<line x1="50" y1="180" x2="50" y2="50" stroke="#0d9488" stroke-width="3.5" marker-end="url(#or-arr-tl)"/>
+<text x="60" y="90" fill="#0d9488" font-weight="800" font-size="13">Y = R sin α</text>
+<line x1="330" y1="50" x2="330" y2="180" stroke="#0d9488" stroke-width="2" stroke-dasharray="4,4"/>
+<text x="340" y="125" fill="#0d9488" font-weight="700" font-size="12">Y = R sin α</text>
+<line x1="50" y1="50" x2="330" y2="50" stroke="#d97706" stroke-width="1.8" stroke-dasharray="4,4"/>
+<path d="M 120 180 A 70 70 0 0 0 110 152" fill="none" stroke="#e11d48" stroke-width="2"/>
+<text x="125" y="168" fill="#e11d48" font-weight="800" font-size="13">α</text>
+</svg>
+<div class="diagram-caption">চিত্র ৩.১: পরস্পর লম্ব উপাংশে ভেক্টর বিভাজন (Orthogonal Resolution)</div>
+</div>
 
 ### ৩.১ সূত্র প্রতিপাদন
 যখন দুটি উপাংশ পরস্পর সমকোণে ($90^\circ$) থাকে, তখন $\alpha + \beta = 90^\circ \implies \beta = 90^\circ - \alpha$।
@@ -102,47 +154,30 @@ $$Y = \frac{R\sin\alpha}{\sin 90^\circ} = \frac{R\sin\alpha}{1} = \mathbf{R\sin\
 ### 🚜 ৪.১ লন রোলার — টানা সহজ কিন্তু ঠেলা কঠিন কেন?
 রোলারের ভর $m$, তাই তার প্রকৃত ওজন $W = mg$ সর্বদা খাড়া নিচের দিকে ক্রিয়া করে।
 
-```
-        (ক) লন রোলার টানা (Pulling)                (খ) লন রোলার ঠেলা (Pushing)
-            F sin θ ↑   ↗ F (টানা বল)                    F cos θ
-                    │  /                               ─────────────•─────────────►
-                    │ / θ                                           │        ─────────────•─────────────► F cos θ                        │  \ θ
-                    │                                               │   ↘ F (ঠেলা বল)
-                    │ W = mg (নিচের দিকে)                            ↓ F sin θ
-                                                                    ↓ W = mg
-```
-
-#### কেস ১: বল অনুভূমিকের সাথে $	heta$ কোণে প্রযুক্ত হলে
-- **টানার সময় (Pulling):**
-  - উলম্ব উপাংশ $F\sin\theta$ ওপরের দিকে কাজ করে ওজনকে হালকা করে।
-  - আপাত ওজন: $\mathbf{W_{pull} = mg - F\sin\theta}$
-- **ঠেলার সময় (Pushing):**
-  - উলম্ব উপাংশ $F\sin\theta$ নিচের দিকে কাজ করে ওজনকে বাড়িয়ে দেয়।
-  - আপাত ওজন: $\mathbf{W_{push} = mg + F\sin\theta}$
-- **আপাত ওজনের পার্থক্য:**
-  $$\mathbf{\Delta W = W_{push} - W_{pull} = 2F\sin\theta}$$
-
-#### 🚨 কেস ২: ট্র্যাপ কেস — বল উলম্বের সাথে $	heta$ কোণে প্রযুক্ত হলে!
-যদি কোণ $\theta$ উল্লম্বের সাথে দেওয়া থাকে:
-- টানার সময় আপাত ওজন: $\mathbf{W_{pull} = mg - F\cos\theta}$
-- ঠেলার সময় আপাত ওজন: $\mathbf{W_{push} = mg + F\cos\theta}$
-- আপাত ওজনের পার্থক্য: $\mathbf{\Delta W = 2F\cos\theta}$
-
----
-
-### ⛵ ৪.২ নৌকার গুণ টানা (Towing a Boat with Rope)
-নদীর তীর থেকে দড়ি বেঁধে নৌকা টেনে সামনে নিয়ে যাওয়াকে গুণ টানা বলে।
-
-```
-                নদীর তীর (Shore)
-    ───────────────────────────────────────
-             \  θ (কোণ)
-              \   F (দড়ির টান বল)
-                               •  নৌকা
-                ├───► Fx = F cos θ (সামনে এগিয়ে নেওয়ার কার্যকর বল)
-                │
-                ↓ Fy = F sin θ (নৌকাকে তীরের দিকে টেনে আনার বল)
-```
+<div class="diagram-box">
+<svg viewBox="0 0 500 220" class="physics-diagram">
+<defs>
+<marker id="bt-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="bt-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="bt-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+</defs>
+<line x1="20" y1="40" x2="480" y2="40" stroke="#0284c7" stroke-width="3"/>
+<rect x="20" y="40" width="460" height="150" fill="rgba(2, 132, 199, 0.05)"/>
+<text x="30" y="30" fill="#0284c7" font-weight="700" font-size="13">নদীর তীর (Bank)</text>
+<line x1="160" y1="40" x2="320" y2="130" stroke="#d97706" stroke-width="2.5" stroke-dasharray="3,2"/>
+<text x="210" y="70" fill="#d97706" font-weight="800" font-size="13">গুণ বা দড়ির টান বল F</text>
+<ellipse cx="320" cy="130" rx="36" ry="16" fill="rgba(217, 119, 6, 0.2)" stroke="#d97706" stroke-width="2.5"/>
+<circle cx="320" cy="130" r="4" fill="var(--text-main)"/>
+<text x="365" y="135" fill="var(--text-main)" font-weight="700" font-size="13">নৌকা</text>
+<line x1="320" y1="130" x2="440" y2="130" stroke="#0d9488" stroke-width="3" marker-end="url(#bt-arr-tl)"/>
+<text x="340" y="160" fill="#0d9488" font-weight="700" font-size="12">Fx = F cos θ (সামনে এগিয়ে নেওয়ার কার্যকর বল)</text>
+<line x1="320" y1="130" x2="320" y2="60" stroke="#e11d48" stroke-width="2.5" marker-end="url(#bt-arr-rb)"/>
+<text x="325" y="80" fill="#e11d48" font-weight="700" font-size="11">Fy = F sin θ (তীরের দিকে টানে - যা হাল দিয়ে প্রতিহত করা হয়)</text>
+<path d="M 270 102 A 40 40 0 0 0 290 130" fill="none" stroke="#d97706" stroke-width="2"/>
+<text x="260" y="125" fill="#d97706" font-weight="800" font-size="13">θ</text>
+</svg>
+<div class="diagram-caption">চিত্র ৪.১: নৌকার গুণ টানা (Towing of Boat) ও বলের উপাংশ বিভাজন</div>
+</div>
 
 - **অনুভূমিক উপাংশ ($F_x = F\cos\theta$):** নৌকাকে নদীর দৈর্ঘ্য বরাবর সোজা সামনের দিকে এগিয়ে নিয়ে যায়।
 - **উলম্ব উপাংশ ($F_y = F\sin\theta$):** নৌকাকে তীরের দিকে আছড়ে ফেলতে চায়। মাঝিরা হালের সাহায্যে এই উপাংশকে নিষ্ক্রিয় (Cancel) করেন।
@@ -182,16 +217,30 @@ $$Y = \frac{R\sin\alpha}{\sin 90^\circ} = \frac{R\sin\alpha}{1} = \mathbf{R\sin\
 
 ## ৬. ল্যামির উপপাদ্য (Lami's Theorem)
 
-```
-                     P
-                     ↑
-                     │
-          γ        . │ .       β
-                 .   │   .
-               .     │     .
-             Q ──────•────── R
-                   α
-```
+<div class="diagram-box">
+<svg viewBox="0 0 440 250" class="physics-diagram">
+<defs>
+<marker id="lm-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="lm-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="lm-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+</defs>
+<circle cx="220" cy="130" r="5" fill="var(--text-main)"/>
+<text x="205" y="150" fill="var(--text-main)" font-weight="800" font-size="14">O</text>
+<line x1="220" y1="130" x2="220" y2="30" stroke="#e11d48" stroke-width="3.5" marker-end="url(#lm-arr-rb)"/>
+<text x="228" y="25" fill="#e11d48" font-weight="800" font-size="16">P⃗ (বল ১)</text>
+<line x1="220" y1="130" x2="100" y2="210" stroke="#d97706" stroke-width="3.5" marker-end="url(#lm-arr-amb)"/>
+<text x="65" y="225" fill="#d97706" font-weight="800" font-size="16">Q⃗ (বল ২)</text>
+<line x1="220" y1="130" x2="350" y2="190" stroke="#0d9488" stroke-width="3.5" marker-end="url(#lm-arr-tl)"/>
+<text x="360" y="200" fill="#0d9488" font-weight="800" font-size="16">R⃗ (বল ৩)</text>
+<path d="M 165 165 A 60 60 0 0 0 275 160" fill="none" stroke="#e11d48" stroke-width="2.2"/>
+<text x="210" y="190" fill="#e11d48" font-weight="800" font-size="14">α (P-এর বিপরীত কোণ)</text>
+<path d="M 220 80 A 50 50 0 0 0 180 100" fill="none" stroke="#0d9488" stroke-width="2"/>
+<text x="165" y="75" fill="#0d9488" font-weight="800" font-size="14">β (R-এর বিপরীত কোণ)</text>
+<path d="M 260 90 A 50 50 0 0 0 220 80" fill="none" stroke="#d97706" stroke-width="2"/>
+<text x="260" y="80" fill="#d97706" font-weight="800" font-size="14">γ (Q-এর বিপরীত কোণ)</text>
+</svg>
+<div class="diagram-caption">চিত্র ৫.১: ল্যামির উপপাদ্য ও তিনটি বলের সাম্যাবস্থা ($rac{P}{\sinlpha} = rac{Q}{\sineta} = rac{R}{\sin\gamma}$)</div>
+</div>
 
 ### ৬.১ উপপাদ্যের বিবৃতি
 > কোনো বিন্দুতে একই সমতলে ক্রিয়ারত তিনটি ভেক্টর বল যদি বস্তুকে সাম্যাবস্থায় (Equilibrium) রাখে, তবে প্রতিটি বলের মান অপর দুটি বলের মধ্যবর্তী কোণের সাইনের (Sine) সমানুপাতিক।

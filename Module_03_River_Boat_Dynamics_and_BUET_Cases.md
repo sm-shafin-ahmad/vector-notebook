@@ -4,17 +4,7 @@
 
 ## ১. নদী-নৌকা সিস্টেমের মৌলিক স্থানাঙ্ক কাঠামো ও উপাংশ বিশ্লেষণ
 
-```
-                                      Y ▲ (নদীর প্রস্থ d)
-       ─────────────────────────────────┼─────────────────────────────── (ওপাড়)
-                                        │          ↗ w⃗ (লব্ধি বেগ)
-                                        │         /
-                                        │     v⃗  / 
-                                        │       /
-                                        │      / α (যাত্রার কোণ)
-       ─────────────────────────────────•──────┴──────────────────────── (এপাড়)
-                                       O ──────► X (স্রোতের বেগ u⃗)
-```
+
 
 ### ১.১ রাশির পরিচয়
 - $u$ = নদীর স্রোতের বেগ (সর্বদা $+X$ অক্ষ বরাবর অনুভূমিক)
@@ -47,17 +37,7 @@ $$\mathbf{t = \frac{d}{v_y} = \frac{d}{v\sin\alpha}}$$
 
 ## ৩. কেস ১: সর্বনিম্ন সময়ে নদী পারাপার (Shortest Time Case)
 
-```
-       ─────────────────────────────────┬─────────────────────────────── (ওপাড়)
-                                        │              ↗ w⃗
-                                        │             /
-                                      d │         v⃗  / 
-                                        │           / 
-                                        │          / α = 90°
-       ─────────────────────────────────•─────────┴───────────────────── (এপাড়)
-                                       O ─────────► u⃗
-                                        |◄── x ──►| (Drift)
-```
+
 
 ### ৩.১ শর্ত ও প্রতিপাদন
 সময় $t = \frac{d}{v\sin\alpha}$ সর্বনিম্ন ($t_{\min}$) হবে যখন হরের $\sin\alpha$ সর্বোচ্চ হবে।
@@ -79,16 +59,7 @@ $$\sin\alpha = 1 \implies \mathbf{\alpha = 90^\circ}$$
 
 ## ৪. কেস ২: সর্বনিম্ন দূরত্বে / সোজাসুজি ওপাড়ে পৌঁছানো (Shortest Distance Case)
 
-```
-       ─────────────────────────────────▲ B (ঠিক বিপরীত বিন্দু, x = 0)
-                                        │
-                                        │ w⃗ = √(v² - u²) (লব্ধি)
-                                      d │  
-                                v⃗ ↖     │  
-                                   \ α  │ θ = 90°
-       ─────────────────────────────•───┴─────────────────────────────── (এপাড়)
-                                   O ───► u⃗
-```
+
 
 ### ৪.১ শর্ত ও প্রতিপাদন
 সোজাসুজি ঠিক বিপরীত বিন্দু $B$-তে পৌঁছাতে হলে পার্শ্ব সরণ বা ড্রাফট শূন্য হতে হবে ($x = 0$)।
@@ -140,18 +111,35 @@ $$\mathbf{x_{\min} = d \frac{\sqrt{u^2 - v^2}}{v}}$$
 
 ## ৭. কেস ৫: পুলিশ-চোর তাড়া করার সমস্যা (River Pursuit Problem)
 
-```
-                চোরের দৌড়ের দিক ───► w_thief
-   ───────────────────────────────────────────────── (ওপাড়)
-                                  ▲ (এখানে ধরা পড়বে)
-                                 /
-                   l   w (লব্ধি) /
-                     ↖          /
-                       ↖       /
-                         ↖ α  /
-  ─────────────────────────•──────────────────────── (এপাড়)
-                 স্রোতের বেগ u⃗
-```
+<div class="diagram-box">
+<svg viewBox="0 0 520 220" class="physics-diagram">
+<defs>
+<marker id="tp-arr-amb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#d97706"/></marker>
+<marker id="tp-arr-tl" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#0d9488"/></marker>
+<marker id="tp-arr-rb" viewBox="0 0 10 10" refX="6" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M 0 1.5 L 8 5 L 0 8.5 z" fill="#e11d48"/></marker>
+</defs>
+<line x1="20" y1="50" x2="500" y2="50" stroke="#0284c7" stroke-width="3"/>
+<line x1="20" y1="180" x2="500" y2="180" stroke="#0284c7" stroke-width="3"/>
+<rect x="20" y="50" width="480" height="130" fill="rgba(2, 132, 199, 0.05)"/>
+<text x="30" y="40" fill="#0284c7" font-weight="700" font-size="12">ওপাড় (Opposite Bank)</text>
+<text x="30" y="200" fill="#0284c7" font-weight="700" font-size="12">এপাড় (Home Bank)</text>
+<circle cx="100" cy="50" r="5" fill="#e11d48"/>
+<text x="45" y="40" fill="#e11d48" font-weight="800" font-size="12">চোর (Thief)</text>
+<line x1="100" y1="50" x2="380" y2="50" stroke="#e11d48" stroke-width="3" marker-end="url(#tp-arr-rb)"/>
+<text x="210" y="38" fill="#e11d48" font-weight="800" font-size="13">চোরের দৌড়ের বেগ w_thief</text>
+<circle cx="100" cy="180" r="5" fill="#0d9488"/>
+<text x="45" y="195" fill="#0d9488" font-weight="800" font-size="12">পুলিশ (O)</text>
+<line x1="100" y1="180" x2="220" y2="180" stroke="#d97706" stroke-width="2.5" marker-end="url(#tp-arr-amb)"/>
+<text x="140" y="172" fill="#d97706" font-weight="700" font-size="11">স্রোত u</text>
+<line x1="100" y1="180" x2="260" y2="80" stroke="#0d9488" stroke-width="3" marker-end="url(#tp-arr-tl)"/>
+<text x="170" y="115" fill="#0d9488" font-weight="800" font-size="13">পুলিশের নৌকার বেগ v</text>
+<line x1="100" y1="180" x2="380" y2="50" stroke="#e11d48" stroke-width="3" stroke-dasharray="4,3" marker-end="url(#tp-arr-rb)"/>
+<circle cx="380" cy="50" r="6" fill="#e11d48"/>
+<text x="390" y="55" fill="#e11d48" font-weight="800" font-size="13">ধরা পড়ার বিন্দু (Interception)</text>
+<text x="280" y="115" fill="#e11d48" font-weight="700" font-size="13">লব্ধি বেগ w</text>
+</svg>
+<div class="diagram-caption">চিত্র ৫.১: নদী-নৌকায় চোর-পুলিশ কেস ও ইন্টারসেপশন ডায়নামিক্স (BUET Case)</div>
+</div>
 
 নদীর একপাড়ে চোর পাড় বরাবর $w_{thief}$ বেগে দৌড়াচ্ছে। ওপর পাড় থেকে পুলিশ $v$ বেগে স্রোতের ($u$) সাথে $\alpha$ কোণে নৌকা চালিয়ে চোরকে ধরতে চায়।
 
