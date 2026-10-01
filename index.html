@@ -2,7 +2,7 @@
 <html lang="bn" data-theme="light">
 <head>
 <meta charset="UTF-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
 <title>ভেক্টর মাস্টারনোট — উচ্চমাধ্যমিক পদার্থবিজ্ঞান ১ম পত্র</title>
 <meta name="description" content="উচ্চমাধ্যমিক পদার্থবিজ্ঞান ১ম পত্রের ২য় অধ্যায়: ভেক্টরের সম্পূর্ণ ৩টি মডিউলের বিস্তারিত নোট, প্রতিপাদন, গাণিতিক সমস্যা ও সিমুলেটর।"/>
 
@@ -30,32 +30,28 @@
   --radius-sm: 8px;
   --radius-md: 12px;
   --radius-lg: 16px;
-  --radius-xl: 20px;
   
   --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ── LIGHT THEME: LUXURY CREME / WARM PARCHMENT ── */
+/* ── LIGHT THEME: SEAMLESS LUXURY CREME ── */
 [data-theme="light"] {
-  --bg-base: #f7f3ea;
-  --bg-surface: #efe7d7;
+  --bg-page: #faf7f2;
+  --bg-header: rgba(250, 247, 242, 0.94);
+  --bg-sidebar: #f4efe6;
   --bg-card: #ffffff;
-  --bg-card-subtle: #fbf9f4;
-  --bg-card-hover: #fcfbfa;
+  --bg-subtle: #f6f1e8;
   --bg-input: #ffffff;
-  --bg-header: rgba(247, 243, 234, 0.96);
-  --bg-sidebar: #f3ecde;
   
-  --text-main: #231912;
-  --text-muted: #6e5845;
-  --text-dim: #947d69;
+  --text-main: #20160f;
+  --text-muted: #655140;
+  --text-dim: #937d6a;
   
-  --border-subtle: rgba(146, 95, 48, 0.15);
-  --border-card: rgba(146, 95, 48, 0.12);
+  --border-subtle: rgba(146, 95, 48, 0.14);
   --border-focus: #b86a24;
   
   --accent-primary: #b86a24;
-  --accent-hover: #9c5516;
+  --accent-hover: #98541c;
   --accent-light: rgba(184, 106, 36, 0.12);
   --accent-glow: rgba(184, 106, 36, 0.22);
   
@@ -63,31 +59,27 @@
   --accent-amber: #d97706;
   --accent-ruby: #be123c;
   
-  --code-bg: #ece3d2;
-  --code-text: #2f2015;
+  --code-bg: #f0e7d8;
+  --code-text: #2c1e14;
   
-  --shadow-sm: 0 1px 4px rgba(92, 57, 24, 0.05);
-  --shadow-md: 0 4px 14px rgba(92, 57, 24, 0.08);
-  --shadow-lg: 0 10px 28px rgba(92, 57, 24, 0.12);
+  --shadow-sm: 0 1px 3px rgba(92, 57, 24, 0.05);
+  --shadow-md: 0 4px 12px rgba(92, 57, 24, 0.08);
 }
 
-/* ── DARK THEME: RICH CHOCOLATE BROWN ── */
+/* ── DARK THEME: SEAMLESS RICH CHOCOLATE BROWN ── */
 [data-theme="dark"] {
-  --bg-base: #140d0a;
-  --bg-surface: #1d140f;
-  --bg-card: #221812;
-  --bg-card-subtle: #1b120d;
-  --bg-card-hover: #291d17;
-  --bg-input: #1a110d;
-  --bg-header: rgba(20, 13, 10, 0.96);
-  --bg-sidebar: #19100c;
+  --bg-page: #150d09;
+  --bg-header: rgba(21, 13, 9, 0.94);
+  --bg-sidebar: #1c120c;
+  --bg-card: #201611;
+  --bg-subtle: #1a110c;
+  --bg-input: #170f0a;
   
-  --text-main: #f8efe6;
-  --text-muted: #c3ada2;
-  --text-dim: #8e776d;
+  --text-main: #f7eee5;
+  --text-muted: #c2ada1;
+  --text-dim: #8d776c;
   
   --border-subtle: rgba(226, 155, 82, 0.15);
-  --border-card: rgba(226, 155, 82, 0.16);
   --border-focus: #e29b52;
   
   --accent-primary: #e29b52;
@@ -99,15 +91,14 @@
   --accent-amber: #fbbf24;
   --accent-ruby: #f87171;
   
-  --code-bg: #18100c;
+  --code-bg: #18100b;
   --code-text: #fbeee3;
   
-  --shadow-sm: 0 1px 4px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 14px rgba(0, 0, 0, 0.45);
-  --shadow-lg: 0 10px 28px rgba(0, 0, 0, 0.6);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
 }
 
-/* ── GLOBAL RESET & MOBILE OVERFLOW PREVENT ── */
+/* ── GLOBAL RESET ── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -123,11 +114,11 @@ html {
 }
 
 body {
-  background-color: var(--bg-base);
+  background-color: var(--bg-page);
   color: var(--text-main);
   font-family: var(--font-bangla);
-  line-height: 1.65;
-  transition: background-color 0.22s ease, color 0.22s ease;
+  line-height: 1.7;
+  transition: background-color 0.2s ease, color 0.2s ease;
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
@@ -135,11 +126,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
-/* Scrollbars */
-::-webkit-scrollbar { width: 6px; height: 6px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: var(--border-subtle); border-radius: 99px; }
 
 /* Progress bar */
 #reading-progress {
@@ -153,26 +139,26 @@ body {
   transition: width 0.1s linear;
 }
 
-/* ── HEADER ── */
+/* ── STICKY HEADER ── */
 .site-header {
   position: sticky;
   top: 0;
   z-index: 900;
   background: var(--bg-header);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border-subtle);
-  padding: 8px 14px;
+  padding: 8px 16px;
   width: 100%;
 }
 
 .header-container {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
+  gap: 12px;
   width: 100%;
 }
 
@@ -190,7 +176,7 @@ body {
   width: 36px;
   height: 36px;
   border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent-primary), #9c5516);
+  background: linear-gradient(135deg, var(--accent-primary), #98541c);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -242,8 +228,8 @@ body {
 }
 
 .btn-icon:hover {
-  background: var(--bg-card-hover);
   border-color: var(--accent-primary);
+  transform: translateY(-1px);
 }
 
 /* Search Box */
@@ -257,11 +243,11 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 99px;
-  padding: 6px 10px 6px 28px;
+  padding: 5px 10px 5px 28px;
   font-family: var(--font-bangla);
   font-size: 0.82rem;
   color: var(--text-main);
-  width: 130px;
+  width: 120px;
   transition: var(--transition);
 }
 
@@ -269,7 +255,7 @@ body {
   outline: none;
   border-color: var(--accent-primary);
   box-shadow: 0 0 0 2px var(--accent-glow);
-  width: 170px;
+  width: 160px;
 }
 
 .search-icon {
@@ -280,14 +266,14 @@ body {
   pointer-events: none;
 }
 
-/* ── NAVIGATION TABS ── */
+/* ── NAVIGATION PILL TABS ── */
 .nav-tabs-bar {
-  background: var(--bg-surface);
+  background: var(--bg-page);
   border-bottom: 1px solid var(--border-subtle);
   position: sticky;
   top: 52px;
   z-index: 850;
-  padding: 6px 10px;
+  padding: 6px 12px;
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -303,7 +289,7 @@ body {
   align-items: center;
   gap: 6px;
   width: max-content;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -313,8 +299,8 @@ body {
   font-size: 0.82rem;
   font-weight: 600;
   color: var(--text-muted);
-  background: transparent;
-  border: 1px solid transparent;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
   cursor: pointer;
   transition: var(--transition);
   display: flex;
@@ -326,32 +312,33 @@ body {
 
 .nav-tab:hover {
   color: var(--text-main);
-  background: var(--accent-light);
+  border-color: var(--accent-primary);
 }
 
 .nav-tab.active {
   background: var(--accent-primary);
   color: #ffffff;
+  border-color: var(--accent-primary);
   box-shadow: 0 2px 8px var(--accent-glow);
 }
 
 /* ── MAIN APP LAYOUT (DESKTOP) ── */
 .app-layout {
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 100%;
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 20px;
-  padding: 20px 14px 70px 14px;
+  grid-template-columns: 240px 1fr;
+  gap: 32px;
+  padding: 24px 20px 80px 20px;
   flex: 1;
 }
 
-/* ── SIDEBAR (DESKTOP ONLY) ── */
+/* ── SIDEBAR (DESKTOP) ── */
 .sidebar {
   position: sticky;
-  top: 104px;
-  height: calc(100vh - 120px);
+  top: 106px;
+  height: calc(100vh - 124px);
   overflow-y: auto;
   background: var(--bg-sidebar);
   border: 1px solid var(--border-subtle);
@@ -360,10 +347,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  scrollbar-width: thin;
 }
 
 .sidebar-title {
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
@@ -386,7 +374,7 @@ body {
   border-radius: var(--radius-xs);
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.84rem;
+  font-size: 0.82rem;
   font-weight: 500;
   transition: var(--transition);
   border-left: 2px solid transparent;
@@ -406,80 +394,73 @@ body {
   font-weight: 700;
 }
 
-/* ── MAIN CONTENT CARD ── */
+/* ── SEAMLESS MAIN CONTENT AREA ── */
 .main-content {
   min-width: 0;
   width: 100%;
-}
-
-.content-card {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: var(--radius-lg);
-  padding: 28px 32px;
-  box-shadow: var(--shadow-sm);
-  width: 100%;
+  max-width: 860px;
 }
 
 /* ── MARKDOWN & MATH TYPOGRAPHY ── */
 .markdown-body {
-  font-size: 1.02rem;
+  font-size: 1.04rem;
   color: var(--text-main);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .markdown-body h1 {
-  font-size: 1.65rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: var(--text-main);
   border-bottom: 2px solid var(--border-subtle);
-  padding-bottom: 10px;
-  margin: 0 0 20px 0;
+  padding-bottom: 12px;
+  margin: 0 0 22px 0;
   letter-spacing: -0.01em;
   line-height: 1.3;
 }
 
 .markdown-body h2 {
-  font-size: 1.32rem;
+  font-size: 1.35rem;
   font-weight: 700;
   color: var(--accent-primary);
-  margin: 32px 0 14px 0;
+  margin: 36px 0 16px 0;
   padding-bottom: 6px;
   border-bottom: 1px solid var(--border-subtle);
   line-height: 1.35;
 }
 
 .markdown-body h3 {
-  font-size: 1.12rem;
+  font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-main);
-  margin: 20px 0 10px 0;
+  margin: 24px 0 12px 0;
   line-height: 1.4;
 }
 
 .markdown-body p {
-  margin-bottom: 14px;
-  line-height: 1.7;
+  margin-bottom: 16px;
+  line-height: 1.75;
 }
 
 .markdown-body ul, .markdown-body ol {
-  margin: 10px 0 16px 20px;
+  margin: 12px 0 18px 22px;
   display: flex;
   flex-direction: column;
   gap: 6px;
 }
 
 .markdown-body li {
-  line-height: 1.6;
+  line-height: 1.65;
 }
 
 .markdown-body blockquote {
-  background: var(--bg-surface);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
   border-left: 4px solid var(--accent-primary);
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-  padding: 12px 14px;
-  margin: 16px 0;
+  border-radius: var(--radius-sm);
+  padding: 14px 18px;
+  margin: 18px 0;
   font-style: normal;
   color: var(--text-main);
 }
@@ -494,7 +475,7 @@ body {
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 16px 0;
+  margin: 18px 0;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   background: var(--bg-card);
@@ -503,21 +484,21 @@ body {
 .markdown-body table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   text-align: left;
 }
 
 .markdown-body th {
-  background: var(--bg-surface);
+  background: var(--bg-subtle);
   color: var(--text-main);
   font-weight: 700;
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-bottom: 2px solid var(--border-subtle);
   white-space: nowrap;
 }
 
 .markdown-body td {
-  padding: 10px 12px;
+  padding: 10px 14px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -525,25 +506,25 @@ body {
   border-bottom: none;
 }
 
-/* Code & ASCII Diagrams — Mobile Scrollable */
+/* Code & ASCII Diagrams */
 .markdown-body pre {
   background: var(--code-bg);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 12px 14px;
+  padding: 14px 16px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   font-family: var(--font-mono);
-  font-size: 0.85rem;
+  font-size: 0.88rem;
   line-height: 1.45;
   color: var(--code-text);
-  margin: 14px 0;
+  margin: 16px 0;
   max-width: 100%;
 }
 
 .markdown-body code {
   font-family: var(--font-mono);
-  background: var(--bg-surface);
+  background: var(--bg-subtle);
   padding: 2px 5px;
   border-radius: 4px;
   font-size: 0.88em;
@@ -556,14 +537,14 @@ body {
   color: inherit;
 }
 
-/* KaTeX Math Blocks — Mobile Scrollable */
+/* KaTeX Math Blocks */
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 10px 6px;
-  margin: 14px 0;
-  background: var(--bg-surface);
+  padding: 12px 10px;
+  margin: 16px 0;
+  background: var(--bg-card);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   max-width: 100%;
@@ -575,25 +556,25 @@ body {
 .simulators-container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
   width: 100%;
 }
 
 .simulators-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
-  gap: 18px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   width: 100%;
 }
 
 .sim-card {
-  background: var(--bg-card-subtle);
+  background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
-  padding: 16px;
+  padding: 18px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 14px;
   box-shadow: var(--shadow-sm);
   width: 100%;
 }
@@ -607,7 +588,7 @@ body {
 }
 
 .sim-card-header h3 {
-  font-size: 1.05rem;
+  font-size: 1.08rem;
   font-weight: 700;
   color: var(--text-main);
   line-height: 1.25;
@@ -635,9 +616,9 @@ body {
   background: var(--bg-input);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xs);
-  padding: 7px 10px;
+  padding: 8px 10px;
   font-family: var(--font-en), var(--font-bangla);
-  font-size: 0.88rem;
+  font-size: 0.9rem;
   color: var(--text-main);
   outline: none;
   transition: var(--transition);
@@ -657,7 +638,7 @@ body {
   padding: 10px 14px;
   font-family: var(--font-bangla);
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   cursor: pointer;
   transition: var(--transition);
   display: flex;
@@ -672,10 +653,10 @@ body {
 }
 
 .sim-results {
-  background: var(--bg-card);
+  background: var(--bg-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xs);
-  padding: 10px 12px;
+  padding: 12px 14px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -685,8 +666,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-size: 0.84rem;
-  line-height: 1.3;
+  font-size: 0.86rem;
+  line-height: 1.35;
 }
 
 .res-row span.label {
@@ -702,7 +683,7 @@ body {
 .sim-canvas {
   width: 100%;
   height: 140px;
-  background: var(--bg-card);
+  background: var(--bg-subtle);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xs);
   display: block;
@@ -718,7 +699,7 @@ body {
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   padding: 10px 16px;
-  box-shadow: var(--shadow-lg);
+  box-shadow: var(--shadow-md);
   font-weight: 600;
   font-size: 0.85rem;
   display: flex;
@@ -765,12 +746,12 @@ body {
 }
 
 /* ═══════════════════════════════════════════════
-   ── MOBILE RESPONSIVENESS OVERRIDES (< 850px) ──
+   ── MOBILE OVERRIDES (< 850px) ──
    ═══════════════════════════════════════════════ */
 @media (max-width: 850px) {
   .app-layout {
     display: block;
-    padding: 10px 8px 70px 8px;
+    padding: 16px 14px 70px 14px;
     width: 100%;
     max-width: 100%;
   }
@@ -779,30 +760,24 @@ body {
     display: none;
   }
   
-  .content-card {
-    padding: 18px 12px;
-    border-radius: var(--radius-sm);
-    width: 100%;
-  }
-  
   .markdown-body h1 {
-    font-size: 1.35rem;
+    font-size: 1.4rem;
     margin-bottom: 14px;
   }
   
   .markdown-body h2 {
-    font-size: 1.15rem;
-    margin: 24px 0 10px 0;
+    font-size: 1.2rem;
+    margin: 26px 0 12px 0;
   }
 
   .markdown-body h3 {
-    font-size: 1.02rem;
+    font-size: 1.05rem;
   }
   
   .search-input {
-    width: 100px;
+    width: 95px;
     font-size: 0.78rem;
-    padding: 5px 8px 5px 24px;
+    padding: 4px 8px 4px 24px;
   }
   
   .search-input:focus {
@@ -815,7 +790,7 @@ body {
 
   .simulators-grid {
     grid-template-columns: 1fr;
-    gap: 14px;
+    gap: 16px;
   }
 }
 
@@ -832,11 +807,6 @@ body {
   }
   .app-layout {
     display: block;
-    padding: 0;
-  }
-  .content-card {
-    border: none;
-    box-shadow: none;
     padding: 0;
   }
 }
@@ -876,7 +846,7 @@ body {
   </div>
 </header>
 
-<!-- ═════════ NAVIGATION TABS ═════════ -->
+<!-- ═════════ NAVIGATION PILL TABS ═════════ -->
 <nav class="nav-tabs-bar">
   <div class="nav-tabs-container">
     <button class="nav-tab active" id="tab-module1" onclick="switchModule('module1')">
@@ -897,26 +867,24 @@ body {
   </div>
 </nav>
 
-<!-- ═════════ MAIN LAYOUT ═════════ -->
+<!-- ═════════ MAIN SEAMLESS LAYOUT ═════════ -->
 <div class="app-layout">
-  <!-- Sticky Table of Contents Sidebar -->
+  <!-- Sticky Table of Contents Sidebar (Desktop) -->
   <aside class="sidebar">
     <div class="sidebar-title">
       <span>সূচিপত্র</span>
-      <span id="toc-count" style="font-size:0.75rem;padding:2px 8px;border-radius:99px;background:var(--bg-surface)">12 টপিক</span>
+      <span id="toc-count" style="font-size:0.75rem;padding:2px 8px;border-radius:99px;background:var(--bg-subtle)">12 টপিক</span>
     </div>
     <ul class="toc-list" id="toc-container">
       <!-- Dynamic TOC Links -->
     </ul>
   </aside>
 
-  <!-- Main Note Content View -->
+  <!-- Main Note Reading Area (Seamless) -->
   <main class="main-content">
-    <article class="content-card">
-      <div class="markdown-body" id="rendered-content">
-        <!-- Markdown and Math content injected dynamically -->
-      </div>
-    </article>
+    <div class="markdown-body" id="rendered-content">
+      <!-- Markdown and Math content injected dynamically -->
+    </div>
   </main>
 </div>
 
@@ -974,7 +942,7 @@ function adjustFontSize(delta) {
   currentFontSize = Math.min(22, Math.max(14, currentFontSize + delta));
   const el = document.querySelector('.markdown-body');
   if (el) {
-    el.style.fontSize = `${currentFontSize / 16 * 1.02}rem`;
+    el.style.fontSize = `${currentFontSize / 16 * 1.04}rem`;
   }
   showToast(`ফন্ট সাইজ: ${currentFontSize}px`);
 }
@@ -1056,7 +1024,7 @@ function buildTOC(container) {
     li.className = 'toc-item';
     if (h.tagName.toLowerCase() === 'h3') {
       li.style.paddingLeft = '10px';
-      li.style.fontSize = '0.8rem';
+      li.style.fontSize = '0.78rem';
     }
 
     const a = document.createElement('a');
@@ -1108,8 +1076,8 @@ function renderSimulators(container) {
   container.innerHTML = `
     <div class="simulators-container">
       <div>
-        <h1 style="border:none;margin-bottom:4px">🧮 পদার্থবিজ্ঞান সিমুলেটর</h1>
-        <p style="color:var(--text-muted);font-size:0.9rem">মান বসিয়ে সরাসরি হিসাব ও ভেক্টর ডায়াগ্রাম পর্যবেক্ষণ করুন।</p>
+        <h1 style="border:none;margin-bottom:4px">🧮 পদার্থবিজ্ঞান সিমুলেটর ও ক্যালকুলেটর</h1>
+        <p style="color:var(--text-muted);font-size:0.92rem">মান বসিয়ে সরাসরি হিসাব ও লাইভ ভেক্টর ডায়াগ্রাম পর্যবেক্ষণ করুন।</p>
       </div>
 
       <div class="simulators-grid">
