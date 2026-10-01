@@ -40,114 +40,62 @@
 ### ২.১ জ্যামিতিক প্রকাশ (Graphical Representation)
 একটি নির্দিষ্ট দৈর্ঘ্যের তীরচিহ্নযুক্ত সরলরেখাংশ দ্বারা ভেক্টর রাশিকে জ্যামিতিকভাবে উপস্থাপন করা হয়:
 
-```
-        পাদবিন্দু (Tail)                         শীর্ষবিন্দু (Head)
-             O •─────────────────────────────────────────► P
-                                  OP⃗ (বা A⃗)
-```
 
-1. **পাদবিন্দু / সূচনা বিন্দু / প্রারম্ভিক বিন্দু (Tail / Initial point):** যে বিন্দু থেকে ভেক্টরের সূচনা হয় (এখানে বিন্দু $O$)।
-2. **শীর্ষবিন্দু / প্রান্তিক বিন্দু (Head / Terminal point):** তীরে চিহ্নিত প্রান্তিক বিন্দু যেখানে ভেক্টরটি শেষ হয় (এখানে বিন্দু $P$)।
-3. **ধারক রেখা (Line of Action):** যে অসীম সরলরেখার অংশবিশেষ নিয়ে ভেক্টরটি গঠিত হয়, তাকে ভেক্টরের ধারক রেখা বলে।
-4. **ভেক্টরের মান (Magnitude):** রেখাংশটির দৈর্ঘ্য $OP = |\vec{A}| = A$।
-5. **ভেক্টরের দিক (Direction):** $O$ থেকে $P$ বিন্দুর অভিমুখে তীরচিহ্ন।
+<div class="diagram-box">
+  <svg viewBox="0 0 540 280" class="physics-diagram">
+    <!-- Grid and Coordinate Planes -->
+    <path d="M 80 220 L 260 220 L 460 160 L 280 160 Z" fill="rgba(217, 119, 6, 0.05)" stroke="var(--border-subtle)" stroke-dasharray="3,3"/>
+    <path d="M 80 220 L 80 50 L 280 50 L 280 160 L 80 220" fill="rgba(13, 148, 136, 0.04)" stroke="var(--border-subtle)" stroke-dasharray="3,3"/>
+    
+    <!-- Axes -->
+    <!-- X-Axis -->
+    <line x1="80" y1="220" x2="480" y2="220" stroke="var(--text-main)" stroke-width="2" marker-end="url(#arrow-muted)"/>
+    <text x="490" y="225" fill="var(--text-main)" font-weight="700" font-size="14">X</text>
+    
+    <!-- Y-Axis -->
+    <line x1="80" y1="220" x2="80" y2="30" stroke="var(--text-main)" stroke-width="2" marker-end="url(#arrow-muted)"/>
+    <text x="75" y="20" fill="var(--text-main)" font-weight="700" font-size="14">Y</text>
+    
+    <!-- Z-Axis (Isometric angle) -->
+    <line x1="80" y1="220" x2="290" y2="155" stroke="var(--text-main)" stroke-width="2" marker-end="url(#arrow-muted)"/>
+    <text x="300" y="150" fill="var(--text-main)" font-weight="700" font-size="14">Z</text>
+    
+    <!-- Origin -->
+    <circle cx="80" cy="220" r="4" fill="var(--text-main)"/>
+    <text x="65" y="238" fill="var(--text-main)" font-weight="700" font-size="13">O (0,0,0)</text>
 
-### ২.২ প্রতীকী প্রকাশ (Symbolic Notation)
-- **হাতে লেখার নিয়ম:**
-  - অক্ষরের মাথায় তীর চিহ্ন দিয়ে: $\vec{A}$
-  - অক্ষরের মাথায় সোজা দাগ (Bar) দিয়ে: $\bar{A}$
-  - অক্ষরের নিচে দাগ দিয়ে: $\underline{A}$
-- **বইয়ের ছাপা অক্ষরে:** বোল্ড বা মোটা হরফে ($\mathbf{A}$)।
-- **ভেক্টরের পরম মান (Magnitude):** পরম মান চিহ্নের সাহায্যে $|\vec{A}|$ বা $|\mathbf{A}|$ অথবা সাধারণ হরফে কেবল $A$ দিয়ে প্রকাশ করা হয়।
+    <!-- 3D Vector A -->
+    <line x1="80" y1="220" x2="380" y2="70" stroke="#e11d48" stroke-width="3.5" marker-end="url(#arrow-ruby)"/>
+    <circle cx="380" cy="70" r="5" fill="#e11d48"/>
+    <text x="390" y="65" fill="#e11d48" font-weight="800" font-size="15">P (Ax, Ay, Az) → A⃗</text>
 
----
+    <!-- Component Projections -->
+    <line x1="380" y1="70" x2="380" y2="160" stroke="#0d9488" stroke-width="1.8" stroke-dasharray="4,4"/>
+    <line x1="380" y1="160" x2="380" y2="220" stroke="#78716c" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="380" y1="160" x2="180" y2="160" stroke="#78716c" stroke-width="1.5" stroke-dasharray="3,3"/>
+    <line x1="80" y1="70" x2="380" y2="70" stroke="#0d9488" stroke-width="1.5" stroke-dasharray="4,4"/>
+    
+    <!-- Labels on Axes -->
+    <text x="230" y="238" fill="#d97706" font-weight="700" font-size="12">Ax (X-উপাংশ)</text>
+    <text x="15" y="140" fill="#0d9488" font-weight="700" font-size="12">Ay (Y-উপাংশ)</text>
+    <text x="190" y="150" fill="#2563eb" font-weight="700" font-size="12">Az (Z-উপাংশ)</text>
 
-## ৩. ভেক্টরের ১৫টি প্রকারভেদের পূর্ণাঙ্গ শ্রেণিবিন্যাস
+    <!-- Angle Arcs -->
+    <!-- Alpha (with X) -->
+    <path d="M 160 220 A 80 80 0 0 0 148 186" fill="none" stroke="#d97706" stroke-width="2"/>
+    <text x="168" y="205" fill="#d97706" font-weight="700" font-size="13">α</text>
 
-```
-                              ┌──────────────────────────────────────┐
-                              │          ভেক্টরের প্রকারভেদ           │
-                              └──────────────────┬───────────────────┘
-                                                 │
-        ┌────────────────────────────────────────┼────────────────────────────────────────┐
-        ▼                                        ▼                                        ▼
-  [স্থানভিত্তিক]                          [দিক ও মানভিত্তিক]                         [বিশেষ গুণভিত্তিক]
-  ├── ১. অবস্থান ভেক্টর (r⃗)                ├── ৩. সম / সমান ভেক্টর (A⃗ = B⃗)          ├── ১০. একক ভেক্টর (â)
-  ├── ২. সরণ ভেক্টর (Δr⃗)                  ├── ৪. বিপরীত / ঋণ ভেক্টর (-A⃗)           ├── ৯. শূন্য / নাল ভেক্টর (0⃗)
-  ├── ১১. স্বাধীন ভেক্টর                    ├── ৫. সদৃশ ও বিসদৃশ ভেক্টর               ├── ১৩. বিপ্রতীপ ভেক্টর
-  └── ১২. সীমাবদ্ধ ভেক্টর                  ├── ৬. সমরেখ ভেক্টর                      ├── ১৪. পোলার ও অক্ষীয় ভেক্টর
-                                         ├── ৭. সমতলীয় ভেক্টর                    └── ১৫. আয়ত একক ভেক্টর (î, ĵ, k̂)
-                                         └── ৮. সহ-প্রারম্ভিক ভেক্টর
-```
+    <!-- Beta (with Y) -->
+    <path d="M 80 140 A 80 80 0 0 0 132 146" fill="none" stroke="#0d9488" stroke-width="2"/>
+    <text x="100" y="130" fill="#0d9488" font-weight="700" font-size="13">β</text>
 
-### ১. অবস্থান ভেক্টর (Position Vector / Radius Vector)
-- **সংজ্ঞা:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় প্রসঙ্গ কাঠামোর মূলবিন্দুর ($O$) সাপেক্ষে অন্য যেকোনো বিন্দুর ($P$) অবস্থান যে ভেক্টরের সাহায্যে নির্দেশ করা হয়, তাকে অবস্থান ভেক্টর বলে।
-- **সমীকরণ:** প্রসঙ্গ কাঠামোর মূলবিন্দু $O(0,0,0)$ এবং যেকোনো বিন্দু $P(x,y,z)$ হলে:
-  $$\vec{OP} = \vec{r} = x\hat{i} + y\hat{j} + z\hat{k}$$
-- **বিশেষ নাম:** অবস্থান ভেক্টরকে **ব্যাসার্ধ ভেক্টর (Radius Vector)**-ও বলা হয়।
+    <!-- Gamma (with Z) -->
+    <path d="M 140 201 A 70 70 0 0 0 130 178" fill="none" stroke="#2563eb" stroke-width="2"/>
+    <text x="142" y="180" fill="#2563eb" font-weight="700" font-size="13">γ</text>
+  </svg>
+  <div class="diagram-caption">চিত্র ৪.১: ত্রিমাত্রিক আয়ত স্থানাঙ্ক ব্যবস্থায় ভেক্টর $ec{A}$ এবং দিক কোসাইন কোণত্রয় ($lpha, eta, \gamma$)</div>
+</div>
 
-### ২. সরণ ভেক্টর (Displacement Vector)
-- **সংজ্ঞা:** কোনো গতিশীল কণার আদি অবস্থান ভেক্টর থেকে শেষ অবস্থান ভেক্টরের পরিবর্তনকে সরণ ভেক্টর বলে।
-- **সমীকরণ:** কণাটি যদি $P(x_1, y_1, z_1)$ থেকে $Q(x_2, y_2, z_2)$ বিন্দুতে যায়:
-  $$\Delta\vec{r} = \vec{r}_2 - \vec{r}_1 = (x_2 - x_1)\hat{i} + (y_2 - y_1)\hat{j} + (z_2 - z_1)\hat{k}$$
-
-### ৩. সমান বা সম ভেক্টর (Equal Vectors)
-- **সংজ্ঞা:** একই জাতীয় দুটি ভেক্টরের মান সমান এবং দিক একই হলে তাদেরকে সমান ভেক্টর বলে ($\vec{A} = \vec{B}$)।
-- **শর্ত:** $|\vec{A}| = |\vec{B}|$ এবং উভয় ভেক্টর সমান্তরাল ও একই অভিমুখী।
-
-### ৪. বিপরীত বা ঋণাত্মক ভেক্টর (Negative / Opposite Vector)
-- **সংজ্ঞা:** নির্দিষ্ট দিক বরাবর কোনো ভেক্টরকে ধনাত্মক ধরলে, তার সমান মানযুক্ত কিন্তু ঠিক বিপরীতমুখী সমজাতীয় ভেক্টরকে ঋণাত্মক বা বিপরীত ভেক্টর বলে ($-\vec{A}$)।
-- **শর্ত:** $|\vec{A}| = |-\vec{A}|$ কিন্তু দিক পরস্পর $180^\circ$ বিপরীত।
-
-### ৫. সদৃশ ও বিসদৃশ ভেক্টর (Like & Unlike Vectors)
-- **সদৃশ ভেক্টর:** সমজাতীয় দুই বা ততোধিক ভেক্টর যদি একই দিকে সমান্তরালে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।
-- **বিসদৃশ ভেক্টর:** সমজাতীয় দুটি ভেক্টর যদি পরস্পর বিপরীত দিকে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।
-
-### ৬. সমরেখ ভেক্টর (Collinear Vectors)
-- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সরলরেখা বরাবর বা পরস্পর সমান্তরালে ক্রিয়া করে, তবে তাদেরকে সমরেখ ভেক্টর বলে।
-
-### ৭. সমতলীয় ভেক্টর (Coplanar Vectors)
-- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সমতলে অবস্থান করে, তবে তাদেরকে সমতলীয় ভেক্টর বলে। যেমন: টেবিলের ওপর রাখা সকল ভেক্টর।
-
-### ৮. সহ-প্রারম্ভিক ভেক্টর (Co-initial Vectors)
-- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টরের যদি প্রারম্ভিক বিন্দু বা পাদবিন্দু (Tail) একই বিন্দু হয়, তবে তাদেরকে সহ-প্রারম্ভিক ভেক্টর বলে।
-
-### ৯. সঠিক ভেক্টর (Proper Vector)
-- **সংজ্ঞা:** যে সকল ভেক্টরের মান অশূন্য ($|\vec{A}| \neq 0$), তাদেরকে সঠিক ভেক্টর বলা হয়।
-
-### ১০. শূন্য বা নাল ভেক্টর (Null / Zero Vector)
-- **সংজ্ঞা:** যে ভেক্টরের মান শূন্য, তাকে শূন্য বা নাল ভেক্টর ($\vec{0}$) বলে।
-- **বৈশিষ্ট্য ও গুরুত্ব:**
-  1. শূন্য ভেক্টরের পাদবিন্দু এবং শীর্ষবিন্দু একই বিন্দুতে সমাপতিত হয়।
-  2. এর কোনো সুনির্দিষ্ট দিক নেই (অনির্দিষ্ট দিক)।
-  3. দুটি সমান ও বিপরীতমুখী ভেক্টরের যোগফল একটি শূন্য ভেক্টর ($\vec{A} + (-\vec{A}) = \vec{0}$)।
-  4. সমবেগে চলমান বস্তুর ত্বরণ ভেক্টর একটি শূন্য ভেক্টর।
-
-### ১১. স্বাধীন বা মুক্ত ভেক্টর (Free Vector)
-- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো যেকোনো স্থানে নির্বাচন করা যায়, তাকে স্বাধীন ভেক্টর বলে।
-
-### ১২. সীমাবদ্ধ ভেক্টর (Localized Vector)
-- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো পছন্দ করা যায় না, কোনো নির্দিষ্ট বিন্দুতে নির্ধারিত থাকে, তাকে সীমাবদ্ধ ভেক্টর বলে।
-- **উদাহরণ:** অবস্থান ভেক্টর একটি সীমাবদ্ধ ভেক্টর, কারণ এর পাদবিন্দু সর্বদা মূলবিন্দুতে ফিক্সড থাকে।
-
-### ১৩. বিপ্রতীপ বা ব্যতিহার ভেক্টর (Reciprocal Vector)
-- **সংজ্ঞা:** সমজাতীয় দুটি সমান্তরাল ভেক্টরের একটির মান যদি অপরটির গুণাত্মক বিপরীত (Reciprocal) হয়, তবে তাদেরকে বিপ্রতীপ ভেক্টর বলে।
-- **উদাহরণ:** $\vec{A} = 6\hat{i}$ হলে এর বিপ্রতীপ ভেক্টর হবে $\vec{B} = \frac{1}{6}\hat{i}$।
-
-### ১৪. পোলার ও অক্ষীয় ভেক্টর (Polar vs Axial Vectors)
-- **পোলার ভেক্টর:** যে ভেক্টরের সুনির্দিষ্ট সূচনা বিন্দু থাকে বা রৈখিক গতি উৎপন্ন করে (যেমন: বল, সরণ, রৈখিক বেগ)।
-- **অক্ষীয় ভেক্টর:** যে ভেক্টর ঘূর্ণন গতির সাথে যুক্ত এবং ঘূর্ণন অক্ষ বরাবর ক্রিয়া করে (যেমন: কৌণিক বেগ $\vec{\omega}$, টর্ক $\vec{\tau}$, কৌণিক ভরবেগ $\vec{L}$)।
-
-### ১৫. একক ভেক্টর (Unit Vector) ও আয়ত একক ভেক্টর (Rectangular Unit Vectors)
-- **একক ভেক্টর:** যে ভেক্টরের মান ১ একক, তাকে একক ভেক্টর বলে। কোনো অশূন্য ভেক্টরকে তার পরম মান দিয়ে ভাগ করলে ওই ভেক্টরের দিক বরাবর একক ভেক্টর পাওয়া যায়:
-  $$\hat{a} = \frac{\vec{A}}{|\vec{A}|} = \frac{\vec{A}}{A}$$
-- **আয়ত একক ভেক্টর:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থার ধনাত্মক $X$, $Y$ এবং $Z$ অক্ষ বরাবর যথাক্রমে যে তিনটি আদর্শ একক ভেক্টর বিবেচনা করা হয়, তাদেরকে আয়ত একক ভেক্টর বলে ($\hat{i}, \hat{j}, \hat{k}$)।
-
----
-
-## ৪. কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় ভেক্টরের মান ও একক ভেক্টরের গাণিতিক প্রতিপাদন
-
-```
                 Y ▲
                   │          P (Ax, Ay)
                   │         /│
@@ -157,80 +105,68 @@
                   │     /θ   │
                   O────┴─────┴──────► X
                        Ax
-```
 
-### ৪.১ দ্বিমাত্রিক (2D) ক্ষেত্রে মান নির্ণয় (পিথাগোরাসের উপপাদ্য থেকে প্রমাণ)
-ধরা যাক, $X$-$Y$ সমতলে একটি ভেক্টর $\vec{A} = A_x\hat{i} + A_y\hat{j}$।
-এখানে, $OA = A_x$ (ভূমি) এবং $AP = A_y$ (লম্ব)।
-সমকোণী ত্রিভুজ $\triangle OAP$-তে পিথাগোরাসের উপপাদ্য প্রয়োগ করে:
-$$\text{অতিভুজ}^2 = \text{ভূমি}^2 + \text{লম্ব}^2$$
-$$OP^2 = OA^2 + AP^2$$
-$$|\vec{A}|^2 = A_x^2 + A_y^2$$
-$$\mathbf{|\vec{A}| = \sqrt{A_x^2 + A_y^2}}$$
+<div class="diagram-box">
+  <svg viewBox="0 0 540 270" class="physics-diagram">
+    <!-- Parallelogram Body -->
+    <!-- OA (P) -->
+    <line x1="60" y1="210" x2="310" y2="210" stroke="#d97706" stroke-width="3.5" marker-end="url(#arrow-amber)"/>
+    <text x="180" y="235" fill="#d97706" font-weight="800" font-size="15">P⃗ (OA)</text>
 
-### ৪.২ ত্রিমাত্রিক (3D) ক্ষেত্রে মান নির্ণয়
-যদি ভেক্টরটি ত্রিমাত্রিক স্থানে অবস্থান করে: $\vec{A} = A_x\hat{i} + A_y\hat{j} + A_z\hat{k}$
-$$\mathbf{|\vec{A}| = A = \sqrt{A_x^2 + A_y^2 + A_z^2}}$$
+    <!-- OB (Q) -->
+    <line x1="60" y1="210" x2="190" y2="55" stroke="#0d9488" stroke-width="3.5" marker-end="url(#arrow-teal)"/>
+    <text x="100" y="125" fill="#0d9488" font-weight="800" font-size="15">Q⃗ (OB)</text>
 
-### ৪.৩ একক ভেক্টর নির্ণয়ের পূর্ণাঙ্গ সূত্র
-$$\mathbf{\hat{a} = \frac{\vec{A}}{|\vec{A}|} = \frac{A_x\hat{i} + A_y\hat{j} + A_z\hat{k}}{\sqrt{A_x^2 + A_y^2 + A_z^2}}}$$
+    <!-- Parallelogram upper lines (Dotted) -->
+    <line x1="190" y1="55" x2="440" y2="55" stroke="var(--border-subtle)" stroke-width="1.8" stroke-dasharray="5,4"/>
+    <line x1="310" y1="210" x2="440" y2="55" stroke="#0d9488" stroke-width="2" stroke-dasharray="5,4"/>
+    <text x="390" y="125" fill="#0d9488" font-weight="700" font-size="13">AC = Q</text>
 
-### ৪.৪ ত্রিমাত্রিক দিক কোসাইন (Direction Cosines) ও প্রতিপাদন
-যদি $\vec{A}$ ভেক্টরটি ধনাত্মক $X$, $Y$ ও $Z$ অক্ষের সাথে যথাক্রমে $\alpha$, $\beta$ ও $\gamma$ কোণ তৈরি করে, তবে:
-$$\cos\alpha = \frac{A_x}{|\vec{A}|}, \quad \cos\beta = \frac{A_y}{|\vec{A}|}, \quad \cos\gamma = \frac{A_z}{|\vec{A}|}$$
+    <!-- Resultant OC (R) -->
+    <line x1="60" y1="210" x2="440" y2="55" stroke="#e11d48" stroke-width="4" marker-end="url(#arrow-ruby)"/>
+    <text x="250" y="115" fill="#e11d48" font-weight="800" font-size="16">R⃗ = P⃗ + Q⃗ (কর্ণ OC)</text>
 
-**১ম প্রমাণ: $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$**
-$$\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \frac{A_x^2}{A^2} + \frac{A_y^2}{A^2} + \frac{A_z^2}{A^2} = \frac{A_x^2 + A_y^2 + A_z^2}{A^2} = \frac{A^2}{A^2} = 1$$
+    <!-- Extension AD and Perpendicular CD -->
+    <line x1="310" y1="210" x2="440" y2="210" stroke="var(--text-dim)" stroke-width="1.8" stroke-dasharray="4,4"/>
+    <line x1="440" y1="55" x2="440" y2="210" stroke="#2563eb" stroke-width="2"/>
+    <rect x="424" y="194" width="16" height="16" fill="none" stroke="#2563eb" stroke-width="1.2"/>
+    
+    <!-- Labels for D, C, A, B, O -->
+    <circle cx="60" cy="210" r="4.5" fill="var(--text-main)"/>
+    <text x="45" y="225" fill="var(--text-main)" font-weight="800" font-size="14">O</text>
 
-**২য় প্রমাণ: $\sin^2\alpha + \sin^2\beta + \sin^2\gamma = 2$**
-আমরা জানি $\cos^2\theta = 1 - \sin^2\theta$। মান বসিয়ে:
-$$(1 - \sin^2\alpha) + (1 - \sin^2\beta) + (1 - \sin^2\gamma) = 1$$
-$$3 - (\sin^2\alpha + \sin^2\beta + \sin^2\gamma) = 1$$
-$$\mathbf{\sin^2\alpha + \sin^2\beta + \sin^2\gamma = 2}$$
+    <circle cx="310" cy="210" r="4.5" fill="var(--text-main)"/>
+    <text x="305" y="235" fill="var(--text-main)" font-weight="800" font-size="14">A</text>
 
----
+    <circle cx="440" cy="210" r="4.5" fill="var(--text-main)"/>
+    <text x="445" y="230" fill="var(--text-main)" font-weight="800" font-size="14">D</text>
 
-## ৫. ভেক্টর যোজন ও বিয়োজনের জ্যামিতিক ও বীজগণিতীয় নিয়মাবলী
+    <circle cx="190" cy="55" r="4.5" fill="var(--text-main)"/>
+    <text x="175" y="45" fill="var(--text-main)" font-weight="800" font-size="14">B</text>
 
-### ৫.১ সাধারণ সূত্র (Head-to-Tail Rule)
-প্রথম ভেক্টরের শীর্ষবিন্দুতে দ্বিতীয় ভেক্টরের পাদবিন্দু স্থাপন করলে প্রথমটির পাদবিন্দু থেকে দ্বিতীয়টির শীর্ষবিন্দুর সংযোজক সরলরেখাটি লব্ধি নির্দেশ করে।
+    <circle cx="440" cy="55" r="4.5" fill="#e11d48"/>
+    <text x="448" y="50" fill="#e11d48" font-weight="800" font-size="14">C</text>
 
-### ৫.২ ত্রিভুজ সূত্র (Triangle Law)
-> **বিবৃতি:** কোনো ত্রিভুজের দুটি সন্নিহিত বাহু দ্বারা যদি একই ক্রমে দুটি সমজাতীয় ভেক্টর নির্দেশ করা যায়, তবে ত্রিভুজটির তৃতীয় বাহুটি বিপরীত ক্রমে ভেক্টরদ্বয়ের লব্ধি নির্দেশ করবে।
-$$\vec{R} = \vec{A} + \vec{B}$$
+    <!-- Component formula texts -->
+    <text x="345" y="228" fill="#d97706" font-size="12" font-weight="700">AD = Q cos α</text>
+    <text x="448" y="140" fill="#2563eb" font-size="12" font-weight="700">CD = Q sin α</text>
 
-### ৫.৩ বহুভুজ সূত্র (Polygon Law)
-> **বিবৃতি:** দুইয়ের অধিক ভেক্টরের ক্ষেত্রে ১ম ভেক্টরের শীর্ষবিন্দুতে ২য়টির পাদবিন্দু, ২য়টির শীর্ষে ৩য়টির পাদবিন্দু—এভাবে সাজানোর পর ১ম ভেক্টরের পাদবিন্দু থেকে শেষ ভেক্টরের শীর্ষবিন্দু যোগ করলে বিপরীত ক্রমে লব্ধি পাওয়া যায়।
-$$\vec{R} = \vec{A} + \vec{B} + \vec{C} + \vec{D} + \dots$$
+    <!-- Angle Arcs -->
+    <!-- Alpha (between P and Q) -->
+    <path d="M 120 210 A 60 60 0 0 0 102 160" fill="none" stroke="#0d9488" stroke-width="2.2"/>
+    <text x="125" y="185" fill="#0d9488" font-weight="800" font-size="13">α</text>
 
-### ৫.৪ ভেক্টর যোগের ৩টি মৌলিক বীজগণিতীয় নিয়ম
-1. **বিনিময় নিয়ম (Commutative Law):** $\vec{A} + \vec{B} = \vec{B} + \vec{A}$
-2. **সংযোগ নিয়ম (Associative Law):** $(\vec{A} + \vec{B}) + \vec{C} = \vec{A} + (\vec{B} + \vec{C})$
-3. **বণ্টন নিয়ম (Distributive Law):** $m(\vec{A} + \vec{B}) = m\vec{A} + m\vec{B}$ (যেখানে $m$ একটি স্কেলার)
+    <!-- Alpha at A -->
+    <path d="M 360 210 A 50 50 0 0 0 348 168" fill="none" stroke="#0d9488" stroke-width="1.8"/>
+    <text x="365" y="195" fill="#0d9488" font-weight="700" font-size="12">α</text>
 
-### ৫.৫ ভেক্টর বিয়োগ (Vector Subtraction)
-ভেক্টর বিয়োগ মূলত বিপরীত ভেক্টরের যোগ:
-$$\vec{A} - \vec{B} = \vec{A} + (-\vec{B})$$
+    <!-- Theta (between P and R) -->
+    <path d="M 150 210 A 90 90 0 0 0 138 178" fill="none" stroke="#e11d48" stroke-width="2.5"/>
+    <text x="155" y="200" fill="#e11d48" font-weight="800" font-size="13">θ</text>
+  </svg>
+  <div class="diagram-caption">চিত্র ৬.১: সামান্তরিক সূত্রের সাহায্যে লব্ধির মান ($R$) ও দিক ($	heta$) নির্ণয়ের সম্পূর্ণ জ্যামিতিক চিত্র ($CD \perp OD$)</div>
+</div>
 
----
-
-## ৬. সামান্তরিক সূত্র ও তার সম্পূর্ণ গাণিতিক প্রমাণ
-
-### ৬.১ বিবৃতি
-> কোনো সামান্তরিকের একটি বিন্দু থেকে অঙ্কিত দুটি সন্নিহিত বাহু যদি একই সময়ে কোনো কণার ওপর ক্রিয়ারত দুটি সমজাতীয় ভেক্টরের মান ও দিক নির্দেশ করে, তবে ওই বিন্দু থেকে অঙ্কিত সামান্তরিকের কর্ণটিই ভেক্টরদ্বয়ের লব্ধির মান ও দিক নির্দেশ করবে।
-
-```
-                    C ───────────────────── B
-                   /                       /
-                  /                       /
-            Q⃗    /                       /
-                /                       /  R⃗ (লব্ধি)
-               /                       /
-              / α                     /
-             O ───────────────────── A ─────── D
-                        P⃗               │
-                                        CD ⊥ OD
-```
 
 ### ৬.২ লব্ধির মান ($R$) নির্ণয়ের নিখুঁত জ্যামিতিক প্রমাণ
 মনে করি, $O$ বিন্দুতে ক্রিয়ারত দুটি ভেক্টর $\vec{P}$ ও $\vec{Q}$-এর মধ্যবর্তী কোণ $\angle AOB = \alpha$।
@@ -347,3 +283,73 @@ $$R^2 = Q^2 - P^2$$
 $$\left(\frac{1}{3}Q\right)^2 = Q^2 - P^2 \implies \frac{1}{9}Q^2 = Q^2 - P^2$$
 $$P^2 = Q^2 - \frac{1}{9}Q^2 = \frac{8}{9}Q^2 \implies \frac{P^2}{Q^2} = \frac{8}{9}$$
 $$\mathbf{\frac{P}{Q} = \frac{\sqrt{8}}{3} = \frac{2\sqrt{2}}{3}}$$
+
+---
+
+## ৯. স্ব-মূল্যায়ন ও প্র্যাকটিস চ্যালেঞ্জ (Self-Practice Problems with Hints & Solutions)
+
+<div class="practice-card">
+  <div class="practice-header">
+    <span class="practice-badge">প্র্যাকটিস ০১</span>
+    <h4>দিক কোসাইন ও কোণ সংক্রান্ত সমস্যা</h4>
+  </div>
+  <p><strong>প্রশ্ন:</strong> একটি ভেক্টর $\vec{A} = 2\hat{i} - 2\hat{j} + \hat{k}$।</p>
+  <ol>
+    <li>ভেক্টরটির দিক কোসাইনত্রয় $(\cos\alpha, \cos\beta, \cos\gamma)$ নির্ণয় করো।</li>
+    <li>ভেক্টরটি $Y$-অক্ষের সাথে কত কোণ তৈরি করে?</li>
+    <li>যাচাই করো যে $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = 1$।</li>
+  </ol>
+  <details class="practice-collapse">
+    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+    <div class="practice-solution">
+      <p><strong>সমাধান:</strong></p>
+      <p>ভেক্টরের মান: $A = \sqrt{2^2 + (-2)^2 + 1^2} = \sqrt{4 + 4 + 1} = \sqrt{9} = 3$</p>
+      <p>১. দিক কোসাইনত্রয়:</p>
+      <ul>
+        <li>$\cos\alpha = \frac{A_x}{A} = \mathbf{\frac{2}{3}}$</li>
+        <li>$\cos\beta = \frac{A_y}{A} = \mathbf{-\frac{2}{3}}$</li>
+        <li>$\cos\gamma = \frac{A_z}{A} = \mathbf{\frac{1}{3}}$</li>
+      </ul>
+      <p>২. $Y$-অক্ষের সাথে কোণ $\beta = \cos^{-1}\left(-\frac{2}{3}\right) = \mathbf{131.81^\circ}$</p>
+      <p>৩. $\cos^2\alpha + \cos^2\beta + \cos^2\gamma = \left(\frac{2}{3}\right)^2 + \left(-\frac{2}{3}\right)^2 + \left(\frac{1}{3}\right)^2 = \frac{4}{9} + \frac{4}{9} + \frac{1}{9} = \frac{9}{9} = 1$ (যাচাইকৃত)।</p>
+    </div>
+  </details>
+</div>
+
+<div class="practice-card">
+  <div class="practice-header">
+    <span class="practice-badge">প্র্যাকটিস ০২</span>
+    <h4>সমান বলদ্বয়ের লব্ধি ও মধ্যবর্তী কোণ</h4>
+  </div>
+  <p><strong>প্রশ্ন:</strong> দুটি সমান মানের বল একটি বিন্দুতে ক্রিয়াশীল। এদের লব্ধির বর্গ বলদ্বয়ের গুণফলের ৩ গুণ হলে বলদ্বয়ের মধ্যবর্তী কোণ কত?</p>
+  <details class="practice-collapse">
+    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+    <div class="practice-solution">
+      <p><strong>সমাধান:</strong></p>
+      <p>ধরি, বলদ্বয় $P = Q$ এবং মধ্যবর্তী কোণ $\alpha$।</p>
+      <p>প্রশ্নমতে: $R^2 = 3(P \times Q) = 3P^2$</p>
+      <p>সামান্তরিক সূত্র থেকে: $R^2 = P^2 + P^2 + 2P^2\cos\alpha = 2P^2(1 + \cos\alpha)$</p>
+      <p>অতএব, $2P^2(1 + \cos\alpha) = 3P^2 \implies 1 + \cos\alpha = \frac{3}{2} \implies \cos\alpha = \frac{1}{2}$</p>
+      <p>$\mathbf{\alpha = \cos^{-1}(0.5) = 60^\circ}$ (উত্তর)</p>
+    </div>
+  </details>
+</div>
+
+<div class="practice-card">
+  <div class="practice-header">
+    <span class="practice-badge">প্র্যাকটিস ০৩</span>
+    <h4>সর্বোচ্চ ও সর্বনিম্ন লব্ধি থেকে কোণ নির্ণয় (BUET Standard)</h4>
+  </div>
+  <p><strong>প্রশ্ন:</strong> কোনো বিন্দুতে ক্রিয়ারত দুটি বলের সর্বোচ্চ লব্ধি $17\text{ N}$ এবং সর্বনিম্ন লব্ধি $7\text{ N}$। বলদ্বয় যদি পরস্পর সমকোণে ($90^\circ$) ক্রিয়া করে, তবে লব্ধির মান কত হবে?</p>
+  <details class="practice-collapse">
+    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+    <div class="practice-solution">
+      <p><strong>সমাধান:</strong></p>
+      <p>আমরা জানি: $P + Q = 17$ এবং $P - Q = 7$</p>
+      <p>যোগ করে: $2P = 24 \implies P = 12\text{ N}$</p>
+      <p>বিয়োগ করে: $2Q = 10 \implies Q = 5\text{ N}$</p>
+      <p>সমকোণে ক্রিয়ারত হলে লব্ধি:</p>
+      <p>$\mathbf{R = \sqrt{P^2 + Q^2} = \sqrt{12^2 + 5^2} = \sqrt{144 + 25} = \sqrt{169} = 13\text{ N}}$ (উত্তর)</p>
+    </div>
+  </details>
+</div>

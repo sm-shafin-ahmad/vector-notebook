@@ -190,3 +190,50 @@ $$\mathbf{\alpha = \cos^{-1}\left(\frac{w_{thief} - u}{v}\right)}$$
   $$\cos\alpha = -\frac{v}{u} = -\frac{3}{5} = -0.6 \implies \alpha = \cos^{-1}(-0.6) \approx \mathbf{126.87^\circ}$$
 - সর্বনিম্ন ড্রাফট:
   $$x_{\min} = d \frac{\sqrt{u^2 - v^2}}{v} = 400 \times \frac{\sqrt{5^2 - 3^2}}{3} = 400 \times \frac{4}{3} = \mathbf{533.33\text{ m}}$$
+
+---
+
+## ৫. স্ব-মূল্যায়ন ও এডমিশন প্র্যাকটিস চ্যালেঞ্জ (River & Rain Practice)
+
+<div class="practice-card">
+  <div class="practice-header">
+    <span class="practice-badge">প্র্যাকটিস ০১</span>
+    <h4>বৃষ্টির বেগ ও সাইকেলের গতি (ছাতার কোণ)</h4>
+  </div>
+  <p><strong>প্রশ্ন:</strong> উল্লম্বভাবে $6\text{ ms}^{-1}$ বেগে বৃষ্টি পড়ছে। একজন সাইকেল আরোহী $8\text{ ms}^{-1}$ বেগে অনুভূমিক রাস্তায় চলছে।</p>
+  <ol>
+    <li>বৃষ্টি হতে রক্ষা পেতে তাকে উল্লম্বের সাথে কত কোণে ছাতা ধরতে হবে?</li>
+    <li>আরোহীর সাপেক্ষে বৃষ্টির আপাত লব্ধি বেগ কত অনুভূত হবে?</li>
+  </ol>
+  <details class="practice-collapse">
+    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+    <div class="practice-solution">
+      <p><strong>সমাধান:</strong></p>
+      <p>উল্লম্বের সাথে ছাতার কোণ:</p>
+      $$\tan\theta = \frac{v_{man}}{v_{rain}} = \frac{8}{6} = 1.333 \implies \mathbf{\theta = \tan^{-1}(1.333) = 53.13^\circ}$$
+      <p>বৃষ্টির আপেক্ষিক বেগ:</p>
+      $$v_{rel} = \sqrt{v_{rain}^2 + v_{man}^2} = \sqrt{6^2 + 8^2} = \sqrt{36 + 64} = \sqrt{100} = \mathbf{10\text{ ms}^{-1}}$$
+    </div>
+  </details>
+</div>
+
+<div class="practice-card">
+  <div class="practice-header">
+    <span class="practice-badge">প্র্যাকটিস ০২</span>
+    <h4>সোজা ওপারে পৌঁছানোর জন্য কোণ ও সময়</h4>
+  </div>
+  <p><strong>প্রশ্ন:</strong> $1.5\text{ km}$ প্রশস্ত একটি নদীতে স্রোতের বেগ $3\text{ km/h}$। একটি নৌকা স্থির পানিতে $6\text{ km/h}$ বেগে চলতে পারে।</p>
+  <ol>
+    <li>সোজা বিপরীত পাড়ে পৌঁছাতে নৌকাটিকে স্রোতের সাথে কত কোণে চালাতে হবে?</li>
+    <li>নদী পার হতে কত সময় লাগবে?</li>
+  </ol>
+  <details class="practice-collapse">
+    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+    <div class="practice-solution">
+      <p><strong>সমাধান:</strong></p>
+      <p>১. কোণ $\alpha = \cos^{-1}\left(-\frac{u}{v}\right) = \cos^{-1}\left(-\frac{3}{6}\right) = \cos^{-1}(-0.5) = \mathbf{120^\circ}$</p>
+      <p>২. লব্ধি বেগ $w = \sqrt{v^2 - u^2} = \sqrt{6^2 - 3^2} = \sqrt{36 - 9} = \sqrt{27} = 3\sqrt{3}\text{ km/h} \approx 5.196\text{ km/h}$</p>
+      <p>সময় $t = \frac{d}{w} = \frac{1.5}{3\sqrt{3}} = \frac{1}{2\sqrt{3}}\text{ h} \approx 0.2887\text{ h} = \mathbf{17.32\text{ মিনিট}}$ (উত্তর)</p>
+    </div>
+  </details>
+</div>
