@@ -670,17 +670,26 @@ body {
   color: inherit;
 }
 
-/* KaTeX Math Blocks */
+/* KaTeX Math Blocks - Compact, Connected & Seamless */
 .katex-display {
   overflow-x: auto;
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
-  padding: 12px 10px;
-  margin: 18px 0;
+  padding: 6px 12px;
+  margin: 8px 0;
   background: var(--bg-card);
   border-radius: var(--radius-sm);
-  border: 1px solid var(--border-subtle);
+  border: 1px solid var(--border-card);
   max-width: 100%;
+}
+
+.katex-display + .katex-display {
+  margin-top: -3px;
+}
+
+.katex-display .katex {
+  font-size: 1.06em;
+  line-height: 1.45;
 }
 
 /* ── VISUAL PHYSICS DIAGRAMS & ILLUSTRATIONS ── */
