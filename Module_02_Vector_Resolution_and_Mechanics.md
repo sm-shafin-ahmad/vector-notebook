@@ -238,44 +238,44 @@ $$\mathbf{\frac{P}{\sin\alpha} = \frac{Q}{\sin\beta} = \frac{R}{\sin\gamma}}$$
 ## ৫. স্ব-মূল্যায়ন ও প্র্যাকটিস চ্যালেঞ্জ (Mechanics Practice Problems)
 
 <div class="practice-card">
-  <div class="practice-header">
-    <span class="practice-badge">প্র্যাকটিস ০১</span>
-    <h4>লন রোলারের ঠেলা বনাম টানার ওজন পার্থক্য</h4>
-  </div>
+<div class="practice-header">
+<span class="practice-badge">প্র্যাকটিস ০১</span>
+<h4>লন রোলারের ঠেলা বনাম টানার ওজন পার্থক্য</h4>
+</div>
   <p><strong>প্রশ্ন:</strong> $20\text{ kg}$ ভরের একটি লন রোলারকে অণুভূমিকের সাথে $30^\circ$ কোণে $50\text{ N}$ বল প্রয়োগ করে ঠেলা হলো এবং একই বলে টানা হলো।</p>
   <ol>
     <li>ঠেলা ও টানার ক্ষেত্রে রোলারের কার্যকর ওজন কত হবে? ($g = 9.8\text{ ms}^{-2}$)</li>
     <li>উভয় ক্ষেত্রে কার্যকর ওজনের পার্থক্য কত?</li>
   </ol>
-  <details class="practice-collapse">
-    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
-    <div class="practice-solution">
-      <p><strong>সমাধান:</strong></p>
-      <p>প্রকৃত ওজন $W = mg = 20 \times 9.8 = 196\text{ N}$</p>
-      <p>উল্লম্ব উপাংশ $F\sin\theta = 50\sin 30^\circ = 50 \times 0.5 = 25\text{ N}$</p>
-      <ul>
-        <li><strong>ঠেলার ক্ষেত্রে ওজন:</strong> $W_{push} = W + F\sin\theta = 196 + 25 = \mathbf{221\text{ N}}$</li>
-        <li><strong>টানার ক্ষেত্রে ওজন:</strong> $W_{pull} = W - F\sin\theta = 196 - 25 = \mathbf{171\text{ N}}$</li>
-        <li><strong>ওজনের পার্থক্য:</strong> $\Delta W = 2F\sin\theta = 2(25) = \mathbf{50\text{ N}}$ (উত্তর)</li>
-      </ul>
-    </div>
+<details class="practice-collapse">
+<summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+<div class="practice-solution">
+<p><strong>সমাধান:</strong></p>
+<p>প্রকৃত ওজন $W = mg = 20 \times 9.8 = 196\text{ N}$</p>
+<p>উল্লম্ব উপাংশ $F\sin\theta = 50\sin 30^\circ = 50 \times 0.5 = 25\text{ N}$</p>
+<ul>
+<li><strong>ঠেলার ক্ষেত্রে ওজন:</strong> $W_{push} = W + F\sin\theta = 196 + 25 = \mathbf{221\text{ N}}$</li>
+<li><strong>টানার ক্ষেত্রে ওজন:</strong> $W_{pull} = W - F\sin\theta = 196 - 25 = \mathbf{171\text{ N}}$</li>
+<li><strong>ওজনের পার্থক্য:</strong> $\Delta W = 2F\sin\theta = 2(25) = \mathbf{50\text{ N}}$ (উত্তর)</li>
+</ul>
+</div>
   </details>
 </div>
 
 <div class="practice-card">
-  <div class="practice-header">
-    <span class="practice-badge">প্র্যাকটিস ০২</span>
-    <h4>ল্যামির উপপাদ্যের সাম্যাবস্থা প্রয়োগ</h4>
-  </div>
+<div class="practice-header">
+<span class="practice-badge">প্র্যাকটিস ০২</span>
+<h4>ল্যামির উপপাদ্যের সাম্যাবস্থা প্রয়োগ</h4>
+</div>
   <p><strong>প্রশ্ন:</strong> একটি বিন্দুতে তিনটি বল $P, Q, R$ সাম্যাবস্থায় রয়েছে। $P$ ও $Q$-এর মধ্যবর্তী কোণ $120^\circ$ এবং $Q$ ও $R$-এর মধ্যবর্তী কোণ $150^\circ$। বলত্রয়ের মানের অনুপাত $P : Q : R$ কত?</p>
-  <details class="practice-collapse">
-    <summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
-    <div class="practice-solution">
-      <p><strong>সমাধান:</strong></p>
-      <p>৩য় কোণ ( $P$ ও $R$-এর মধ্যবর্তী কোণ) $= 360^\circ - (120^\circ + 150^\circ) = 360^\circ - 270^\circ = 90^\circ$</p>
-      <p>ল্যামির উপপাদ্য অনুসারে:</p>
+<details class="practice-collapse">
+<summary class="practice-summary">💡 সমাধান ও উত্তর দেখতে ক্লিক করুন</summary>
+<div class="practice-solution">
+<p><strong>সমাধান:</strong></p>
+<p>৩য় কোণ ( $P$ ও $R$-এর মধ্যবর্তী কোণ) $= 360^\circ - (120^\circ + 150^\circ) = 360^\circ - 270^\circ = 90^\circ$</p>
+<p>ল্যামির উপপাদ্য অনুসারে:</p>
       $$\frac{P}{\sin 150^\circ} = \frac{Q}{\sin 90^\circ} = \frac{R}{\sin 120^\circ}$$
       $$\frac{P}{0.5} = \frac{Q}{1} = \frac{R}{\frac{\sqrt{3}}{2}} \implies P : Q : R = 0.5 : 1 : 0.866 = \mathbf{1 : 2 : \sqrt{3}}$$
-    </div>
+</div>
   </details>
 </div>
