@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0"/>
-<title>ভেক্টর মাস্টারনোট — উচ্চমাধ্যমিক পদার্থবিজ্ঞান ১ম পত্র</title>
-<meta name="description" content="উচ্চমাধ্যমিক পদার্থবিজ্ঞান ১ম পত্রের ২য় অধ্যায়: ভেক্টরের সম্পূর্ণ ৩টি মডিউলের বিস্তারিত নোট, প্রতিপাদন, গাণিতিক সমস্যা ও সিমুলেটর।"/>
+<title>মাস্টারনোট — উচ্চমাধ্যমিক লার্নিং প্ল্যাটফর্ম</title>
+<meta name="description" content="এইচএসসি ও ভর্তি পরীক্ষার সম্পূর্ণ একাডেমিক মাস্টারনোট, প্রতিপাদন, ইন্টারঅ্যাক্টিভ সিমুলেটর ও গাণিতিক সমাধান।"/>
 
 <!-- Google Fonts -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,59 +27,65 @@
   --font-mono: 'JetBrains Mono', monospace;
   
   --radius-xs: 6px;
-  --radius-sm: 8px;
-  --radius-md: 12px;
-  --radius-lg: 16px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
   
-  --transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  --transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-/* ── LIGHT THEME: SEAMLESS LUXURY CREME ── */
+/* ── LIGHT THEME: LUXURY CREME / WARM PARCHMENT ── */
 [data-theme="light"] {
-  --bg-page: #faf7f2;
-  --bg-header: rgba(250, 247, 242, 0.94);
-  --bg-sidebar: #f4efe6;
+  --bg-page: #faf6ee;
+  --bg-surface: #f3ecde;
   --bg-card: #ffffff;
-  --bg-subtle: #f6f1e8;
+  --bg-subtle: #f7f1e4;
   --bg-input: #ffffff;
+  --bg-header: rgba(250, 246, 238, 0.94);
+  --bg-drawer: #f7f1e4;
   
-  --text-main: #20160f;
-  --text-muted: #655140;
-  --text-dim: #937d6a;
+  --text-main: #221710;
+  --text-muted: #6b5543;
+  --text-dim: #99806c;
   
-  --border-subtle: rgba(146, 95, 48, 0.14);
-  --border-focus: #b86a24;
+  --border-subtle: rgba(146, 95, 48, 0.13);
+  --border-card: rgba(146, 95, 48, 0.10);
+  --border-focus: #b56920;
   
-  --accent-primary: #b86a24;
-  --accent-hover: #98541c;
-  --accent-light: rgba(184, 106, 36, 0.12);
-  --accent-glow: rgba(184, 106, 36, 0.22);
+  --accent-primary: #b56920;
+  --accent-hover: #985213;
+  --accent-light: rgba(181, 105, 32, 0.12);
+  --accent-glow: rgba(181, 105, 32, 0.22);
   
   --accent-teal: #107e65;
   --accent-amber: #d97706;
   --accent-ruby: #be123c;
   
-  --code-bg: #f0e7d8;
-  --code-text: #2c1e14;
+  --code-bg: #eee5d4;
+  --code-text: #2c1d13;
   
   --shadow-sm: 0 1px 3px rgba(92, 57, 24, 0.05);
-  --shadow-md: 0 4px 12px rgba(92, 57, 24, 0.08);
+  --shadow-md: 0 4px 16px rgba(92, 57, 24, 0.08);
+  --shadow-lg: 0 12px 32px rgba(92, 57, 24, 0.12);
 }
 
-/* ── DARK THEME: SEAMLESS RICH CHOCOLATE BROWN ── */
+/* ── DARK THEME: ROASTED CHOCOLATE COCOA ── */
 [data-theme="dark"] {
-  --bg-page: #150d09;
-  --bg-header: rgba(21, 13, 9, 0.94);
-  --bg-sidebar: #1c120c;
-  --bg-card: #201611;
-  --bg-subtle: #1a110c;
-  --bg-input: #170f0a;
+  --bg-page: #140d09;
+  --bg-surface: #1e130d;
+  --bg-card: #221610;
+  --bg-subtle: #1a100a;
+  --bg-input: #190f09;
+  --bg-header: rgba(20, 13, 9, 0.94);
+  --bg-drawer: #1a100a;
   
-  --text-main: #f7eee5;
-  --text-muted: #c2ada1;
-  --text-dim: #8d776c;
+  --text-main: #f8efe5;
+  --text-muted: #c4ada0;
+  --text-dim: #8e776b;
   
   --border-subtle: rgba(226, 155, 82, 0.15);
+  --border-card: rgba(226, 155, 82, 0.14);
   --border-focus: #e29b52;
   
   --accent-primary: #e29b52;
@@ -94,8 +100,9 @@
   --code-bg: #18100b;
   --code-text: #fbeee3;
   
-  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.3);
-  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.45);
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.35);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.5);
+  --shadow-lg: 0 12px 36px rgba(0, 0, 0, 0.65);
 }
 
 /* ── GLOBAL RESET ── */
@@ -118,7 +125,7 @@ body {
   color: var(--text-main);
   font-family: var(--font-bangla);
   line-height: 1.7;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.22s ease, color 0.22s ease;
   min-height: 100vh;
   width: 100%;
   max-width: 100%;
@@ -133,17 +140,17 @@ body {
   top: 0;
   left: 0;
   width: 0%;
-  height: 3px;
+  height: 3.5px;
   background: linear-gradient(90deg, var(--accent-primary), #f59e0b, #ef4444);
-  z-index: 1000;
+  z-index: 1200;
   transition: width 0.1s linear;
 }
 
-/* ── STICKY HEADER ── */
+/* ── STICKY TOP NAVBAR ── */
 .site-header {
   position: sticky;
   top: 0;
-  z-index: 900;
+  z-index: 950;
   background: var(--bg-header);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
@@ -153,7 +160,7 @@ body {
 }
 
 .header-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -162,6 +169,32 @@ body {
   width: 100%;
 }
 
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-main);
+  cursor: pointer;
+  transition: var(--transition);
+  font-size: 18px;
+}
+
+.menu-toggle-btn:hover {
+  border-color: var(--accent-primary);
+}
+
+/* 🎨 BESPOKE VECTOR LOGO ── */
 .brand-wrap {
   display: flex;
   align-items: center;
@@ -169,45 +202,46 @@ body {
   text-decoration: none;
   color: inherit;
   cursor: pointer;
-  flex-shrink: 0;
 }
 
-.brand-icon {
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-sm);
-  background: linear-gradient(135deg, var(--accent-primary), #98541c);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #ffffff;
-  font-family: var(--font-en);
-  font-weight: 800;
-  font-size: 18px;
-  box-shadow: 0 2px 8px var(--accent-glow);
+.brand-svg-logo {
+  width: 38px;
+  height: 38px;
   flex-shrink: 0;
+  filter: drop-shadow(0 2px 8px var(--accent-glow));
 }
 
 .brand-text h1 {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.15;
   color: var(--text-main);
   letter-spacing: -0.01em;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.brand-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 99px;
+  background: var(--accent-light);
+  color: var(--accent-primary);
+  font-family: var(--font-en);
 }
 
 .brand-text p {
   font-size: 0.72rem;
   color: var(--text-muted);
   font-weight: 500;
-  line-height: 1.1;
 }
 
 .header-actions {
   display: flex;
   align-items: center;
   gap: 6px;
-  flex-shrink: 0;
 }
 
 .btn-icon {
@@ -232,196 +266,295 @@ body {
   transform: translateY(-1px);
 }
 
-/* Search Box */
-.search-box {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.search-input {
-  background: var(--bg-card);
-  border: 1px solid var(--border-subtle);
-  border-radius: 99px;
-  padding: 5px 10px 5px 28px;
-  font-family: var(--font-bangla);
-  font-size: 0.82rem;
-  color: var(--text-main);
-  width: 120px;
-  transition: var(--transition);
-}
-
-.search-input:focus {
-  outline: none;
-  border-color: var(--accent-primary);
-  box-shadow: 0 0 0 2px var(--accent-glow);
-  width: 160px;
-}
-
-.search-icon {
-  position: absolute;
-  left: 9px;
-  color: var(--text-muted);
-  font-size: 12px;
-  pointer-events: none;
-}
-
-/* ── NAVIGATION PILL TABS ── */
-.nav-tabs-bar {
-  background: var(--bg-page);
-  border-bottom: 1px solid var(--border-subtle);
-  position: sticky;
-  top: 52px;
-  z-index: 850;
-  padding: 6px 12px;
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-}
-
-.nav-tabs-bar::-webkit-scrollbar {
-  display: none;
-}
-
-.nav-tabs-container {
+/* Quick Search Button / Input */
+.search-btn {
   display: flex;
   align-items: center;
   gap: 6px;
-  width: max-content;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.nav-tab {
-  padding: 5px 12px;
-  border-radius: 99px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  color: var(--text-muted);
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
+  border-radius: 99px;
+  padding: 6px 12px;
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  font-family: var(--font-bangla);
   cursor: pointer;
   transition: var(--transition);
+}
+
+.search-btn:hover {
+  border-color: var(--accent-primary);
+  color: var(--text-main);
+}
+
+.search-btn kbd {
+  background: var(--bg-subtle);
+  border: 1px solid var(--border-subtle);
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: 0.7rem;
+  font-family: var(--font-mono);
+}
+
+/* ── BREADCRUMB & CONTEXT BAR ── */
+.context-bar {
+  background: var(--bg-subtle);
+  border-bottom: 1px solid var(--border-subtle);
+  padding: 6px 16px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.context-container {
+  max-width: 1400px;
+  margin: 0 auto;
   display: flex;
   align-items: center;
-  gap: 5px;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.breadcrumb-trail {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
   white-space: nowrap;
-  flex-shrink: 0;
 }
 
-.nav-tab:hover {
-  color: var(--text-main);
-  border-color: var(--accent-primary);
+.breadcrumb-item {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-weight: 500;
 }
 
-.nav-tab.active {
-  background: var(--accent-primary);
-  color: #ffffff;
-  border-color: var(--accent-primary);
-  box-shadow: 0 2px 8px var(--accent-glow);
+.breadcrumb-item.active {
+  color: var(--accent-primary);
+  font-weight: 700;
 }
 
-/* ── MAIN APP LAYOUT (DESKTOP) ── */
+.reading-badge {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* ── APP MAIN LAYOUT (2 COLUMNS) ── */
 .app-layout {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   width: 100%;
   display: grid;
-  grid-template-columns: 240px 1fr;
+  grid-template-columns: 290px 1fr;
   gap: 32px;
-  padding: 24px 20px 80px 20px;
+  padding: 20px 20px 80px 20px;
   flex: 1;
 }
 
-/* ── SIDEBAR (DESKTOP) ── */
+/* ── HIERARCHICAL SUBJECT/CHAPTER SIDEBAR ── */
 .sidebar {
   position: sticky;
-  top: 106px;
-  height: calc(100vh - 124px);
+  top: 92px;
+  height: calc(100vh - 110px);
   overflow-y: auto;
-  background: var(--bg-sidebar);
+  background: var(--bg-surface);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-md);
   padding: 14px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
   scrollbar-width: thin;
 }
 
-.sidebar-title {
-  font-size: 0.78rem;
+/* Subject Selector Dropdown */
+.subject-picker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.subject-picker label {
+  font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.05em;
+  color: var(--text-dim);
+}
+
+.subject-select {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  font-family: var(--font-bangla);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--text-main);
+  cursor: pointer;
+  outline: none;
+  transition: var(--transition);
+  width: 100%;
+}
+
+.subject-select:focus {
+  border-color: var(--accent-primary);
+  box-shadow: 0 0 0 2px var(--accent-glow);
+}
+
+/* Chapter Accordion Group */
+.chapter-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.chapter-block {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.chapter-title {
+  font-size: 0.84rem;
+  font-weight: 700;
   color: var(--text-muted);
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 6px 8px;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  transition: var(--transition);
+  user-select: none;
 }
 
-.toc-list {
+.chapter-title:hover {
+  background: var(--bg-card);
+  color: var(--text-main);
+}
+
+.chapter-badge {
+  font-size: 0.7rem;
+  font-family: var(--font-en);
+  background: var(--bg-subtle);
+  padding: 1px 6px;
+  border-radius: 99px;
+  color: var(--text-muted);
+}
+
+.module-nav-list {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 2px;
+  padding-left: 8px;
+  border-left: 2px solid var(--border-subtle);
+  margin-left: 6px;
 }
 
-.toc-item a {
-  display: block;
-  padding: 5px 8px;
+.module-nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6px 10px;
   border-radius: var(--radius-xs);
   color: var(--text-muted);
   text-decoration: none;
-  font-size: 0.82rem;
+  font-size: 0.84rem;
   font-weight: 500;
   transition: var(--transition);
-  border-left: 2px solid transparent;
   line-height: 1.35;
 }
 
-.toc-item a:hover {
+.module-nav-item a:hover {
   color: var(--text-main);
   background: var(--bg-card);
-  border-left-color: var(--accent-primary);
 }
 
-.toc-item.active a {
+.module-nav-item.active a {
   color: var(--accent-primary);
   background: var(--bg-card);
-  border-left-color: var(--accent-primary);
   font-weight: 700;
+  box-shadow: var(--shadow-sm);
 }
 
-/* ── SEAMLESS MAIN CONTENT AREA ── */
+.module-nav-item .tag {
+  font-size: 0.65rem;
+  padding: 1px 5px;
+  border-radius: 4px;
+  background: var(--bg-subtle);
+  color: var(--text-dim);
+}
+
+.module-nav-item.active .tag {
+  background: var(--accent-light);
+  color: var(--accent-primary);
+}
+
+/* Extra Tools in Sidebar */
+.sidebar-tools-section {
+  margin-top: auto;
+  padding-top: 12px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.sidebar-tool-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border-radius: var(--radius-xs);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-main);
+  font-family: var(--font-bangla);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+  text-decoration: none;
+}
+
+.sidebar-tool-btn:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-1px);
+}
+
+/* ── MAIN READING CONTENT AREA ── */
 .main-content {
   min-width: 0;
   width: 100%;
-  max-width: 860px;
+  max-width: 900px;
 }
 
 /* ── MARKDOWN & MATH TYPOGRAPHY ── */
 .markdown-body {
-  font-size: 1.04rem;
+  font-size: 1.05rem;
   color: var(--text-main);
   word-wrap: break-word;
   overflow-wrap: break-word;
 }
 
 .markdown-body h1 {
-  font-size: 1.75rem;
+  font-size: 1.8rem;
   font-weight: 800;
   color: var(--text-main);
   border-bottom: 2px solid var(--border-subtle);
   padding-bottom: 12px;
-  margin: 0 0 22px 0;
+  margin: 0 0 24px 0;
   letter-spacing: -0.01em;
   line-height: 1.3;
 }
 
 .markdown-body h2 {
-  font-size: 1.35rem;
+  font-size: 1.38rem;
   font-weight: 700;
   color: var(--accent-primary);
   margin: 36px 0 16px 0;
@@ -431,7 +564,7 @@ body {
 }
 
 .markdown-body h3 {
-  font-size: 1.15rem;
+  font-size: 1.18rem;
   font-weight: 600;
   color: var(--text-main);
   margin: 24px 0 12px 0;
@@ -444,7 +577,7 @@ body {
 }
 
 .markdown-body ul, .markdown-body ol {
-  margin: 12px 0 18px 22px;
+  margin: 12px 0 18px 24px;
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -460,7 +593,7 @@ body {
   border-left: 4px solid var(--accent-primary);
   border-radius: var(--radius-sm);
   padding: 14px 18px;
-  margin: 18px 0;
+  margin: 20px 0;
   font-style: normal;
   color: var(--text-main);
 }
@@ -469,13 +602,13 @@ body {
   color: var(--accent-primary);
 }
 
-/* Tables — Mobile Scrollable */
+/* Tables — Mobile Responsive */
 .table-wrap {
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  margin: 18px 0;
+  margin: 20px 0;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
   background: var(--bg-card);
@@ -492,13 +625,13 @@ body {
   background: var(--bg-subtle);
   color: var(--text-main);
   font-weight: 700;
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-bottom: 2px solid var(--border-subtle);
   white-space: nowrap;
 }
 
 .markdown-body td {
-  padding: 10px 14px;
+  padding: 12px 16px;
   border-bottom: 1px solid var(--border-subtle);
 }
 
@@ -518,14 +651,14 @@ body {
   font-size: 0.88rem;
   line-height: 1.45;
   color: var(--code-text);
-  margin: 16px 0;
+  margin: 18px 0;
   max-width: 100%;
 }
 
 .markdown-body code {
   font-family: var(--font-mono);
   background: var(--bg-subtle);
-  padding: 2px 5px;
+  padding: 2px 6px;
   border-radius: 4px;
   font-size: 0.88em;
   color: var(--accent-primary);
@@ -543,16 +676,58 @@ body {
   overflow-y: hidden;
   -webkit-overflow-scrolling: touch;
   padding: 12px 10px;
-  margin: 16px 0;
+  margin: 18px 0;
   background: var(--bg-card);
   border-radius: var(--radius-sm);
   border: 1px solid var(--border-subtle);
   max-width: 100%;
 }
 
-/* ═══════════════════════════════════════════════
-   ── INTERACTIVE SIMULATORS & CALCULATORS ──
-   ═══════════════════════════════════════════════ */
+/* ── PREV / NEXT NAVIGATION FOOTER ── */
+.module-nav-footer {
+  margin-top: 48px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border-subtle);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.nav-footer-btn {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition);
+  max-width: 48%;
+  cursor: pointer;
+}
+
+.nav-footer-btn:hover {
+  border-color: var(--accent-primary);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-footer-btn .direction {
+  font-size: 0.74rem;
+  color: var(--text-dim);
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.nav-footer-btn .title {
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--accent-primary);
+}
+
+/* ── INTERACTIVE SIMULATORS TAB ── */
 .simulators-container {
   display: flex;
   flex-direction: column;
@@ -689,17 +864,102 @@ body {
   display: block;
 }
 
-/* ── QUICK ACTION TOAST ── */
+/* ── SEARCH MODAL (COMMAND PALETTE) ── */
+.search-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 2000;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 60px 16px;
+}
+
+.search-modal-backdrop.open {
+  display: flex;
+}
+
+.search-modal {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  width: 100%;
+  max-width: 580px;
+  box-shadow: var(--shadow-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-modal-header {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  border-bottom: 1px solid var(--border-subtle);
+  gap: 10px;
+}
+
+.search-modal-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-family: var(--font-bangla);
+  font-size: 1.05rem;
+  color: var(--text-main);
+  outline: none;
+}
+
+.search-modal-results {
+  max-height: 380px;
+  overflow-y: auto;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.search-result-item {
+  padding: 10px 14px;
+  border-radius: var(--radius-xs);
+  cursor: pointer;
+  transition: var(--transition);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.search-result-item:hover {
+  background: var(--accent-light);
+}
+
+.search-result-item .item-title {
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--accent-primary);
+}
+
+.search-result-item .item-snippet {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* ── TOAST NOTIFICATION ── */
 #toast {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 24px;
+  right: 24px;
   background: var(--bg-card);
   color: var(--text-main);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-sm);
-  padding: 10px 16px;
-  box-shadow: var(--shadow-md);
+  padding: 10px 18px;
+  box-shadow: var(--shadow-lg);
   font-weight: 600;
   font-size: 0.85rem;
   display: flex;
@@ -708,7 +968,7 @@ body {
   transform: translateY(80px);
   opacity: 0;
   transition: var(--transition);
-  z-index: 1100;
+  z-index: 1500;
 }
 
 #toast.show {
@@ -719,10 +979,10 @@ body {
 /* ── BACK TO TOP BUTTON ── */
 #back-to-top {
   position: fixed;
-  bottom: 20px;
-  left: 20px;
-  width: 38px;
-  height: 38px;
+  bottom: 24px;
+  left: 24px;
+  width: 40px;
+  height: 40px;
   border-radius: 50%;
   background: var(--bg-card);
   color: var(--text-main);
@@ -746,68 +1006,92 @@ body {
 }
 
 /* ═══════════════════════════════════════════════
-   ── MOBILE OVERRIDES (< 850px) ──
+   ── MOBILE RESPONSIVE DRAWER & OVERRIDES (< 900px) ──
    ═══════════════════════════════════════════════ */
-@media (max-width: 850px) {
+@media (max-width: 900px) {
   .app-layout {
     display: block;
     padding: 16px 14px 70px 14px;
     width: 100%;
     max-width: 100%;
   }
-  
+
+  /* Mobile Slide-in Drawer for Subjects & Chapters */
   .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 290px;
+    height: 100vh;
+    z-index: 1300;
+    border-radius: 0;
+    background: var(--bg-surface);
+    box-shadow: var(--shadow-lg);
+    transform: translateX(-100%);
+    transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+    border: none;
+    border-right: 1px solid var(--border-subtle);
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  /* Drawer Backdrop */
+  .drawer-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(4px);
+    z-index: 1250;
     display: none;
   }
-  
+
+  .drawer-backdrop.open {
+    display: block;
+  }
+
   .markdown-body h1 {
-    font-size: 1.4rem;
+    font-size: 1.45rem;
     margin-bottom: 14px;
   }
   
   .markdown-body h2 {
-    font-size: 1.2rem;
-    margin: 26px 0 12px 0;
+    font-size: 1.22rem;
+    margin: 28px 0 12px 0;
   }
 
   .markdown-body h3 {
     font-size: 1.05rem;
-  }
-  
-  .search-input {
-    width: 95px;
-    font-size: 0.78rem;
-    padding: 4px 8px 4px 24px;
-  }
-  
-  .search-input:focus {
-    width: 130px;
   }
 
   .brand-text p {
     display: none;
   }
 
+  .search-btn span:not(.search-icon) {
+    display: none;
+  }
+
+  .search-btn {
+    padding: 6px 8px;
+  }
+
   .simulators-grid {
     grid-template-columns: 1fr;
     gap: 16px;
   }
-}
 
-@media (max-width: 420px) {
-  .search-box {
-    display: none;
+  .module-nav-footer {
+    flex-direction: column;
+    align-items: stretch;
   }
-}
 
-/* Print Styles */
-@media print {
-  .site-header, .nav-tabs-bar, .sidebar, #reading-progress, #back-to-top, .header-actions {
-    display: none !important;
-  }
-  .app-layout {
-    display: block;
-    padding: 0;
+  .nav-footer-btn {
+    max-width: 100%;
   }
 }
 </style>
@@ -816,23 +1100,57 @@ body {
 
 <div id="reading-progress"></div>
 
-<!-- ═════════ HEADER ═════════ -->
+<!-- Mobile Drawer Backdrop -->
+<div class="drawer-backdrop" id="drawer-backdrop" onclick="toggleMobileDrawer()"></div>
+
+<!-- ═════════ TOP NAVBAR ═════════ -->
 <header class="site-header">
   <div class="header-container">
-    <div class="brand-wrap" onclick="switchModule('module1')">
-      <div class="brand-icon">V</div>
-      <div class="brand-text">
-        <h1>ভেক্টর মাস্টারনোট</h1>
-        <p>উচ্চমাধ্যমিক পদার্থবিজ্ঞান ১ম পত্র • অধ্যায় ২</p>
+    <div class="header-left">
+      <!-- Mobile Drawer Menu Toggle -->
+      <button class="menu-toggle-btn" onclick="toggleMobileDrawer()" title="টপিক সূচিপত্র খুলুন">☰</button>
+
+      <!-- 🎨 Bespoke Vector Quantum Logo -->
+      <div class="brand-wrap" onclick="switchModule('p1_c2_m1')">
+        <svg class="brand-svg-logo" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#f59e0b"/>
+              <stop offset="50%" stop-color="#b56920"/>
+              <stop offset="100%" stop-color="#985213"/>
+            </linearGradient>
+            <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%" stop-color="#38bdf8"/>
+              <stop offset="100%" stop-color="#10b981"/>
+            </linearGradient>
+          </defs>
+          <!-- Outer Quantum Orbital Ring -->
+          <ellipse cx="50" cy="50" rx="42" ry="18" stroke="url(#ringGrad)" stroke-width="3" transform="rotate(-30 50 50)" stroke-dasharray="4 2" opacity="0.85"/>
+          <!-- Central Dynamic Coordinate Axes -->
+          <circle cx="50" cy="50" r="36" fill="url(#logoGrad)" filter="drop-shadow(0 4px 10px rgba(181, 105, 32, 0.4))"/>
+          <!-- Bold Stylized Vector Arrow V -->
+          <path d="M30 35 L50 68 L70 35" stroke="#ffffff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+          <!-- Forward Resultant Arrow Tip -->
+          <path d="M50 20 L50 42" stroke="#ffffff" stroke-width="4" stroke-linecap="round"/>
+          <path d="M44 26 L50 18 L56 26" fill="#ffffff"/>
+          <circle cx="50" cy="68" r="4" fill="#fbbf24"/>
+        </svg>
+
+        <div class="brand-text">
+          <h1>মাস্টারনোট <span class="brand-badge">HSC</span></h1>
+          <p>পদার্থবিজ্ঞান ১ম পত্র • অধ্যায় ২: ভেক্টর</p>
+        </div>
       </div>
     </div>
 
+    <!-- Header Actions -->
     <div class="header-actions">
-      <!-- Search Input -->
-      <div class="search-box">
+      <!-- Search Modal Button -->
+      <button class="search-btn" onclick="openSearchModal()" title="খুঁজুন (Ctrl+K)">
         <span class="search-icon">🔍</span>
-        <input type="text" id="doc-search" class="search-input" placeholder="অনুসন্ধান..." oninput="handleSearch(this.value)"/>
-      </div>
+        <span>অনুসন্ধান</span>
+        <kbd>Ctrl K</kbd>
+      </button>
 
       <!-- Font Size Controller -->
       <button class="btn-icon" title="লেখা ছোট করুন" onclick="adjustFontSize(-1)">A-</button>
@@ -846,46 +1164,80 @@ body {
   </div>
 </header>
 
-<!-- ═════════ NAVIGATION PILL TABS ═════════ -->
-<nav class="nav-tabs-bar">
-  <div class="nav-tabs-container">
-    <button class="nav-tab active" id="tab-module1" onclick="switchModule('module1')">
-      <span>🚀</span> মডিউল ০১: বেসিক ও সামান্তরিক সূত্র
-    </button>
-    <button class="nav-tab" id="tab-module2" onclick="switchModule('module2')">
-      <span>⚙️</span> মডিউল ০২: উপাংশ ও মেকানিক্স
-    </button>
-    <button class="nav-tab" id="tab-module3" onclick="switchModule('module3')">
-      <span>🛶</span> মডিউল ০৩: নদী-নৌকা ও লব্ধি বেগ
-    </button>
-    <button class="nav-tab" id="tab-all" onclick="switchModule('all')">
-      <span>📚</span> সম্পূর্ণ নোট একসাথে
-    </button>
-    <button class="nav-tab" id="tab-simulators" onclick="switchModule('simulators')">
-      <span>🧮</span> সিমুলেটর ও ক্যালকুলেটর
-    </button>
-  </div>
-</nav>
-
-<!-- ═════════ MAIN SEAMLESS LAYOUT ═════════ -->
-<div class="app-layout">
-  <!-- Sticky Table of Contents Sidebar (Desktop) -->
-  <aside class="sidebar">
-    <div class="sidebar-title">
-      <span>সূচিপত্র</span>
-      <span id="toc-count" style="font-size:0.75rem;padding:2px 8px;border-radius:99px;background:var(--bg-subtle)">12 টপিক</span>
+<!-- ═════════ BREADCRUMB CONTEXT BAR ═════════ -->
+<div class="context-bar">
+  <div class="context-container">
+    <div class="breadcrumb-trail" id="breadcrumb-trail">
+      <span class="breadcrumb-item">পদার্থবিজ্ঞান ১ম পত্র</span>
+      <span>›</span>
+      <span class="breadcrumb-item">অধ্যায় ০২: ভেক্টর</span>
+      <span>›</span>
+      <span class="breadcrumb-item active" id="breadcrumb-active">মডিউল ০১: বেসিক ও সামান্তরিক সূত্র</span>
     </div>
-    <ul class="toc-list" id="toc-container">
-      <!-- Dynamic TOC Links -->
-    </ul>
+    <div class="reading-badge" id="reading-badge">⏱️ ২৫ মিনিট পাঠ</div>
+  </div>
+</div>
+
+<!-- ═════════ MAIN SEAMLESS APP LAYOUT ═════════ -->
+<div class="app-layout">
+  <!-- 📚 HIERARCHICAL SUBJECT/CHAPTER SIDEBAR -->
+  <aside class="sidebar" id="app-sidebar">
+    <!-- Subject Switcher -->
+    <div class="subject-picker">
+      <label>বিষয় নির্বাচন</label>
+      <select class="subject-select" id="subject-dropdown" onchange="handleSubjectChange(this.value)">
+        <option value="physics1" selected>⚛️ পদার্থবিজ্ঞান ১ম পত্র</option>
+        <option value="physics2">⚡ পদার্থবিজ্ঞান ২য় পত্র (আসন্ন)</option>
+        <option value="math1">📐 উচ্চতর গণিত ১ম পত্র (আসন্ন)</option>
+        <option value="chem1">🧪 রসায়ন ১ম পত্র (আসন্ন)</option>
+      </select>
+    </div>
+
+    <!-- Chapter Tree -->
+    <div class="chapter-tree" id="chapter-tree-container">
+      <!-- Dynamically Injected Chapters & Modules -->
+    </div>
+
+    <!-- Tools & Simulators Section -->
+    <div class="sidebar-tools-section">
+      <button class="sidebar-tool-btn" onclick="switchModule('simulators')">
+        <span>🧮</span>
+        <span>ফিজিক্স ক্যালকুলেটর ও ল্যাব</span>
+      </button>
+      <button class="sidebar-tool-btn" onclick="openSearchModal()">
+        <span>🔍</span>
+        <span>কুইক সার্চ ও সূত্র তালিকা</span>
+      </button>
+    </div>
   </aside>
 
-  <!-- Main Note Reading Area (Seamless) -->
+  <!-- 📖 SEAMLESS READING CONTENT -->
   <main class="main-content">
     <div class="markdown-body" id="rendered-content">
-      <!-- Markdown and Math content injected dynamically -->
+      <!-- Active Module Content -->
+    </div>
+
+    <!-- Next / Prev Module Navigation Footer -->
+    <div class="module-nav-footer" id="module-nav-footer">
+      <!-- Dynamic Next / Prev Buttons -->
     </div>
   </main>
+</div>
+
+<!-- 🔍 SEARCH MODAL DIALOG -->
+<div class="search-modal-backdrop" id="search-modal" onclick="closeSearchModal(event)">
+  <div class="search-modal" onclick="event.stopPropagation()">
+    <div class="search-modal-header">
+      <span style="font-size:18px">🔍</span>
+      <input type="text" id="modal-search-input" class="search-modal-input" placeholder="টপিক, সূত্র বা সংজ্ঞা অনুসন্ধান করুন..." oninput="handleModalSearch(this.value)"/>
+      <button class="btn-icon" onclick="closeSearchModal()" style="border:none">✕</button>
+    </div>
+    <div class="search-modal-results" id="search-modal-results">
+      <div style="padding:20px;text-align:center;color:var(--text-dim);font-size:0.88rem">
+        অনুসন্ধান করতে কীওয়ার্ড টাইপ করুন (যেমন: <i>সামান্তরিক সূত্র, নদী নৌকা, লন রোলার, ল্যামির সূত্র</i>)...
+      </div>
+    </div>
+  </div>
 </div>
 
 <!-- Back to Top Button -->
@@ -896,19 +1248,47 @@ body {
   <span id="toast-msg">✓ কপি সম্পন্ন হয়েছে</span>
 </div>
 
-<!-- ═════════ SCRIPT & DATA ═════════ -->
+<!-- ═════════ PLATFORM SCRIPTS & DATABASE ═════════ -->
 <script>
-// Raw Markdown Database
-const MODULE_DATA = {
-  module1: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০১: ভেক্টরের মৌলিক ধারণা ও সামান্তরিক সূত্র\n\n---\n\n## ১. ভৌত রাশি ও স্কেলার বনাম ভেক্টর রাশি\n\n### ১.১ ভৌত রাশি (Physical Quantity) কী?\nভৌত জগতে যা কিছু সরাসরি বা পরোক্ষভাবে পরিমাপ করা যায়, তাকে **ভৌত রাশি (Physical Quantity)** বলে। যেমন: কোনো বস্তুর দৈর্ঘ্য, ভর, সময়, তাপমাত্রা, বেগ, ত্বরণ, বল ইত্যাদি।\n\nপরিমাপের বৈশিষ্ট্যের ওপর ভিত্তি করে ভৌত রাশিকে প্রধানত দুটি শ্রেণিতে ভাগ করা হয়:\n1. **অদিক রাশি বা স্কেলার রাশি (Scalar Quantity)**\n2. **দিক রাশি বা ভেক্টর রাশি (Vector Quantity)**\n\n---\n\n### ১.২ স্কেলার ও ভেক্টর রাশির গভীর তুলনামূলক বিশ্লেষণ\n\n| বৈশিষ্ট্য | স্কেলার রাশি (Scalar Quantity) | ভেক্টর রাশি (Vector Quantity) |\n| :--- | :--- | :--- |\n| **সংজ্ঞা** | যে সকল ভৌত রাশিকে সম্পূর্ণরূপে প্রকাশ করার জন্য শুধুমাত্র **মান** (Magnitude)-এর প্রয়োজন হয়, কোনো দিকের প্রয়োজন হয় না। | যে সকল ভৌত রাশিকে সম্পূর্ণরূপে প্রকাশ করার জন্য **মান ও দিক** (Magnitude & Direction) উভয়েরই প্রয়োজন হয়। |\n| **বীজগণিতীয় নিয়ম** | সাধারণ পাটিগণিত বা বীজগণিতের নিয়মে ($২ + ৩ = ৫$) এদের যোগ, বিয়োগ, গুণ করা যায়। | সাধারণ বীজগণিতের নিয়মে যোগ-বিয়োগ করা যায় না; এরা ভেক্টর বীজগণিতের জ্যামিতিক নিয়ম (যেমন: সামান্তরিক সূত্র, ত্রিভুজ সূত্র) মেনে চলে। |\n| **পরিবর্তন** | কেবল মানের পরিবর্তন হলে রাশির পরিবর্তন ঘটে। | ১. কেবল মানের পরিবর্তনে,<br>২. কেবল দিকের পরিবর্তনে, অথবা<br>৩. মান ও দিক উভয়ের পরিবর্তনে পরিবর্তিত হয়। |\n| **উদাহরণ** | দৈর্ঘ্য, ভর, সময়, তাপমাত্রা, দ্রুতি, দূরত্ব, কাজ, বিভব, ক্ষমতা, শক্তি, ঘনত্ব ইত্যাদি। | সরণ, বেগ, ত্বরণ, বল, ভরবেগ, বলের ঘাত, মহাকর্ষীয় প্রাবল্য, টর্ক, চৌম্বক আবেশ ইত্যাদি। |\n\n---\n\n### ১.৩ গুরুত্বপূর্ণ অনুধাবনমূলক প্রশ্ন ও ব্যতিক্রমী কেস\n\n#### ❓ প্রশ্ন ১: \"তড়িৎপ্রবাহ (Electric Current) দিক থাকা সত্ত্বেও কেন স্কেলার রাশি?\"\n- **গভীর বৈজ্ঞানিক ব্যাখ্যা:** কোনো রাশি ভেক্টর হতে হলে তাকে কেবল নির্দিষ্ট দিক থাকলেই চলে না, তাকে অবশ্যই **ভেক্টর যোগের নিয়ম (সামান্তরিক সূত্র বা ত্রিভুজ সূত্র)** মেনে চলতে হয়।\n- একটি পরিবাহীর সংযোগস্থলে যদি দুটি তার দিয়ে $3\\text{ A}$ এবং $4\\text{ A}$ প্রবাহ যে কোণেই মিলিত হোক না কেন, তাদের সংযোগস্থলে মোট নির্গমন প্রবাহ সর্বদা সাধারণ পাটিগণিতের নিয়মে $3 + 4 = 7\\text{ A}$ হয়। এটি তার দুটির মধ্যবর্তী কোণের ওপর নির্ভর করে না এবং ভেক্টর যোগের সামান্তরিক সূত্র মানে না। তাই নির্দিষ্ট দিক থাকা সত্ত্বেও তড়িৎপ্রবাহ একটি **স্কেলার রাশি**।\n\n#### ❓ প্রশ্ন ২: \"চাপ (Pressure) ও পৃষ্ঠটান (Surface Tension) কেন স্কেলার রাশি?\"\n- **চাপ:** চাপ হলো প্রতি একক ক্ষেত্রফলের ওপর লম্বভাবে প্রযুক্ত বল ($P = F/A$)। কোনো আবদ্ধ তরল বা বায়বীয় পদার্থের অভ্যন্তরে চাপ কোনো একক নির্দিষ্ট দিকে কাজ করে না, বরং পাত্রের দেওয়ালে সকল দিকে অভিলম্বভাবে ক্রিয়া করে। এর কোনো সুনির্দিষ্ট একক অভিমুখ নেই। তাই চাপ স্কেলার রাশি।\n\n---\n\n## ২. ভেক্টরের জ্যামিতিক ও প্রতীকী প্রকাশ\n\n### ২.১ জ্যামিতিক প্রকাশ (Graphical Representation)\nএকটি নির্দিষ্ট দৈর্ঘ্যের তীরচিহ্নযুক্ত সরলরেখাংশ দ্বারা ভেক্টর রাশিকে জ্যামিতিকভাবে উপস্থাপন করা হয়:\n\n```\n        পাদবিন্দু (Tail)                         শীর্ষবিন্দু (Head)\n             O •─────────────────────────────────────────► P\n                                  OP⃗ (বা A⃗)\n```\n\n1. **পাদবিন্দু / সূচনা বিন্দু / প্রারম্ভিক বিন্দু (Tail / Initial point):** যে বিন্দু থেকে ভেক্টরের সূচনা হয় (এখানে বিন্দু $O$)।\n2. **শীর্ষবিন্দু / প্রান্তিক বিন্দু (Head / Terminal point):** তীরে চিহ্নিত প্রান্তিক বিন্দু যেখানে ভেক্টরটি শেষ হয় (এখানে বিন্দু $P$)।\n3. **ধারক রেখা (Line of Action):** যে অসীম সরলরেখার অংশবিশেষ নিয়ে ভেক্টরটি গঠিত হয়, তাকে ভেক্টরের ধারক রেখা বলে।\n4. **ভেক্টরের মান (Magnitude):** রেখাংশটির দৈর্ঘ্য $OP = |\\vec{A}| = A$।\n5. **ভেক্টরের দিক (Direction):** $O$ থেকে $P$ বিন্দুর অভিমুখে তীরচিহ্ন।\n\n### ২.২ প্রতীকী প্রকাশ (Symbolic Notation)\n- **হাতে লেখার নিয়ম:**\n  - অক্ষরের মাথায় তীর চিহ্ন দিয়ে: $\\vec{A}$\n  - অক্ষরের মাথায় সোজা দাগ (Bar) দিয়ে: $\\bar{A}$\n  - অক্ষরের নিচে দাগ দিয়ে: $\\underline{A}$\n- **বইয়ের ছাপা অক্ষরে:** বোল্ড বা মোটা হরফে ($\\mathbf{A}$)।\n- **ভেক্টরের পরম মান (Magnitude):** পরম মান চিহ্নের সাহায্যে $|\\vec{A}|$ বা $|\\mathbf{A}|$ অথবা সাধারণ হরফে কেবল $A$ দিয়ে প্রকাশ করা হয়।\n\n---\n\n## ৩. ভেক্টরের ১৫টি প্রকারভেদের পূর্ণাঙ্গ শ্রেণিবিন্যাস\n\n```\n                              ┌──────────────────────────────────────┐\n                              │          ভেক্টরের প্রকারভেদ           │\n                              └──────────────────┬───────────────────┘\n                                                 │\n        ┌────────────────────────────────────────┼────────────────────────────────────────┐\n        ▼                                        ▼                                        ▼\n  [স্থানভিত্তিক]                          [দিক ও মানভিত্তিক]                         [বিশেষ গুণভিত্তিক]\n  ├── ১. অবস্থান ভেক্টর (r⃗)                ├── ৩. সম / সমান ভেক্টর (A⃗ = B⃗)          ├── ১০. একক ভেক্টর (â)\n  ├── ২. সরণ ভেক্টর (Δr⃗)                  ├── ৪. বিপরীত / ঋণ ভেক্টর (-A⃗)           ├── ৯. শূন্য / নাল ভেক্টর (0⃗)\n  ├── ১১. স্বাধীন ভেক্টর                    ├── ৫. সদৃশ ও বিসদৃশ ভেক্টর               ├── ১৩. বিপ্রতীপ ভেক্টর\n  └── ১২. সীমাবদ্ধ ভেক্টর                  ├── ৬. সমরেখ ভেক্টর                      ├── ১৪. পোলার ও অক্ষীয় ভেক্টর\n                                         ├── ৭. সমতলীয় ভেক্টর                    └── ১৫. আয়ত একক ভেক্টর (î, ĵ, k̂)\n                                         └── ৮. সহ-প্রারম্ভিক ভেক্টর\n```\n\n### ১. অবস্থান ভেক্টর (Position Vector / Radius Vector)\n- **সংজ্ঞা:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় প্রসঙ্গ কাঠামোর মূলবিন্দুর ($O$) সাপেক্ষে অন্য যেকোনো বিন্দুর ($P$) অবস্থান যে ভেক্টরের সাহায্যে নির্দেশ করা হয়, তাকে অবস্থান ভেক্টর বলে।\n- **সমীকরণ:** প্রসঙ্গ কাঠামোর মূলবিন্দু $O(0,0,0)$ এবং যেকোনো বিন্দু $P(x,y,z)$ হলে:\n  $$\\vec{OP} = \\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k}$$\n- **বিশেষ নাম:** অবস্থান ভেক্টরকে **ব্যাসার্ধ ভেক্টর (Radius Vector)**-ও বলা হয়।\n\n### ২. সরণ ভেক্টর (Displacement Vector)\n- **সংজ্ঞা:** কোনো গতিশীল কণার আদি অবস্থান ভেক্টর থেকে শেষ অবস্থান ভেক্টরের পরিবর্তনকে সরণ ভেক্টর বলে।\n- **সমীকরণ:** কণাটি যদি $P(x_1, y_1, z_1)$ থেকে $Q(x_2, y_2, z_2)$ বিন্দুতে যায়:\n  $$\\Delta\\vec{r} = \\vec{r}_2 - \\vec{r}_1 = (x_2 - x_1)\\hat{i} + (y_2 - y_1)\\hat{j} + (z_2 - z_1)\\hat{k}$$\n\n### ৩. সমান বা সম ভেক্টর (Equal Vectors)\n- **সংজ্ঞা:** একই জাতীয় দুটি ভেক্টরের মান সমান এবং দিক একই হলে তাদেরকে সমান ভেক্টর বলে ($\\vec{A} = \\vec{B}$)।\n- **শর্ত:** $|\u000bec{A}| = |\u000bec{B}|$ এবং উভয় ভেক্টর সমান্তরাল ও একই অভিমুখী।\n\n### ৪. বিপরীত বা ঋণাত্মক ভেক্টর (Negative / Opposite Vector)\n- **সংজ্ঞা:** নির্দিষ্ট দিক বরাবর কোনো ভেক্টরকে ধনাত্মক ধরলে, তার সমান মানযুক্ত কিন্তু ঠিক বিপরীতমুখী সমজাতীয় ভেক্টরকে ঋণাত্মক বা বিপরীত ভেক্টর বলে ($-\\vec{A}$)।\n- **শর্ত:** $|\u000bec{A}| = |-\\vec{A}|$ কিন্তু দিক পরস্পর $180^\\circ$ বিপরীত।\n\n### ৫. সদৃশ ও বিসদৃশ ভেক্টর (Like & Unlike Vectors)\n- **সদৃশ ভেক্টর:** সমজাতীয় দুই বা ততোধিক ভেক্টর যদি একই দিকে সমান্তরালে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।\n- **বিসদৃশ ভেক্টর:** সমজাতীয় দুটি ভেক্টর যদি পরস্পর বিপরীত দিকে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।\n\n### ৬. সমরেখ ভেক্টর (Collinear Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সরলরেখা বরাবর বা পরস্পর সমান্তরালে ক্রিয়া করে, তবে তাদেরকে সমরেখ ভেক্টর বলে।\n\n### ৭. সমতলীয় ভেক্টর (Coplanar Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সমতলে অবস্থান করে, তবে তাদেরকে সমতলীয় ভেক্টর বলে। যেমন: টেবিলের ওপর রাখা সকল ভেক্টর।\n\n### ৮. সহ-প্রারম্ভিক ভেক্টর (Co-initial Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টরের যদি প্রারম্ভিক বিন্দু বা পাদবিন্দু (Tail) একই বিন্দু হয়, তবে তাদেরকে সহ-প্রারম্ভিক ভেক্টর বলে।\n\n### ৯. সঠিক ভেক্টর (Proper Vector)\n- **সংজ্ঞা:** যে সকল ভেক্টরের মান অশূন্য ($|\\vec{A}| \\neq 0$), তাদেরকে সঠিক ভেক্টর বলা হয়।\n\n### ১০. শূন্য বা নাল ভেক্টর (Null / Zero Vector)\n- **সংজ্ঞা:** যে ভেক্টরের মান শূন্য, তাকে শূন্য বা নাল ভেক্টর ($\\vec{0}$) বলে।\n- **বৈশিষ্ট্য ও গুরুত্ব:**\n  1. শূন্য ভেক্টরের পাদবিন্দু এবং শীর্ষবিন্দু একই বিন্দুতে সমাপতিত হয়।\n  2. এর কোনো সুনির্দিষ্ট দিক নেই (অনির্দিষ্ট দিক)।\n  3. দুটি সমান ও বিপরীতমুখী ভেক্টরের যোগফল একটি শূন্য ভেক্টর ($\\vec{A} + (-\\vec{A}) = \\vec{0}$)।\n  4. সমবেগে চলমান বস্তুর ত্বরণ ভেক্টর একটি শূন্য ভেক্টর।\n\n### ১১. স্বাধীন বা মুক্ত ভেক্টর (Free Vector)\n- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো যেকোনো স্থানে নির্বাচন করা যায়, তাকে স্বাধীন ভেক্টর বলে।\n\n### ১২. সীমাবদ্ধ ভেক্টর (Localized Vector)\n- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো পছন্দ করা যায় না, কোনো নির্দিষ্ট বিন্দুতে নির্ধারিত থাকে, তাকে সীমাবদ্ধ ভেক্টর বলে।\n- **উদাহরণ:** অবস্থান ভেক্টর একটি সীমাবদ্ধ ভেক্টর, কারণ এর পাদবিন্দু সর্বদা মূলবিন্দুতে ফিক্সড থাকে।\n\n### ১৩. বিপ্রতীপ বা ব্যতিহার ভেক্টর (Reciprocal Vector)\n- **সংজ্ঞা:** সমজাতীয় দুটি সমান্তরাল ভেক্টরের একটির মান যদি অপরটির গুণাত্মক বিপরীত (Reciprocal) হয়, তবে তাদেরকে বিপ্রতীপ ভেক্টর বলে।\n- **উদাহরণ:** $\\vec{A} = 6\\hat{i}$ হলে এর বিপ্রতীপ ভেক্টর হবে $\\vec{B} = \\frac{1}{6}\\hat{i}$।\n\n### ১৪. পোলার ও অক্ষীয় ভেক্টর (Polar vs Axial Vectors)\n- **পোলার ভেক্টর:** যে ভেক্টরের সুনির্দিষ্ট সূচনা বিন্দু থাকে বা রৈখিক গতি উৎপন্ন করে (যেমন: বল, সরণ, রৈখিক বেগ)।\n- **অক্ষীয় ভেক্টর:** যে ভেক্টর ঘূর্ণন গতির সাথে যুক্ত এবং ঘূর্ণন অক্ষ বরাবর ক্রিয়া করে (যেমন: কৌণিক বেগ $\\vec{\\omega}$, টর্ক $\\vec{\\tau}$, কৌণিক ভরবেগ $\\vec{L}$)।\n\n### ১৫. একক ভেক্টর (Unit Vector) ও আয়ত একক ভেক্টর (Rectangular Unit Vectors)\n- **একক ভেক্টর:** যে ভেক্টরের মান ১ একক, তাকে একক ভেক্টর বলে। কোনো অশূন্য ভেক্টরকে তার পরম মান দিয়ে ভাগ করলে ওই ভেক্টরের দিক বরাবর একক ভেক্টর পাওয়া যায়:\n  $$\\hat{a} = \\frac{\\vec{A}}{|\\vec{A}|} = \\frac{\\vec{A}}{A}$$\n- **আয়ত একক ভেক্টর:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থার ধনাত্মক $X$, $Y$ এবং $Z$ অক্ষ বরাবর যথাক্রমে যে তিনটি আদর্শ একক ভেক্টর বিবেচনা করা হয়, তাদেরকে আয়ত একক ভেক্টর বলে ($\\hat{i}, \\hat{j}, \\hat{k}$)।\n\n---\n\n## ৪. কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় ভেক্টরের মান ও একক ভেক্টরের গাণিতিক প্রতিপাদন\n\n```\n                Y ▲\n                  │          P (Ax, Ay)\n                  │         /│\n                  │        / │\n                  │    A⃗  /  │ Ay\n                  │      /   │\n                  │     /θ   │\n                  O────┴─────┴──────► X\n                       Ax\n```\n\n### ৪.১ দ্বিমাত্রিক (2D) ক্ষেত্রে মান নির্ণয় (পিথাগোরাসের উপপাদ্য থেকে প্রমাণ)\nধরা যাক, $X$-$Y$ সমতলে একটি ভেক্টর $\\vec{A} = A_x\\hat{i} + A_y\\hat{j}$।\nএখানে, $OA = A_x$ (ভূমি) এবং $AP = A_y$ (লম্ব)।\nসমকোণী ত্রিভুজ $\\triangle OAP$-তে পিথাগোরাসের উপপাদ্য প্রয়োগ করে:\n$$\\text{অতিভুজ}^2 = \\text{ভূমি}^2 + \\text{লম্ব}^2$$\n$$OP^2 = OA^2 + AP^2$$\n$$|\\vec{A}|^2 = A_x^2 + A_y^2$$\n$$\\mathbf{|\\vec{A}| = \\sqrt{A_x^2 + A_y^2}}$$\n\n### ৪.২ ত্রিমাত্রিক (3D) ক্ষেত্রে মান নির্ণয়\nযদি ভেক্টরটি ত্রিমাত্রিক স্থানে অবস্থান করে: $\\vec{A} = A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}$\n$$\\mathbf{|\\vec{A}| = A = \\sqrt{A_x^2 + A_y^2 + A_z^2}}$$\n\n### ৪.৩ একক ভেক্টর নির্ণয়ের পূর্ণাঙ্গ সূত্র\n$$\\mathbf{\\hat{a} = \\frac{\\vec{A}}{|\\vec{A}|} = \\frac{A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}}$$\n\n### ৪.৪ ত্রিমাত্রিক দিক কোসাইন (Direction Cosines) ও প্রতিপাদন\nযদি $\\vec{A}$ ভেক্টরটি ধনাত্মক $X$, $Y$ ও $Z$ অক্ষের সাথে যথাক্রমে $\\alpha$, $\\beta$ ও $\\gamma$ কোণ তৈরি করে, তবে:\n$$\\cos\\alpha = \\frac{A_x}{|\\vec{A}|}, \\quad \\cos\\beta = \\frac{A_y}{|\\vec{A}|}, \\quad \\cos\\gamma = \\frac{A_z}{|\\vec{A}|}$$\n\n**১ম প্রমাণ: $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$**\n$$\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = \\frac{A_x^2}{A^2} + \\frac{A_y^2}{A^2} + \\frac{A_z^2}{A^2} = \\frac{A_x^2 + A_y^2 + A_z^2}{A^2} = \\frac{A^2}{A^2} = 1$$\n\n**২য় প্রমাণ: $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2$**\nআমরা জানি $\\cos^2\\theta = 1 - \\sin^2\\theta$। মান বসিয়ে:\n$$(1 - \\sin^2\\alpha) + (1 - \\sin^2\\beta) + (1 - \\sin^2\\gamma) = 1$$\n$$3 - (\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma) = 1$$\n$$\\mathbf{\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2}$$\n\n---\n\n## ৫. ভেক্টর যোজন ও বিয়োজনের জ্যামিতিক ও বীজগণিতীয় নিয়মাবলী\n\n### ৫.১ সাধারণ সূত্র (Head-to-Tail Rule)\nপ্রথম ভেক্টরের শীর্ষবিন্দুতে দ্বিতীয় ভেক্টরের পাদবিন্দু স্থাপন করলে প্রথমটির পাদবিন্দু থেকে দ্বিতীয়টির শীর্ষবিন্দুর সংযোজক সরলরেখাটি লব্ধি নির্দেশ করে।\n\n### ৫.২ ত্রিভুজ সূত্র (Triangle Law)\n> **বিবৃতি:** কোনো ত্রিভুজের দুটি সন্নিহিত বাহু দ্বারা যদি একই ক্রমে দুটি সমজাতীয় ভেক্টর নির্দেশ করা যায়, তবে ত্রিভুজটির তৃতীয় বাহুটি বিপরীত ক্রমে ভেক্টরদ্বয়ের লব্ধি নির্দেশ করবে।\n$$\\vec{R} = \\vec{A} + \\vec{B}$$\n\n### ৫.৩ বহুভুজ সূত্র (Polygon Law)\n> **বিবৃতি:** দুইয়ের অধিক ভেক্টরের ক্ষেত্রে ১ম ভেক্টরের শীর্ষবিন্দুতে ২য়টির পাদবিন্দু, ২য়টির শীর্ষে ৩য়টির পাদবিন্দু—এভাবে সাজানোর পর ১ম ভেক্টরের পাদবিন্দু থেকে শেষ ভেক্টরের শীর্ষবিন্দু যোগ করলে বিপরীত ক্রমে লব্ধি পাওয়া যায়।\n$$\\vec{R} = \\vec{A} + \\vec{B} + \\vec{C} + \\vec{D} + \\dots$$\n\n### ৫.৪ ভেক্টর যোগের ৩টি মৌলিক বীজগণিতীয় নিয়ম\n1. **বিনিময় নিয়ম (Commutative Law):** $\\vec{A} + \\vec{B} = \\vec{B} + \\vec{A}$\n2. **সংযোগ নিয়ম (Associative Law):** $(\\vec{A} + \\vec{B}) + \\vec{C} = \\vec{A} + (\\vec{B} + \\vec{C})$\n3. **বণ্টন নিয়ম (Distributive Law):** $m(\\vec{A} + \\vec{B}) = m\\vec{A} + m\\vec{B}$ (যেখানে $m$ একটি স্কেলার)\n\n### ৫.৫ ভেক্টর বিয়োগ (Vector Subtraction)\nভেক্টর বিয়োগ মূলত বিপরীত ভেক্টরের যোগ:\n$$\\vec{A} - \\vec{B} = \\vec{A} + (-\\vec{B})$$\n\n---\n\n## ৬. সামান্তরিক সূত্র ও তার সম্পূর্ণ গাণিতিক প্রমাণ\n\n### ৬.১ বিবৃতি\n> কোনো সামান্তরিকের একটি বিন্দু থেকে অঙ্কিত দুটি সন্নিহিত বাহু যদি একই সময়ে কোনো কণার ওপর ক্রিয়ারত দুটি সমজাতীয় ভেক্টরের মান ও দিক নির্দেশ করে, তবে ওই বিন্দু থেকে অঙ্কিত সামান্তরিকের কর্ণটিই ভেক্টরদ্বয়ের লব্ধির মান ও দিক নির্দেশ করবে।\n\n```\n                    C ───────────────────── B\n                   /                       /\n                  /                       /\n            Q⃗    /                       /\n                /                       /  R⃗ (লব্ধি)\n               /                       /\n              / α                     /\n             O ───────────────────── A ─────── D\n                        P⃗               │\n                                        CD ⊥ OD\n```\n\n### ৬.২ লব্ধির মান ($R$) নির্ণয়ের নিখুঁত জ্যামিতিক প্রমাণ\nমনে করি, $O$ বিন্দুতে ক্রিয়ারত দুটি ভেক্টর $\\vec{P}$ ও $\\vec{Q}$-এর মধ্যবর্তী কোণ $\\angle AOB = \\alpha$।\n$OA = P$, $OB = Q$ ধরে $OACB$ সামান্তরিক অঙ্কন করা হলো। তাহলে কর্ণ $OC = \\vec{R}$ হলো লব্ধি।\n\n$OA$ বাহুকে $D$ পর্যন্ত বর্ধিত করি এবং $C$ বিন্দু থেকে $OA$-এর বর্ধিতাংশের ওপর $CD$ লম্ব টানি ($CD \\perp OD$)।\nযেহেতু $AC \\parallel OB$, সুতরাং $AC = OB = Q$ এবং $\\angle CAD = \\angle AOB = \\alpha$।\n\nসমকোণী ত্রিভুজ $\\triangle ACD$ হতে:\n$$\\cos\\alpha = \\frac{AD}{AC} \\implies AD = AC\\cos\\alpha = Q\\cos\\alpha$$\n$$\\sin\\alpha = \\frac{CD}{AC} \\implies CD = AC\\sin\\alpha = Q\\sin\\alpha$$\n\nএখন, সমকোণী ত্রিভুজ $\\triangle OCD$-তে পিথাগোরাসের উপপাদ্য প্রয়োগ করে:\n$$OC^2 = OD^2 + CD^2$$\n$$OC^2 = (OA + AD)^2 + CD^2$$\n$$R^2 = (P + Q\\cos\\alpha)^2 + (Q\\sin\\alpha)^2$$\n$$R^2 = P^2 + 2PQ\\cos\\alpha + Q^2\\cos^2\\alpha + Q^2\\sin^2\\alpha$$\n$$R^2 = P^2 + 2PQ\\cos\\alpha + Q^2(\\cos^2\\alpha + \\sin^2\\alpha)$$\n$$R^2 = P^2 + Q^2 + 2PQ\\cos\\alpha \\quad [\\because \\cos^2\\alpha + \\sin^2\\alpha = 1]$$\n\n$$\\mathbf{R = \\sqrt{P^2 + Q^2 + 2PQ\\cos\\alpha}}$$\n\n### ৬.৩ লব্ধির দিক ($\\theta$) নির্ণয়ের প্রতিপাদন\nধরি, লব্ধি $\\vec{R}$ ভেক্টরটি $\\vec{P}$ ভেক্টরের সাথে $\\theta$ কোণ তৈরি করেছে ($\\angle COD = \\theta$)।\nসমকোণী ত্রিভুজ $\\triangle OCD$ হতে:\n$$\\tan\\theta = \\frac{CD}{OD} = \\frac{CD}{OA + AD}$$\n$$\\mathbf{\\tan\\theta = \\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}}$$\n$$\\mathbf{\\theta = \\tan^{-1}\\left(\\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}\\right)}$$\n\n> **লব্ধির দিক সংক্রান্ত সোনালি নিয়ম:**\n> লব্ধি $R$ যার সাথে $\\theta$ কোণ তৈরি করবে (এখানে $P$), সে হরে একাকী বসে থাকবে। আর অপর ভেক্টরটি ($Q$) উপরে $\\sin\\alpha$ এবং নিচে $\\cos\\alpha$ নিয়ে গুণ থাকবে।\n> যদি লব্ধি $Q$ ভেক্টরের সাথে $\\theta_Q$ কোণ তৈরি করে:\n> $$\\tan\\theta_Q = \\frac{P\\sin\\alpha}{Q + P\\cos\\alpha}$$\n\n---\n\n## ৭. লব্ধির বিশেষ ক্ষেত্রসমূহ (Special Cases Table)\n\n| কেস | মধ্যবর্তী কোণ ($\\alpha$) | $\\cos\\alpha$ ও $\\sin\\alpha$ | লব্ধির মান ($R$) | লব্ধির দিক ($\\theta$) | ভৌত তাৎপর্য |\n| :---: | :---: | :---: | :---: | :---: | :--- |\n| **১. একই দিকে (সমরেখ)** | $\\alpha = 0^\\circ$ | $\\cos 0^\\circ = 1$<br>$\\sin 0^\\circ = 0$ | $\\mathbf{R_{\\max} = P + Q}$ | $\\theta = 0^\\circ$ | লব্ধির মান সর্বোচ্চ হয়। |\n| **২. বিপরীত দিকে** | $\\alpha = 180^\\circ$ | $\\cos 180^\\circ = -1$<br>$\\sin 180^\\circ = 0$ | $\\mathbf{R_{\\min} = \\|P - Q\\|}$ | $\\theta = 0^\\circ$ (বৃহত্তর বলের দিকে) | লব্ধির মান সর্বনিম্ন হয়। |\n| **৩. পরস্পর লম্বভাবে** | $\\alpha = 90^\\circ$ | $\\cos 90^\\circ = 0$<br>$\\sin 90^\\circ = 1$ | $\\mathbf{R = \\sqrt{P^2 + Q^2}}$ | $\\tan\\theta = \\frac{Q}{P}$ | সমকোণে ক্রিয়ারত পিথাগোরাস কেস। |\n| **৪. সমান মানের ভেক্টর** | $P = Q$ | যেকোনো $\\alpha$ | $\\mathbf{R = 2P\\cos\\left(\\frac{\\alpha}{2}\\right)}$ | $\\theta = \\frac{\\alpha}{2}$ | লব্ধি মধ্যবর্তী কোণকে সমদ্বিখণ্ডিত করে। |\n| **৫. লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব** | $\\theta = 90^\\circ$ ($P$-এর ওপর) | $\\tan 90^\\circ = \\infty$ | $\\mathbf{R = \\sqrt{Q^2 - P^2}}$ | $\\cos\\alpha = -\\frac{P}{Q}$ | এখানে অবশ্যই $Q > P$ হতে হবে। |\n\n### প্রমাণ: সমান মানের ভেক্টরের ক্ষেত্রে $R = 2P\\cos(\\alpha/2)$\n$$R = \\sqrt{P^2 + P^2 + 2P^2\\cos\\alpha} = \\sqrt{2P^2(1 + \\cos\\alpha)}$$\nত্রিকোণমিতিক সূত্রমতে $1 + \\cos\\alpha = 2\\cos^2(\\alpha/2)$\n$$R = \\sqrt{2P^2 \\cdot 2\\cos^2(\\alpha/2)} = \\sqrt{4P^2\\cos^2(\\alpha/2)} = \\mathbf{2P\\cos\\left(\\frac{\\alpha}{2}\\right)}$$\n\n---\n\n## ৮. টাইপভিত্তিক সমাধানকৃত গাণিতিক সমস্যা (Worked Examples)\n\n### 📌 টাইপ ১: দ্বিমাত্রিক ও ত্রিমাত্রিক ভেক্টরের মান ও একক ভেক্টর\n**সমস্যা ১:** একটি ৩D ভেক্টর $\\vec{P} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$ দেওয়া আছে।\n১. ভেক্টরটির পরম মান $|\\vec{P}|$ কত?\n২. $\\vec{P}$-এর দিক বরাবর একক ভেক্টর $\\hat{p}$ নির্ণয় করো।\n\n**সমাধান:**\n- **ধাপ ১ (সহগ চিহ্নিতকরণ):** $P_x = 2$, $P_y = -3$, $P_z = 6$\n- **ধাপ ২ (মান নির্ণয়):**\n  $$|\\vec{P}| = \\sqrt{(2)^2 + (-3)^2 + (6)^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = \\mathbf{7\\text{ একক}}$$\n- **ধাপ ৩ (একক ভেক্টর):**\n  $$\\hat{p} = \\frac{\\vec{P}}{|\\vec{P}|} = \\frac{2\\hat{i} - 3\\hat{j} + 6\\hat{k}}{7} = \\mathbf{\\frac{2}{7}\\hat{i} - \\frac{3}{7}\\hat{j} + \\frac{6}{7}\\hat{k}}$$\n\n---\n\n### 📌 টাইপ ২: দুটি বিন্দুর স্থানাঙ্ক থেকে সরণ ভেক্টর\n**সমস্যা ২:** ত্রিমাত্রিক স্থানে দুটি বিন্দু $A(1, 2, 3)$ এবং $B(4, 6, 8)$। সরণ ভেক্টর $\\vec{AB}$ এবং এর মান নির্ণয় করো।\n\n**সমাধান:**\n- **ধাপ ১ (সরণ ভেক্টর গঠন):**\n  $$\\vec{AB} = (x_2 - x_1)\\hat{i} + (y_2 - y_1)\\hat{j} + (z_2 - z_1)\\hat{k}$$\n  $$\\vec{AB} = (4 - 1)\\hat{i} + (6 - 2)\\hat{j} + (8 - 3)\\hat{k} = \\mathbf{3\\hat{i} + 4\\hat{j} + 5\\hat{k}}$$\n- **ধাপ ২ (মান নির্ণয়):**\n  $$|\\vec{AB}| = \\sqrt{3^2 + 4^2 + 5^2} = \\sqrt{9 + 16 + 25} = \\sqrt{50} = \\mathbf{5\\sqrt{2}\\text{ একক}}$$\n\n---\n\n### 📌 টাইপ ৩: সামান্তরিক সূত্রের সাধারণ প্রয়োগ\n**সমস্যা ৩:** $3\\text{ N}$ এবং $4\\text{ N}$ মানের দুটি বল একটি বিন্দুতে $60^\\circ$ কোণে ক্রিয়ারত। লব্ধির মান ও দিক নির্ণয় করো।\n\n**সমাধান:**\nদেওয়া আছে: $P = 3\\text{ N}$, $Q = 4\\text{ N}$, $\\alpha = 60^\\circ$\n1. **লব্ধির মান:**\n   $$R = \\sqrt{3^2 + 4^2 + 2(3)(4)\\cos 60^\\circ} = \\sqrt{9 + 16 + 24(0.5)} = \\sqrt{25 + 12} = \\sqrt{37} \\approx \\mathbf{6.08\\text{ N}}$$\n2. **লব্ধির দিক ($P$-এর সাথে কোণ):**\n   $$\\tan\\theta = \\frac{4\\sin 60^\\circ}{3 + 4\\cos 60^\\circ} = \\frac{4(0.866)}{3 + 4(0.5)} = \\frac{3.464}{5} = 0.6928$$\n   $$\\theta = \\tan^{-1}(0.6928) \\approx \\mathbf{34.71^\\circ}$$\n\n---\n\n### 📌 টাইপ ৪: দুটি সমান বল ও ১২০° কোণ\n**সমস্যা ৪:** $5\\text{ N}$ ও $5\\text{ N}$ মানের দুটি বল $120^\\circ$ কোণে ক্রিয়ারত থাকলে এদের লব্ধির মান ও দিক কত?\n\n**সমাধান:**\nযেহেতু $P = Q = 5\\text{ N}$ এবং $\\alpha = 120^\\circ$:\n$$R = 2P\\cos\\left(\\frac{\\alpha}{2}\\right) = 2(5)\\cos 60^\\circ = 10 \\times 0.5 = \\mathbf{5\\text{ N}}$$\n$$\\theta = \\frac{\\alpha}{2} = \\frac{120^\\circ}{2} = \\mathbf{60^\\circ}$$\n> **গুরুত্বপূর্ণ সিদ্ধান্ত:** দুটি সমান মানের ভেক্টর $120^\\circ$ কোণে ক্রিয়া করলে তাদের লব্ধির মান বলদ্বয়ের যেকোনো একটির মানের সমান হয়।\n\n---\n\n### 📌 টাইপ ৫: বুয়েট / এডমিশন স্পেশাল (লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব)\n**সমস্যা ৫:** দুটি বলের লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব এবং এর মান বৃহত্তর বলের মানের এক-তৃতীয়াংশ। বলদ্বয়ের মানের অনুপাত কত?\n\n**সমাধান:**\nধরি ক্ষুদ্রতর বল $P$ এবং বৃহত্তর বল $Q$। লব্ধি $\\vec{R} \\perp \\vec{P}$, অর্থাৎ $\\theta = 90^\\circ$।\nশর্তমতে: $R = \\frac{1}{3}Q$\nআমরা জানি, যখন লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব হয়:\n$$R^2 = Q^2 - P^2$$\n$$\\left(\\frac{1}{3}Q\\right)^2 = Q^2 - P^2 \\implies \\frac{1}{9}Q^2 = Q^2 - P^2$$\n$$P^2 = Q^2 - \\frac{1}{9}Q^2 = \\frac{8}{9}Q^2 \\implies \\frac{P^2}{Q^2} = \\frac{8}{9}$$\n$$\\mathbf{\\frac{P}{Q} = \\frac{\\sqrt{8}}{3} = \\frac{2\\sqrt{2}}{3}}$$\n",
-  module2: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০২: ভেক্টরের উপাংশ বিভাজন, লম্বাংশের উপপাদ্য ও মেকানিক্স\n\n---\n\n## ১. ভেক্টরের বিভাজন ও উপাংশের মূল ধারণা\n\n### ১.১ বাস্তব জীবনের উদাহরণ (ট্রলি ব্যাগের মেকানিক্স)\nতুমি যখন স্টেশনে একটি ভারী চাকাযুক্ত ট্রলি ব্যাগ টেনে নিয়ে যাও, তখন হ্যান্ডেল ধরে কোণাকুণি (তির্যকভাবে) ওপরের দিকে বল $F$ প্রয়োগ করো। কিন্তু ব্যাগটি শূন্যে উড়ে যায় না, বরং মাটির সমান্তরালে সোজা সামনে এগিয়ে যায়।\n\nএখানে তোমার প্রযুক্ত একক তির্যক বলটি ভেতরে ভেতরে একই সাথে দুটি স্বতন্ত্র কাজের জন্ম দেয়:\n1. বলের একটি অংশ ব্যাগকে মাটির সমান্তরালে সোজা সামনে টেনে নিয়ে যায় (**অনুভূমিক উপাংশ**)।\n2. বলের আরেকটি অংশ ব্যাগকে ওপরের দিকে তুলে মাটি থেকে কিছুটা হালকা করে (**উলম্ব উপাংশ**)।\n\n```\n                  F sin θ ↑   ↗ F (প্রযুক্ত টান বল)\n                          │  /\n                          │ / θ\n        ──────────────────•──────────────────► F cos θ (সামনে নেওয়ার কার্যকর বল)\n                          │\n                          ↓ W = mg (ব্যাগের প্রকৃত ওজন)\n```\n\n- **ভেক্টরের বিভাজন (Resolution of Vectors):** একটি ভেক্টর রাশিকে দুই বা ততোধিক রাশিতে বিভক্ত করার প্রক্রিয়াকে ভেক্টরের বিভাজন বলে।\n- **উপাংশ (Components):** বিভক্ত অংশগুলোর প্রত্যেকটিকে মূল ভেক্টরের উপাংশ বলা হয়।\n\n---\n\n## ২. যেকোনো কোণে ভেক্টর বিভাজন (Non-orthogonal Resolution)\n\nযখন কোনো ভেক্টরকে এমন দুটি দিকে বিভক্ত করতে হয় যা পরস্পর সমকোণে ($90^\\circ$) নেই।\n\n```\n                         Y ▲\n                          /\n                         /   . C\n                     Y  /   /\n                       /   /  R⃗ (মূল ভেক্টর)\n                      / β /\n                     O───┴───────────► X (১ম উপাংশ)\n                           α\n```\n\n### ২.১ কোণের পরিচয়\n- মূল ভেক্টর = $\\vec{R}$\n- ১ম উপাংশ = $\\vec{X}$, যা মূল ভেক্টর $\\vec{R}$-এর সাথে $\\alpha$ কোণে ক্রিয়ারত।\n- ২য় উপাংশ = $\\vec{Y}$, যা মূল ভেক্টর $\\vec{R}$-এর সাথে $\\beta$ কোণে ক্রিয়ারত।\n- $X$ ও $Y$ উপাংশদ্বয়ের মধ্যবর্তী মোট কোণ $= (\\alpha + \\beta)$।\n\n### ২.২ সাইন সূত্র (Sine Rule) দিয়ে গাণিতিক প্রমাণ\nত্রিভুজ সূত্রানুসারে $\\vec{X}$ এবং $\\vec{Y}$ উপাংশদ্বয়ের ভেক্টর যোগফল $\\vec{R}$। অতএব, $X$, $Y$ এবং $R$ বাহু তিনটি দ্বারা একটি ত্রিভুজ $\\triangle OAC$ গঠিত হয়, যার তিনটি কোণ:\n- $\\angle AOC = \\alpha$ ($Y$ বাহুর বিপরীত কোণ)\n- $\\angle ACO = \\beta$ ($X$ বাহুর বিপরীত কোণ)\n- $\\angle OAC = 180^\\circ - (\\alpha + \\beta)$ ($R$ বাহুর বিপরীত কোণ)\n\nত্রিকোণমিতির সাইন সূত্র অনুযায়ী:\n$$\\frac{\\text{বাহুর দৈর্ঘ্য}}{\\text{বিপরীত কোণের সাইন}} = \\text{ধ্রুবক}$$\n$$\\frac{X}{\\sin\\beta} = \\frac{Y}{\\sin\\alpha} = \\frac{R}{\\sin(180^\\circ - (\\alpha + \\beta))} = \\frac{R}{\\sin(\\alpha + \\beta)}$$\n\nঅতএব, উপাংশদ্বয়ের মান:\n$$\\mathbf{X = \\frac{R\\sin\\beta}{\\sin(\\alpha + \\beta)}}$$\n$$\\mathbf{Y = \\frac{R\\sin\\alpha}{\\sin(\\alpha + \\beta)}}$$\n\n> **মনে রাখার কৌশল:**\n> $X$ উপাংশ নির্ণয়ের সময় লবে বিপরীত দিকের কোণ ($\\beta$)-এর সাইন বসে।\n> $Y$ উপাংশ নির্ণয়ের সময় লবে বিপরীত দিকের কোণ ($\\alpha$)-এর সাইন বসে।\n> এবং হরে সর্বদা উভয় কোণের সমষ্টির সাইন $\\sin(\\alpha + \\beta)$ থাকে।\n\n---\n\n## ৩. পরস্পর লম্ব উপাংশে বিভাজন (Orthogonal Resolution)\n\n```\n                Y ▲\n                  │          C (x, y)\n                  │         /│\n                  │        / │\n              Y⃗  │    R⃗  /  │ Y = R sin α\n                  │      /   │\n                  │     /α   │\n                  O────┴─────┴──────► X\n                   X = R cos α\n```\n\n### ৩.১ সূত্র প্রতিপাদন\nযখন দুটি উপাংশ পরস্পর সমকোণে ($90^\\circ$) থাকে, তখন $\\alpha + \\beta = 90^\\circ \\implies \\beta = 90^\\circ - \\alpha$।\nসাধারণ সূত্রে মান বসিয়ে:\n$$X = \\frac{R\\sin(90^\\circ - \\alpha)}{\\sin 90^\\circ} = \\frac{R\\cos\\alpha}{1} = \\mathbf{R\\cos\\alpha}$$\n$$Y = \\frac{R\\sin\\alpha}{\\sin 90^\\circ} = \\frac{R\\sin\\alpha}{1} = \\mathbf{R\\sin\\alpha}$$\n\n### ৩.২ 🔑 সোনালি মাস্টার রুল\n> **\"কোণ ($\\theta$) যে অক্ষের সাথে যুক্ত থাকবে, সেদিকে উপাংশ হবে $\\cos\\theta$; এবং তার লম্ব দিকে উপাংশ হবে $\\sin\\theta$।\"**\n\n| কোণ কার সাথে দেওয়া আছে | অনুভূমিক উপাংশ ($F_x$) | উলম্ব উপাংশ ($F_y$) |\n| :--- | :---: | :---: |\n| **অনুভূমিকের সাথে $\\theta$ কোণ** | $\\mathbf{F\\cos\\theta}$ | $\\mathbf{F\\sin\\theta}$ |\n| **উলম্বের সাথে $\\theta$ কোণ (ট্র্যাপ!)** | $\\mathbf{F\\sin\\theta}$ | $\\mathbf{F\\cos\\theta}$ |\n\n---\n\n## ৪. উপাংশের বাস্তব প্রয়োগ ও গতিবিজ্ঞান (Real-World Applications)\n\n### 🚜 ৪.১ লন রোলার — টানা সহজ কিন্তু ঠেলা কঠিন কেন?\nরোলারের ভর $m$, তাই তার প্রকৃত ওজন $W = mg$ সর্বদা খাড়া নিচের দিকে ক্রিয়া করে।\n\n```\n        (ক) লন রোলার টানা (Pulling)                (খ) লন রোলার ঠেলা (Pushing)\n            F sin θ ↑   ↗ F (টানা বল)                    F cos θ\n                    │  /                               ─────────────•─────────────►\n                    │ / θ                                           │        ─────────────•─────────────► F cos θ                        │  \\ θ\n                    │                                               │   ↘ F (ঠেলা বল)\n                    │ W = mg (নিচের দিকে)                            ↓ F sin θ\n                                                                    ↓ W = mg\n```\n\n#### কেস ১: বল অনুভূমিকের সাথে $\theta$ কোণে প্রযুক্ত হলে\n- **টানার সময় (Pulling):**\n  - উলম্ব উপাংশ $F\\sin\\theta$ ওপরের দিকে কাজ করে ওজনকে হালকা করে।\n  - আপাত ওজন: $\\mathbf{W_{pull} = mg - F\\sin\\theta}$\n- **ঠেলার সময় (Pushing):**\n  - উলম্ব উপাংশ $F\\sin\\theta$ নিচের দিকে কাজ করে ওজনকে বাড়িয়ে দেয়।\n  - আপাত ওজন: $\\mathbf{W_{push} = mg + F\\sin\\theta}$\n- **আপাত ওজনের পার্থক্য:**\n  $$\\mathbf{\\Delta W = W_{push} - W_{pull} = 2F\\sin\\theta}$$\n\n#### 🚨 কেস ২: ট্র্যাপ কেস — বল উলম্বের সাথে $\theta$ কোণে প্রযুক্ত হলে!\nযদি কোণ $\\theta$ উল্লম্বের সাথে দেওয়া থাকে:\n- টানার সময় আপাত ওজন: $\\mathbf{W_{pull} = mg - F\\cos\\theta}$\n- ঠেলার সময় আপাত ওজন: $\\mathbf{W_{push} = mg + F\\cos\\theta}$\n- আপাত ওজনের পার্থক্য: $\\mathbf{\\Delta W = 2F\\cos\\theta}$\n\n---\n\n### ⛵ ৪.২ নৌকার গুণ টানা (Towing a Boat with Rope)\nনদীর তীর থেকে দড়ি বেঁধে নৌকা টেনে সামনে নিয়ে যাওয়াকে গুণ টানা বলে।\n\n```\n                নদীর তীর (Shore)\n    ───────────────────────────────────────\n             \\  θ (কোণ)\n              \\   F (দড়ির টান বল)\n                               •  নৌকা\n                ├───► Fx = F cos θ (সামনে এগিয়ে নেওয়ার কার্যকর বল)\n                │\n                ↓ Fy = F sin θ (নৌকাকে তীরের দিকে টেনে আনার বল)\n```\n\n- **অনুভূমিক উপাংশ ($F_x = F\\cos\\theta$):** নৌকাকে নদীর দৈর্ঘ্য বরাবর সোজা সামনের দিকে এগিয়ে নিয়ে যায়।\n- **উলম্ব উপাংশ ($F_y = F\\sin\\theta$):** নৌকাকে তীরের দিকে আছড়ে ফেলতে চায়। মাঝিরা হালের সাহায্যে এই উপাংশকে নিষ্ক্রিয় (Cancel) করেন।\n- **দড়ি যত লম্বা করা হয়, নৌকা টানা তত সহজ হয় কেন?**\n  - দড়ির দৈর্ঘ্য বৃদ্ধি পেলে তীরের সাথে দড়ির কোণ $\\theta$ ছোট হয় ($\theta \\downarrow$)।\n  - কোণ $\\theta$ কমলে $\\cos\\theta$-র মান বৃদ্ধি পায় ($\\cos\\theta \\uparrow$), ফলে সামনে এগিয়ে নেওয়ার কার্যকর বল $\\mathbf{F\\cos\\theta}$ বৃদ্ধি পায়।\n  - একই সাথে ক্ষতিকর উপাংশ $F\\sin\\theta$ হ্রাস পায়।\n  - তাই দড়ি যত লম্বা হবে, গুণ টেনে নৌকা চালানো তত দ্রুত ও সহজ হবে।\n\n---\n\n### 🕊️ ৪.৩ পাখির ডানা ঝাপটানো ও আকাশে ওড়া\nপাখি যখন আকাশে ওড়ে, তখন তার দুটি ডানা দিয়ে বায়ুর ওপর তির্যকভাবে পেছনের দিকে বল $F_1$ ও $F_2$ প্রয়োগ করে।\n- নিউটনের ৩য় সূত্রানুসারে বায়ু পাখির ডানার ওপর সমান ও বিপরীতমুখী প্রতিক্রিয়া বল $R_1$ ও $R_2$ প্রয়োগ করে।\n- প্রতিক্রিয়া বলগুলোর উলম্ব উপাংশ $R\\sin\\theta$ পাখির ওজনকে প্রশমিত করে আকাশে ভাসিয়ে রাখে।\n- প্রতিক্রিয়া বলগুলোর অনুভূমিক উপাংশ $2R\\cos\\theta$ পাখিকে দ্রুত সামনের দিকে উড়ে যেতে সাহায্য করে।\n\n---\n\n## ৫. লম্বাংশের উপপাদ্য (Law of Components)\n\n### ৫.১ বিবৃতি\n> যেকোনো নির্দিষ্ট দিক বরাবর সমতলীয় কতগুলো ভেক্টরের উপাংশের বীজগণিতীয় যোগফল, ওই নির্দিষ্ট দিক বরাবর এদের লব্ধির উপাংশের সমান।\n\n### ৫.২ গাণিতিক সমাধানের ৪টি ধাপ\nধরা যাক, $F_1, F_2, F_3, \\dots$ বলসমূহ $X$-অক্ষের সাথে যথাক্রমে $\\theta_1, \\theta_2, \\theta_3, \\dots$ কোণে ক্রিয়ারত।\n1. **$X$-অক্ষ বরাবর মোট উপাংশ:**\n   $$R_x = \\sum F_x = F_1\\cos\\theta_1 + F_2\\cos\\theta_2 + F_3\\cos\\theta_3 + \\dots$$\n2. **$Y$-অক্ষ বরাবর মোট উপাংশ:**\n   $$R_y = \\sum F_y = F_1\\sin\\theta_1 + F_2\\sin\\theta_2 + F_3\\sin\\theta_3 + \\dots$$\n3. **একক লব্ধির মান ($R$):**\n   $$\\mathbf{R = \\sqrt{R_x^2 + R_y^2}}$$\n4. **লব্ধির দিক ($\\theta$):**\n   $$\\mathbf{\\theta = \\tan^{-1}\\left(\\frac{R_y}{R_x}\\right)}$$\n\n---\n\n## ৬. ল্যামির উপপাদ্য (Lami's Theorem)\n\n```\n                     P\n                     ↑\n                     │\n          γ        . │ .       β\n                 .   │   .\n               .     │     .\n             Q ──────•────── R\n                   α\n```\n\n### ৬.১ উপপাদ্যের বিবৃতি\n> কোনো বিন্দুতে একই সমতলে ক্রিয়ারত তিনটি ভেক্টর বল যদি বস্তুকে সাম্যাবস্থায় (Equilibrium) রাখে, তবে প্রতিটি বলের মান অপর দুটি বলের মধ্যবর্তী কোণের সাইনের (Sine) সমানুপাতিক।\n\n### ৬.২ গাণিতিক সমীকরণ\n$$\\mathbf{\\frac{P}{\\sin\\alpha} = \\frac{Q}{\\sin\\beta} = \\frac{R}{\\sin\\gamma}}$$\n- $P$-এর বিপরীত কোণ = $Q$ ও $R$-এর মধ্যবর্তী কোণ ($\u0007lpha$)\n- $Q$-এর বিপরীত কোণ = $P$ ও $R$-এর মধ্যবর্তী কোণ ($\beta$)\n- $R$-এর বিপরীত কোণ = $P$ ও $Q$-এর মধ্যবর্তী কোণ ($\\gamma$)\n\n---\n\n## ৭. সমাধানকৃত গাণিতিক সমস্যা ও বোর্ড সিকিউ (Worked CQ Problems)\n\n### 📌 সমস্যা ১: লন রোলার বোর্ড সিকিউ (উলম্ব কোণ ট্র্যাপ)\n**প্রশ্ন:** $15\\text{ kg}$ ভরের একটি লন রোলারকে উলম্বের সাথে $30^\\circ$ কোণে $98\\text{ N}$ বল প্রয়োগ করে একজন মালী প্রথমে ঠেললেন এবং পরে একই বলে টানলেন ($g = 9.8\\text{ m/s}^2$)।\n(গ) লন রোলারটিকে টানার সময় এর আপাত ওজন কত হবে?\n(ঘ) মালী রোলারটিকে ঠেলার বদলে টেনে নেওয়া সুবিধাজনক মনে করলেন কেন?—গাণিতিকভাবে বিশ্লেষণ করো।\n\n**সমাধান:**\n- **প্রদত্ত মান:** $m = 15\\text{ kg}$, $W = mg = 15 \\times 9.8 = 147\\text{ N}$, $F = 98\\text{ N}$, উলম্বের সাথে কোণ $\\theta = 30^\\circ$\n- **(গ) টানার সময় আপাত ওজন:**\n  যেহেতু কোণ উলম্বের সাথে, উলম্ব উপাংশ $= F\\cos 30^\\circ = 98 \\times 0.866 = 84.87\\text{ N}$\n  $$W_{pull} = W - F\\cos 30^\\circ = 147 - 84.87 = \\mathbf{62.13\\text{ N}}$$\n- **(ঘ) ঠেলার সময় আপাত ওজন ও তুলনা:**\n  $$W_{push} = W + F\\cos 30^\\circ = 147 + 84.87 = \\mathbf{231.87\\text{ N}}$$\n  সামনে নেওয়ার বল উভয় ক্ষেত্রে সমান ($F_x = F\\sin 30^\\circ = 49\\text{ N}$)।\n  আপাত ওজনের পার্থক্য $\\Delta W = 231.87 - 62.13 = \\mathbf{169.74\\text{ N}}$।\n  ঠেলার সময় মেঝেতে চাপ $169.74\\text{ N}$ বেশি হওয়ায় ঘর্ষণ বল মারাত্মক বৃদ্ধি পায়, ফলে ঠেলে নেওয়া কঠিন কিন্তু টেনে নেওয়া সুবিধাজনক।\n\n---\n\n### 📌 সমস্যা ২: লম্বাংশের উপপাদ্যে বহু-বলের লব্ধি\n**প্রশ্ন:** একটি বিন্দুতে তিনটি বল ক্রিয়ারত: $F_1 = 10\\text{ N}$ ($0^\\circ$), $F_2 = 20\\text{ N}$ ($60^\\circ$), $F_3 = 15\\text{ N}$ ($120^\\circ$)। লব্ধির মান ও দিক নির্ণয় করো।\n\n**সমাধান:**\n- $R_x = 10\\cos 0^\\circ + 20\\cos 60^\\circ + 15\\cos 120^\\circ = 10(1) + 20(0.5) + 15(-0.5) = \\mathbf{12.5\\text{ N}}$\n- $R_y = 10\\sin 0^\\circ + 20\\sin 60^\\circ + 15\\sin 120^\\circ = 0 + 20(0.866) + 15(0.866) = \\mathbf{30.31\\text{ N}}$\n- লব্ধির মান: $R = \\sqrt{(12.5)^2 + (30.31)^2} = \\sqrt{156.25 + 918.70} = \\sqrt{1074.95} \\approx \\mathbf{32.78\\text{ N}}$\n- লব্ধির দিক: $\\theta = \\tan^{-1}\\left(\\frac{30.31}{12.5}\\right) = \\tan^{-1}(2.4248) \\approx \\mathbf{67.58^\\circ}$\n",
-  module3: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০৩: নদী-নৌকার গতিবিদ্যা, লব্ধি বেগ ও BUET স্পেশাল কেস\n\n---\n\n## ১. নদী-নৌকা সিস্টেমের মৌলিক স্থানাঙ্ক কাঠামো ও উপাংশ বিশ্লেষণ\n\n```\n                                      Y ▲ (নদীর প্রস্থ d)\n       ─────────────────────────────────┼─────────────────────────────── (ওপাড়)\n                                        │          ↗ w⃗ (লব্ধি বেগ)\n                                        │         /\n                                        │     v⃗  / \n                                        │       /\n                                        │      / α (যাত্রার কোণ)\n       ─────────────────────────────────•──────┴──────────────────────── (এপাড়)\n                                       O ──────► X (স্রোতের বেগ u⃗)\n```\n\n### ১.১ রাশির পরিচয়\n- $u$ = নদীর স্রোতের বেগ (সর্বদা $+X$ অক্ষ বরাবর অনুভূমিক)\n- $v$ = স্থির পানিতে নৌকার নিজস্ব বেগ / মাঝির দাঁড় টানার বেগ\n- $\\alpha$ = স্রোতের বেগের সাথে নৌকার যাত্রা শুরুর কোণ\n- $d$ = নদীর প্রকৃত প্রস্থ ($Y$-অক্ষ বরাবর উলম্ব দূরত্ব)\n- $\\vec{w}$ = নৌকা ও স্রোতের লব্ধি বেগ\n\n### ১.২ বেগের অক্ষভিত্তিক উপাংশ বিভাজন\n- **$X$-অক্ষ বরাবর (নদীর দৈর্ঘ্য বা স্রোত বরাবর) বেগ:**\n  $$v_x = u + v\\cos\\alpha$$\n- **$Y$-অক্ষ বরাবর (নদীর প্রস্থ বা পারাপার বরাবর) বেগ:**\n  $$v_y = v\\sin\\alpha$$\n\n---\n\n## ২. নদী পারাপারের সার্বজনীন সময় সূত্র (Universal Time Formula)\n\n> **মৌলিক নীতি:** নদীর প্রস্থ ($d$) হলো খাড়া উলম্ব ($Y$-অক্ষ) বরাবর দূরত্ব। সুতরাং নদী পার হতে প্রয়োজনীয় সময় নির্ভর করবে কেবল $Y$-অক্ষ বরাবর বেগের উপাংশের ($v_y = v\\sin\\alpha$) ওপর। স্রোতের বেগ ($u$) নদীর প্রস্থ পার হতে কোনো ভূমিকা রাখে না!\n\n$$\\mathbf{t = \\frac{d}{v_y} = \\frac{d}{v\\sin\\alpha}}$$\n\n### লব্ধি বেগ ($w$) ও লব্ধির দিক ($\\theta$)\n- **লব্ধি বেগ:**\n  $$\\mathbf{w = \\sqrt{u^2 + v^2 + 2uv\\cos\\alpha} = \\sqrt{v_x^2 + v_y^2}}$$\n- **স্রোতের সাথে লব্ধির কোণ ($\\theta$):**\n  $$\\mathbf{\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha} \\implies \\theta = \\tan^{-1}\\left(\\frac{v\\sin\\alpha}{u + v\\cos\\alpha}\\right)}$$\n\n---\n\n## ৩. কেস ১: সর্বনিম্ন সময়ে নদী পারাপার (Shortest Time Case)\n\n```\n       ─────────────────────────────────┬─────────────────────────────── (ওপাড়)\n                                        │              ↗ w⃗\n                                        │             /\n                                      d │         v⃗  / \n                                        │           / \n                                        │          / α = 90°\n       ─────────────────────────────────•─────────┴───────────────────── (এপাড়)\n                                       O ─────────► u⃗\n                                        |◄── x ──►| (Drift)\n```\n\n### ৩.১ শর্ত ও প্রতিপাদন\nসময় $t = \\frac{d}{v\\sin\\alpha}$ সর্বনিম্ন ($t_{\\min}$) হবে যখন হরের $\\sin\\alpha$ সর্বোচ্চ হবে।\n$$\\sin\\alpha = 1 \\implies \\mathbf{\\alpha = 90^\\circ}$$\nঅর্থাৎ স্রোতের সাথে ঠিক সমকোণে ($90^\\circ$) সোজা ওপাড়ে নৌকা চালাতে হবে।\n\n### ৩.২ সূত্রাবলী\n1. **সর্বনিম্ন সময়:**\n   $$\\mathbf{t_{\\min} = \\frac{d}{v}}$$\n2. **লব্ধি বেগ:**\n   $$\\mathbf{w = \\sqrt{u^2 + v^2}}$$\n3. **পার্শ্ব সরণ / ড্রিফটিং (Drift - $x$):**\n   স্রোতের টানে নৌকাটি সোজা ওপাড়ে না গিয়ে কিছুটা ডানে সরে পৌঁছাবে:\n   $$\\mathbf{x = u \\cdot t_{\\min} = u \\left(\\frac{d}{v}\\right) = \\frac{ud}{v}}$$\n4. **অতিক্রান্ত প্রকৃত পথ ($s$):**\n   $$\\mathbf{s = \\sqrt{d^2 + x^2} = w \\cdot t_{\\min}}$$\n\n---\n\n## ৪. কেস ২: সর্বনিম্ন দূরত্বে / সোজাসুজি ওপাড়ে পৌঁছানো (Shortest Distance Case)\n\n```\n       ─────────────────────────────────▲ B (ঠিক বিপরীত বিন্দু, x = 0)\n                                        │\n                                        │ w⃗ = √(v² - u²) (লব্ধি)\n                                      d │  \n                                v⃗ ↖     │  \n                                   \\ α  │ θ = 90°\n       ─────────────────────────────•───┴─────────────────────────────── (এপাড়)\n                                   O ───► u⃗\n```\n\n### ৪.১ শর্ত ও প্রতিপাদন\nসোজাসুজি ঠিক বিপরীত বিন্দু $B$-তে পৌঁছাতে হলে পার্শ্ব সরণ বা ড্রাফট শূন্য হতে হবে ($x = 0$)।\n$$x = (u + v\\cos\\alpha)t = 0 \\implies u + v\\cos\\alpha = 0$$\n$$\\mathbf{\\cos\\alpha = -\\frac{u}{v} \\implies \\alpha = \\cos^{-1}\\left(-\\frac{u}{v}\\right) > 90^\\circ}$$\n\n> **বাস্তবতার শর্ত:** $\\cos\\alpha$ সংজ্ঞায়িত হওয়ার জন্য অবশ্যই **$\\mathbf{v > u}$ (নৌকার বেগ স্রোতের বেগের চেয়ে বেশি)** হতে হবে!\n\n### ৪.২ সূত্রাবলী\n1. **প্রয়োজনীয় যাত্রার কোণ:**\n   $$\\mathbf{\\alpha = 90^\\circ + \\sin^{-1}\\left(\\frac{u}{v}\\right) = \\cos^{-1}\\left(-\\frac{u}{v}\\right)}$$\n2. **লব্ধি বেগ (পিথাগোরাস সমকোণী ত্রিভুজ থেকে):**\n   $$\\mathbf{w = \\sqrt{v^2 - u^2}}$$\n3. **নদী পার হতে প্রয়োজনীয় সময়:**\n   $$\\mathbf{t = \\frac{d}{w} = \\frac{d}{\\sqrt{v^2 - u^2}}}$$\n4. **সর্বনিম্ন দূরত্ব:**\n   $$\\mathbf{s_{\\min} = d}$$\n\n---\n\n## ৫. কেস ৩: স্রোত নৌকার চেয়ে বেশি হলে সর্বনিম্ন ড্রাফট ($u > v$ BUET কেস)\n\nযখন স্রোতের বেগ নৌকার চেয়ে বেশি ($u > v$), তখন মাঝির পক্ষে সোজাসুজি ওপাড়ে পৌঁছানো ($x=0$) অসম্ভব। এক্ষেত্রে একটি নির্দিষ্ট কোণে চালালে পার্শ্ব সরণ বা ড্রাফট সর্বনিম্ন ($x_{\\min}$) করা যায়।\n\n### ৫.১ ক্যালকুলাস দিয়ে প্রতিপাদন\nপার্শ্ব সরণ: $x = (u + v\\cos\\alpha)t = \\frac{d(u + v\\cos\\alpha)}{v\\sin\\alpha}$\nসর্বনিম্ন সরণের শর্ত: $\\frac{dx}{d\\alpha} = 0$\n$$\\frac{d}{d\\alpha}\\left[\\frac{u + v\\cos\\alpha}{\\sin\\alpha}\\right] = 0$$\n$$\\frac{(-v\\sin\\alpha)(\\sin\\alpha) - (u + v\\cos\\alpha)(\\cos\\alpha)}{\\sin^2\\alpha} = 0$$\n$$-v\\sin^2\\alpha - u\\cos\\alpha - v\\cos^2\\alpha = 0$$\n$$-v(\\sin^2\\alpha + \\cos^2\\alpha) - u\\cos\\alpha = 0 \\implies -v - u\\cos\\alpha = 0$$\n$$\\mathbf{\\cos\\alpha = -\\frac{v}{u} \\implies \\alpha = \\cos^{-1}\\left(-\\frac{v}{u}\\right)}$$\n\n### ৫.২ সর্বনিম্ন ড্রাফটের মান\n$$\\mathbf{x_{\\min} = d \\frac{\\sqrt{u^2 - v^2}}{v}}$$\n\n---\n\n## ৬. কেস ৪: ত্বরান্বিত নদীর নৌকা (Accelerated Boat Mechanics)\n\nনৌকাটি যদি স্থির বেগ $v$-এর বদলে সুষম ত্বরণ $a$ নিয়ে $\\alpha$ কোণে যাত্রা করে:\n- $Y$-অক্ষ বরাবর ত্বরণ: $a_y = a\\sin\\alpha$\n- $Y$-অক্ষ বরাবর অতিক্রান্ত দূরত্ব:\n  $$d = v_0\\sin\\alpha \\cdot t + \\frac{1}{2}(a\\sin\\alpha)t^2$$\n- **স্থির অবস্থান থেকে যাত্রা শুরু করলে ($v_0 = 0$):**\n  $$d = \\frac{1}{2}(a\\sin\\alpha)t^2 \\implies \\mathbf{t = \\sqrt{\\frac{2d}{a\\sin\\alpha}}}$$\n\n---\n\n## ৭. কেস ৫: পুলিশ-চোর তাড়া করার সমস্যা (River Pursuit Problem)\n\n```\n                চোরের দৌড়ের দিক ───► w_thief\n   ───────────────────────────────────────────────── (ওপাড়)\n                                  ▲ (এখানে ধরা পড়বে)\n                                 /\n                   l   w (লব্ধি) /\n                     ↖          /\n                       ↖       /\n                         ↖ α  /\n  ─────────────────────────•──────────────────────── (এপাড়)\n                 স্রোতের বেগ u⃗\n```\n\nনদীর একপাড়ে চোর পাড় বরাবর $w_{thief}$ বেগে দৌড়াচ্ছে। ওপর পাড় থেকে পুলিশ $v$ বেগে স্রোতের ($u$) সাথে $\u0007lpha$ কোণে নৌকা চালিয়ে চোরকে ধরতে চায়।\n\n### চোর ধরার শর্ত\nএকটি নির্দিষ্ট সময় $t$ পর পুলিশ চোরকে ধরতে পারবে যদি এবং কেবল যদি পাড় বরাবর চোরের সরণ ($x_{thief}$) এবং পুলিশের নৌকার পাড় বরাবর লব্ধি সরণ ($x_{police}$) হুবহু সমান হয়:\n$$x_{thief} = x_{police}$$\n$$w_{thief} \\cdot t = (u + v\\cos\\alpha) \\cdot t$$\n$$\\mathbf{w_{thief} = u + v\\cos\\alpha}$$\n$$\\mathbf{\\alpha = \\cos^{-1}\\left(\\frac{w_{thief} - u}{v}\\right)}$$\n\n---\n\n## ৮. সমাধানকৃত গাণিতিক সমস্যা (Worked Problems)\n\n### 📌 সমস্যা ১: সর্বনিম্ন সময় বনাম সর্বনিম্ন দূরত্ব\n**প্রশ্ন:** একটি নদীর প্রস্থ $500\\text{ m}$, স্রোতের বেগ $3\\text{ m/s}$ এবং নৌকার বেগ $6\\text{ m/s}$।\n১. সর্বনিম্ন সময়ে নদী পার হতে কত সময় লাগবে এবং ড্রাফট কত হবে?\n২. সোজাসুজি ওপাড়ে পৌঁছাতে মাঝিকে কোন কোণে নৌকা চালাতে হবে এবং কত সময় লাগবে?\n\n**সমাধান:**\n- **১. সর্বনিম্ন সময় ($t_{\\min}$):**\n  $$t_{\\min} = \\frac{d}{v} = \\frac{500}{6} = \\mathbf{83.33\\text{ s}}$$\n  ড্রাফট: $x = u \\cdot t_{\\min} = 3 \\times 83.33 = \\mathbf{250\\text{ m}}$\n- **২. সোজাসুজি ওপাড়ে পৌঁছানো ($x = 0$):**\n  $$\\cos\\alpha = -\\frac{u}{v} = -\\frac{3}{6} = -0.5 \\implies \\alpha = \\cos^{-1}(-0.5) = \\mathbf{120^\\circ}$$\n  লব্ধি বেগ: $w = \\sqrt{v^2 - u^2} = \\sqrt{6^2 - 3^2} = \\sqrt{27} \\approx 5.20\\text{ m/s}$\n  পারাপারের সময়: $t = \\frac{d}{w} = \\frac{500}{\\sqrt{27}} = \\mathbf{96.23\\text{ s}}$\n\n---\n\n### 📌 সমস্যা ২: $u > v$ ক্ষেত্রে সর্বনিম্ন ড্রাফট\n**প্রশ্ন:** নদীর স্রোতের বেগ $5\\text{ m/s}$, নৌকার বেগ $3\\text{ m/s}$ এবং নদীর প্রস্থ $400\\text{ m}$। সর্বনিম্ন ড্রাফটের জন্য মাঝিকে কোন কোণে নৌকা চালাতে হবে এবং সর্বনিম্ন ড্রাফট কত হবে?\n\n**সমাধান:**\n- প্রয়োজনীয় কোণ:\n  $$\\cos\\alpha = -\\frac{v}{u} = -\\frac{3}{5} = -0.6 \\implies \\alpha = \\cos^{-1}(-0.6) \\approx \\mathbf{126.87^\\circ}$$\n- সর্বনিম্ন ড্রাফট:\n  $$x_{\\min} = d \\frac{\\sqrt{u^2 - v^2}}{v} = 400 \\times \\frac{\\sqrt{5^2 - 3^2}}{3} = 400 \\times \\frac{4}{3} = \\mathbf{533.33\\text{ m}}$$\n"
+// ── SCALABLE MULTI-SUBJECT / MULTI-CHAPTER DATABASE ──
+const PLATFORM_DATABASE = {
+  subjects: [
+    {
+      id: "physics1",
+      name: "পদার্থবিজ্ঞান ১ম পত্র",
+      icon: "⚛️",
+      chapters: [
+        {
+          id: "ch2_vector",
+          number: "০২",
+          name: "ভেক্টর (Vector)",
+          icon: "🧭",
+          modules: [
+            { id: "p1_c2_m1", title: "মডিউল ০১: বেসিক ও সামান্তরিক সূত্র", duration: "২৫ মিনিট", tag: "ফাউন্ডেশন", md: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০১: ভেক্টরের মৌলিক ধারণা ও সামান্তরিক সূত্র\n\n---\n\n## ১. ভৌত রাশি ও স্কেলার বনাম ভেক্টর রাশি\n\n### ১.১ ভৌত রাশি (Physical Quantity) কী?\nভৌত জগতে যা কিছু সরাসরি বা পরোক্ষভাবে পরিমাপ করা যায়, তাকে **ভৌত রাশি (Physical Quantity)** বলে। যেমন: কোনো বস্তুর দৈর্ঘ্য, ভর, সময়, তাপমাত্রা, বেগ, ত্বরণ, বল ইত্যাদি।\n\nপরিমাপের বৈশিষ্ট্যের ওপর ভিত্তি করে ভৌত রাশিকে প্রধানত দুটি শ্রেণিতে ভাগ করা হয়:\n1. **অদিক রাশি বা স্কেলার রাশি (Scalar Quantity)**\n2. **দিক রাশি বা ভেক্টর রাশি (Vector Quantity)**\n\n---\n\n### ১.২ স্কেলার ও ভেক্টর রাশির গভীর তুলনামূলক বিশ্লেষণ\n\n| বৈশিষ্ট্য | স্কেলার রাশি (Scalar Quantity) | ভেক্টর রাশি (Vector Quantity) |\n| :--- | :--- | :--- |\n| **সংজ্ঞা** | যে সকল ভৌত রাশিকে সম্পূর্ণরূপে প্রকাশ করার জন্য শুধুমাত্র **মান** (Magnitude)-এর প্রয়োজন হয়, কোনো দিকের প্রয়োজন হয় না। | যে সকল ভৌত রাশিকে সম্পূর্ণরূপে প্রকাশ করার জন্য **মান ও দিক** (Magnitude & Direction) উভয়েরই প্রয়োজন হয়। |\n| **বীজগণিতীয় নিয়ম** | সাধারণ পাটিগণিত বা বীজগণিতের নিয়মে ($২ + ৩ = ৫$) এদের যোগ, বিয়োগ, গুণ করা যায়। | সাধারণ বীজগণিতের নিয়মে যোগ-বিয়োগ করা যায় না; এরা ভেক্টর বীজগণিতের জ্যামিতিক নিয়ম (যেমন: সামান্তরিক সূত্র, ত্রিভুজ সূত্র) মেনে চলে। |\n| **পরিবর্তন** | কেবল মানের পরিবর্তন হলে রাশির পরিবর্তন ঘটে। | ১. কেবল মানের পরিবর্তনে,<br>২. কেবল দিকের পরিবর্তনে, অথবা<br>৩. মান ও দিক উভয়ের পরিবর্তনে পরিবর্তিত হয়। |\n| **উদাহরণ** | দৈর্ঘ্য, ভর, সময়, তাপমাত্রা, দ্রুতি, দূরত্ব, কাজ, বিভব, ক্ষমতা, শক্তি, ঘনত্ব ইত্যাদি। | সরণ, বেগ, ত্বরণ, বল, ভরবেগ, বলের ঘাত, মহাকর্ষীয় প্রাবল্য, টর্ক, চৌম্বক আবেশ ইত্যাদি। |\n\n---\n\n### ১.৩ গুরুত্বপূর্ণ অনুধাবনমূলক প্রশ্ন ও ব্যতিক্রমী কেস\n\n#### ❓ প্রশ্ন ১: \"তড়িৎপ্রবাহ (Electric Current) দিক থাকা সত্ত্বেও কেন স্কেলার রাশি?\"\n- **গভীর বৈজ্ঞানিক ব্যাখ্যা:** কোনো রাশি ভেক্টর হতে হলে তাকে কেবল নির্দিষ্ট দিক থাকলেই চলে না, তাকে অবশ্যই **ভেক্টর যোগের নিয়ম (সামান্তরিক সূত্র বা ত্রিভুজ সূত্র)** মেনে চলতে হয়।\n- একটি পরিবাহীর সংযোগস্থলে যদি দুটি তার দিয়ে $3\\text{ A}$ এবং $4\\text{ A}$ প্রবাহ যে কোণেই মিলিত হোক না কেন, তাদের সংযোগস্থলে মোট নির্গমন প্রবাহ সর্বদা সাধারণ পাটিগণিতের নিয়মে $3 + 4 = 7\\text{ A}$ হয়। এটি তার দুটির মধ্যবর্তী কোণের ওপর নির্ভর করে না এবং ভেক্টর যোগের সামান্তরিক সূত্র মানে না। তাই নির্দিষ্ট দিক থাকা সত্ত্বেও তড়িৎপ্রবাহ একটি **স্কেলার রাশি**।\n\n#### ❓ প্রশ্ন ২: \"চাপ (Pressure) ও পৃষ্ঠটান (Surface Tension) কেন স্কেলার রাশি?\"\n- **চাপ:** চাপ হলো প্রতি একক ক্ষেত্রফলের ওপর লম্বভাবে প্রযুক্ত বল ($P = F/A$)। কোনো আবদ্ধ তরল বা বায়বীয় পদার্থের অভ্যন্তরে চাপ কোনো একক নির্দিষ্ট দিকে কাজ করে না, বরং পাত্রের দেওয়ালে সকল দিকে অভিলম্বভাবে ক্রিয়া করে। এর কোনো সুনির্দিষ্ট একক অভিমুখ নেই। তাই চাপ স্কেলার রাশি।\n\n---\n\n## ২. ভেক্টরের জ্যামিতিক ও প্রতীকী প্রকাশ\n\n### ২.১ জ্যামিতিক প্রকাশ (Graphical Representation)\nএকটি নির্দিষ্ট দৈর্ঘ্যের তীরচিহ্নযুক্ত সরলরেখাংশ দ্বারা ভেক্টর রাশিকে জ্যামিতিকভাবে উপস্থাপন করা হয়:\n\n```\n        পাদবিন্দু (Tail)                         শীর্ষবিন্দু (Head)\n             O •─────────────────────────────────────────► P\n                                  OP⃗ (বা A⃗)\n```\n\n1. **পাদবিন্দু / সূচনা বিন্দু / প্রারম্ভিক বিন্দু (Tail / Initial point):** যে বিন্দু থেকে ভেক্টরের সূচনা হয় (এখানে বিন্দু $O$)।\n2. **শীর্ষবিন্দু / প্রান্তিক বিন্দু (Head / Terminal point):** তীরে চিহ্নিত প্রান্তিক বিন্দু যেখানে ভেক্টরটি শেষ হয় (এখানে বিন্দু $P$)।\n3. **ধারক রেখা (Line of Action):** যে অসীম সরলরেখার অংশবিশেষ নিয়ে ভেক্টরটি গঠিত হয়, তাকে ভেক্টরের ধারক রেখা বলে।\n4. **ভেক্টরের মান (Magnitude):** রেখাংশটির দৈর্ঘ্য $OP = |\\vec{A}| = A$।\n5. **ভেক্টরের দিক (Direction):** $O$ থেকে $P$ বিন্দুর অভিমুখে তীরচিহ্ন।\n\n### ২.২ প্রতীকী প্রকাশ (Symbolic Notation)\n- **হাতে লেখার নিয়ম:**\n  - অক্ষরের মাথায় তীর চিহ্ন দিয়ে: $\\vec{A}$\n  - অক্ষরের মাথায় সোজা দাগ (Bar) দিয়ে: $\\bar{A}$\n  - অক্ষরের নিচে দাগ দিয়ে: $\\underline{A}$\n- **বইয়ের ছাপা অক্ষরে:** বোল্ড বা মোটা হরফে ($\\mathbf{A}$)।\n- **ভেক্টরের পরম মান (Magnitude):** পরম মান চিহ্নের সাহায্যে $|\\vec{A}|$ বা $|\\mathbf{A}|$ অথবা সাধারণ হরফে কেবল $A$ দিয়ে প্রকাশ করা হয়।\n\n---\n\n## ৩. ভেক্টরের ১৫টি প্রকারভেদের পূর্ণাঙ্গ শ্রেণিবিন্যাস\n\n```\n                              ┌──────────────────────────────────────┐\n                              │          ভেক্টরের প্রকারভেদ           │\n                              └──────────────────┬───────────────────┘\n                                                 │\n        ┌────────────────────────────────────────┼────────────────────────────────────────┐\n        ▼                                        ▼                                        ▼\n  [স্থানভিত্তিক]                          [দিক ও মানভিত্তিক]                         [বিশেষ গুণভিত্তিক]\n  ├── ১. অবস্থান ভেক্টর (r⃗)                ├── ৩. সম / সমান ভেক্টর (A⃗ = B⃗)          ├── ১০. একক ভেক্টর (â)\n  ├── ২. সরণ ভেক্টর (Δr⃗)                  ├── ৪. বিপরীত / ঋণ ভেক্টর (-A⃗)           ├── ৯. শূন্য / নাল ভেক্টর (0⃗)\n  ├── ১১. স্বাধীন ভেক্টর                    ├── ৫. সদৃশ ও বিসদৃশ ভেক্টর               ├── ১৩. বিপ্রতীপ ভেক্টর\n  └── ১২. সীমাবদ্ধ ভেক্টর                  ├── ৬. সমরেখ ভেক্টর                      ├── ১৪. পোলার ও অক্ষীয় ভেক্টর\n                                         ├── ৭. সমতলীয় ভেক্টর                    └── ১৫. আয়ত একক ভেক্টর (î, ĵ, k̂)\n                                         └── ৮. সহ-প্রারম্ভিক ভেক্টর\n```\n\n### ১. অবস্থান ভেক্টর (Position Vector / Radius Vector)\n- **সংজ্ঞা:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় প্রসঙ্গ কাঠামোর মূলবিন্দুর ($O$) সাপেক্ষে অন্য যেকোনো বিন্দুর ($P$) অবস্থান যে ভেক্টরের সাহায্যে নির্দেশ করা হয়, তাকে অবস্থান ভেক্টর বলে।\n- **সমীকরণ:** প্রসঙ্গ কাঠামোর মূলবিন্দু $O(0,0,0)$ এবং যেকোনো বিন্দু $P(x,y,z)$ হলে:\n  $$\\vec{OP} = \\vec{r} = x\\hat{i} + y\\hat{j} + z\\hat{k}$$\n- **বিশেষ নাম:** অবস্থান ভেক্টরকে **ব্যাসার্ধ ভেক্টর (Radius Vector)**-ও বলা হয়।\n\n### ২. সরণ ভেক্টর (Displacement Vector)\n- **সংজ্ঞা:** কোনো গতিশীল কণার আদি অবস্থান ভেক্টর থেকে শেষ অবস্থান ভেক্টরের পরিবর্তনকে সরণ ভেক্টর বলে।\n- **সমীকরণ:** কণাটি যদি $P(x_1, y_1, z_1)$ থেকে $Q(x_2, y_2, z_2)$ বিন্দুতে যায়:\n  $$\\Delta\\vec{r} = \\vec{r}_2 - \\vec{r}_1 = (x_2 - x_1)\\hat{i} + (y_2 - y_1)\\hat{j} + (z_2 - z_1)\\hat{k}$$\n\n### ৩. সমান বা সম ভেক্টর (Equal Vectors)\n- **সংজ্ঞা:** একই জাতীয় দুটি ভেক্টরের মান সমান এবং দিক একই হলে তাদেরকে সমান ভেক্টর বলে ($\\vec{A} = \\vec{B}$)।\n- **শর্ত:** $|\u000bec{A}| = |\u000bec{B}|$ এবং উভয় ভেক্টর সমান্তরাল ও একই অভিমুখী।\n\n### ৪. বিপরীত বা ঋণাত্মক ভেক্টর (Negative / Opposite Vector)\n- **সংজ্ঞা:** নির্দিষ্ট দিক বরাবর কোনো ভেক্টরকে ধনাত্মক ধরলে, তার সমান মানযুক্ত কিন্তু ঠিক বিপরীতমুখী সমজাতীয় ভেক্টরকে ঋণাত্মক বা বিপরীত ভেক্টর বলে ($-\\vec{A}$)।\n- **শর্ত:** $|\u000bec{A}| = |-\\vec{A}|$ কিন্তু দিক পরস্পর $180^\\circ$ বিপরীত।\n\n### ৫. সদৃশ ও বিসদৃশ ভেক্টর (Like & Unlike Vectors)\n- **সদৃশ ভেক্টর:** সমজাতীয় দুই বা ততোধিক ভেক্টর যদি একই দিকে সমান্তরালে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।\n- **বিসদৃশ ভেক্টর:** সমজাতীয় দুটি ভেক্টর যদি পরস্পর বিপরীত দিকে ক্রিয়া করে (মান সমান হওয়া আবশ্যক নয়)।\n\n### ৬. সমরেখ ভেক্টর (Collinear Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সরলরেখা বরাবর বা পরস্পর সমান্তরালে ক্রিয়া করে, তবে তাদেরকে সমরেখ ভেক্টর বলে।\n\n### ৭. সমতলীয় ভেক্টর (Coplanar Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টর যদি একই সমতলে অবস্থান করে, তবে তাদেরকে সমতলীয় ভেক্টর বলে। যেমন: টেবিলের ওপর রাখা সকল ভেক্টর।\n\n### ৮. সহ-প্রারম্ভিক ভেক্টর (Co-initial Vectors)\n- **সংজ্ঞা:** দুই বা ততোধিক ভেক্টরের যদি প্রারম্ভিক বিন্দু বা পাদবিন্দু (Tail) একই বিন্দু হয়, তবে তাদেরকে সহ-প্রারম্ভিক ভেক্টর বলে।\n\n### ৯. সঠিক ভেক্টর (Proper Vector)\n- **সংজ্ঞা:** যে সকল ভেক্টরের মান অশূন্য ($|\\vec{A}| \\neq 0$), তাদেরকে সঠিক ভেক্টর বলা হয়।\n\n### ১০. শূন্য বা নাল ভেক্টর (Null / Zero Vector)\n- **সংজ্ঞা:** যে ভেক্টরের মান শূন্য, তাকে শূন্য বা নাল ভেক্টর ($\\vec{0}$) বলে।\n- **বৈশিষ্ট্য ও গুরুত্ব:**\n  1. শূন্য ভেক্টরের পাদবিন্দু এবং শীর্ষবিন্দু একই বিন্দুতে সমাপতিত হয়।\n  2. এর কোনো সুনির্দিষ্ট দিক নেই (অনির্দিষ্ট দিক)।\n  3. দুটি সমান ও বিপরীতমুখী ভেক্টরের যোগফল একটি শূন্য ভেক্টর ($\\vec{A} + (-\\vec{A}) = \\vec{0}$)।\n  4. সমবেগে চলমান বস্তুর ত্বরণ ভেক্টর একটি শূন্য ভেক্টর।\n\n### ১১. স্বাধীন বা মুক্ত ভেক্টর (Free Vector)\n- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো যেকোনো স্থানে নির্বাচন করা যায়, তাকে স্বাধীন ভেক্টর বলে।\n\n### ১২. সীমাবদ্ধ ভেক্টর (Localized Vector)\n- **সংজ্ঞা:** যে ভেক্টরের পাদবিন্দু ইচ্ছামতো পছন্দ করা যায় না, কোনো নির্দিষ্ট বিন্দুতে নির্ধারিত থাকে, তাকে সীমাবদ্ধ ভেক্টর বলে।\n- **উদাহরণ:** অবস্থান ভেক্টর একটি সীমাবদ্ধ ভেক্টর, কারণ এর পাদবিন্দু সর্বদা মূলবিন্দুতে ফিক্সড থাকে।\n\n### ১৩. বিপ্রতীপ বা ব্যতিহার ভেক্টর (Reciprocal Vector)\n- **সংজ্ঞা:** সমজাতীয় দুটি সমান্তরাল ভেক্টরের একটির মান যদি অপরটির গুণাত্মক বিপরীত (Reciprocal) হয়, তবে তাদেরকে বিপ্রতীপ ভেক্টর বলে।\n- **উদাহরণ:** $\\vec{A} = 6\\hat{i}$ হলে এর বিপ্রতীপ ভেক্টর হবে $\\vec{B} = \\frac{1}{6}\\hat{i}$।\n\n### ১৪. পোলার ও অক্ষীয় ভেক্টর (Polar vs Axial Vectors)\n- **পোলার ভেক্টর:** যে ভেক্টরের সুনির্দিষ্ট সূচনা বিন্দু থাকে বা রৈখিক গতি উৎপন্ন করে (যেমন: বল, সরণ, রৈখিক বেগ)।\n- **অক্ষীয় ভেক্টর:** যে ভেক্টর ঘূর্ণন গতির সাথে যুক্ত এবং ঘূর্ণন অক্ষ বরাবর ক্রিয়া করে (যেমন: কৌণিক বেগ $\\vec{\\omega}$, টর্ক $\\vec{\\tau}$, কৌণিক ভরবেগ $\\vec{L}$)।\n\n### ১৫. একক ভেক্টর (Unit Vector) ও আয়ত একক ভেক্টর (Rectangular Unit Vectors)\n- **একক ভেক্টর:** যে ভেক্টরের মান ১ একক, তাকে একক ভেক্টর বলে। কোনো অশূন্য ভেক্টরকে তার পরম মান দিয়ে ভাগ করলে ওই ভেক্টরের দিক বরাবর একক ভেক্টর পাওয়া যায়:\n  $$\\hat{a} = \\frac{\\vec{A}}{|\\vec{A}|} = \\frac{\\vec{A}}{A}$$\n- **আয়ত একক ভেক্টর:** ত্রিমাত্রিক কার্তেসীয় স্থানাঙ্ক ব্যবস্থার ধনাত্মক $X$, $Y$ এবং $Z$ অক্ষ বরাবর যথাক্রমে যে তিনটি আদর্শ একক ভেক্টর বিবেচনা করা হয়, তাদেরকে আয়ত একক ভেক্টর বলে ($\\hat{i}, \\hat{j}, \\hat{k}$)।\n\n---\n\n## ৪. কার্তেসীয় স্থানাঙ্ক ব্যবস্থায় ভেক্টরের মান ও একক ভেক্টরের গাণিতিক প্রতিপাদন\n\n```\n                Y ▲\n                  │          P (Ax, Ay)\n                  │         /│\n                  │        / │\n                  │    A⃗  /  │ Ay\n                  │      /   │\n                  │     /θ   │\n                  O────┴─────┴──────► X\n                       Ax\n```\n\n### ৪.১ দ্বিমাত্রিক (2D) ক্ষেত্রে মান নির্ণয় (পিথাগোরাসের উপপাদ্য থেকে প্রমাণ)\nধরা যাক, $X$-$Y$ সমতলে একটি ভেক্টর $\\vec{A} = A_x\\hat{i} + A_y\\hat{j}$।\nএখানে, $OA = A_x$ (ভূমি) এবং $AP = A_y$ (লম্ব)।\nসমকোণী ত্রিভুজ $\\triangle OAP$-তে পিথাগোরাসের উপপাদ্য প্রয়োগ করে:\n$$\\text{অতিভুজ}^2 = \\text{ভূমি}^2 + \\text{লম্ব}^2$$\n$$OP^2 = OA^2 + AP^2$$\n$$|\\vec{A}|^2 = A_x^2 + A_y^2$$\n$$\\mathbf{|\\vec{A}| = \\sqrt{A_x^2 + A_y^2}}$$\n\n### ৪.২ ত্রিমাত্রিক (3D) ক্ষেত্রে মান নির্ণয়\nযদি ভেক্টরটি ত্রিমাত্রিক স্থানে অবস্থান করে: $\\vec{A} = A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}$\n$$\\mathbf{|\\vec{A}| = A = \\sqrt{A_x^2 + A_y^2 + A_z^2}}$$\n\n### ৪.৩ একক ভেক্টর নির্ণয়ের পূর্ণাঙ্গ সূত্র\n$$\\mathbf{\\hat{a} = \\frac{\\vec{A}}{|\\vec{A}|} = \\frac{A_x\\hat{i} + A_y\\hat{j} + A_z\\hat{k}}{\\sqrt{A_x^2 + A_y^2 + A_z^2}}}$$\n\n### ৪.৪ ত্রিমাত্রিক দিক কোসাইন (Direction Cosines) ও প্রতিপাদন\nযদি $\\vec{A}$ ভেক্টরটি ধনাত্মক $X$, $Y$ ও $Z$ অক্ষের সাথে যথাক্রমে $\\alpha$, $\\beta$ ও $\\gamma$ কোণ তৈরি করে, তবে:\n$$\\cos\\alpha = \\frac{A_x}{|\\vec{A}|}, \\quad \\cos\\beta = \\frac{A_y}{|\\vec{A}|}, \\quad \\cos\\gamma = \\frac{A_z}{|\\vec{A}|}$$\n\n**১ম প্রমাণ: $\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = 1$**\n$$\\cos^2\\alpha + \\cos^2\\beta + \\cos^2\\gamma = \\frac{A_x^2}{A^2} + \\frac{A_y^2}{A^2} + \\frac{A_z^2}{A^2} = \\frac{A_x^2 + A_y^2 + A_z^2}{A^2} = \\frac{A^2}{A^2} = 1$$\n\n**২য় প্রমাণ: $\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2$**\nআমরা জানি $\\cos^2\\theta = 1 - \\sin^2\\theta$। মান বসিয়ে:\n$$(1 - \\sin^2\\alpha) + (1 - \\sin^2\\beta) + (1 - \\sin^2\\gamma) = 1$$\n$$3 - (\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma) = 1$$\n$$\\mathbf{\\sin^2\\alpha + \\sin^2\\beta + \\sin^2\\gamma = 2}$$\n\n---\n\n## ৫. ভেক্টর যোজন ও বিয়োজনের জ্যামিতিক ও বীজগণিতীয় নিয়মাবলী\n\n### ৫.১ সাধারণ সূত্র (Head-to-Tail Rule)\nপ্রথম ভেক্টরের শীর্ষবিন্দুতে দ্বিতীয় ভেক্টরের পাদবিন্দু স্থাপন করলে প্রথমটির পাদবিন্দু থেকে দ্বিতীয়টির শীর্ষবিন্দুর সংযোজক সরলরেখাটি লব্ধি নির্দেশ করে।\n\n### ৫.২ ত্রিভুজ সূত্র (Triangle Law)\n> **বিবৃতি:** কোনো ত্রিভুজের দুটি সন্নিহিত বাহু দ্বারা যদি একই ক্রমে দুটি সমজাতীয় ভেক্টর নির্দেশ করা যায়, তবে ত্রিভুজটির তৃতীয় বাহুটি বিপরীত ক্রমে ভেক্টরদ্বয়ের লব্ধি নির্দেশ করবে।\n$$\\vec{R} = \\vec{A} + \\vec{B}$$\n\n### ৫.৩ বহুভুজ সূত্র (Polygon Law)\n> **বিবৃতি:** দুইয়ের অধিক ভেক্টরের ক্ষেত্রে ১ম ভেক্টরের শীর্ষবিন্দুতে ২য়টির পাদবিন্দু, ২য়টির শীর্ষে ৩য়টির পাদবিন্দু—এভাবে সাজানোর পর ১ম ভেক্টরের পাদবিন্দু থেকে শেষ ভেক্টরের শীর্ষবিন্দু যোগ করলে বিপরীত ক্রমে লব্ধি পাওয়া যায়।\n$$\\vec{R} = \\vec{A} + \\vec{B} + \\vec{C} + \\vec{D} + \\dots$$\n\n### ৫.৪ ভেক্টর যোগের ৩টি মৌলিক বীজগণিতীয় নিয়ম\n1. **বিনিময় নিয়ম (Commutative Law):** $\\vec{A} + \\vec{B} = \\vec{B} + \\vec{A}$\n2. **সংযোগ নিয়ম (Associative Law):** $(\\vec{A} + \\vec{B}) + \\vec{C} = \\vec{A} + (\\vec{B} + \\vec{C})$\n3. **বণ্টন নিয়ম (Distributive Law):** $m(\\vec{A} + \\vec{B}) = m\\vec{A} + m\\vec{B}$ (যেখানে $m$ একটি স্কেলার)\n\n### ৫.৫ ভেক্টর বিয়োগ (Vector Subtraction)\nভেক্টর বিয়োগ মূলত বিপরীত ভেক্টরের যোগ:\n$$\\vec{A} - \\vec{B} = \\vec{A} + (-\\vec{B})$$\n\n---\n\n## ৬. সামান্তরিক সূত্র ও তার সম্পূর্ণ গাণিতিক প্রমাণ\n\n### ৬.১ বিবৃতি\n> কোনো সামান্তরিকের একটি বিন্দু থেকে অঙ্কিত দুটি সন্নিহিত বাহু যদি একই সময়ে কোনো কণার ওপর ক্রিয়ারত দুটি সমজাতীয় ভেক্টরের মান ও দিক নির্দেশ করে, তবে ওই বিন্দু থেকে অঙ্কিত সামান্তরিকের কর্ণটিই ভেক্টরদ্বয়ের লব্ধির মান ও দিক নির্দেশ করবে।\n\n```\n                    C ───────────────────── B\n                   /                       /\n                  /                       /\n            Q⃗    /                       /\n                /                       /  R⃗ (লব্ধি)\n               /                       /\n              / α                     /\n             O ───────────────────── A ─────── D\n                        P⃗               │\n                                        CD ⊥ OD\n```\n\n### ৬.২ লব্ধির মান ($R$) নির্ণয়ের নিখুঁত জ্যামিতিক প্রমাণ\nমনে করি, $O$ বিন্দুতে ক্রিয়ারত দুটি ভেক্টর $\\vec{P}$ ও $\\vec{Q}$-এর মধ্যবর্তী কোণ $\\angle AOB = \\alpha$।\n$OA = P$, $OB = Q$ ধরে $OACB$ সামান্তরিক অঙ্কন করা হলো। তাহলে কর্ণ $OC = \\vec{R}$ হলো লব্ধি।\n\n$OA$ বাহুকে $D$ পর্যন্ত বর্ধিত করি এবং $C$ বিন্দু থেকে $OA$-এর বর্ধিতাংশের ওপর $CD$ লম্ব টানি ($CD \\perp OD$)।\nযেহেতু $AC \\parallel OB$, সুতরাং $AC = OB = Q$ এবং $\\angle CAD = \\angle AOB = \\alpha$।\n\nসমকোণী ত্রিভুজ $\\triangle ACD$ হতে:\n$$\\cos\\alpha = \\frac{AD}{AC} \\implies AD = AC\\cos\\alpha = Q\\cos\\alpha$$\n$$\\sin\\alpha = \\frac{CD}{AC} \\implies CD = AC\\sin\\alpha = Q\\sin\\alpha$$\n\nএখন, সমকোণী ত্রিভুজ $\\triangle OCD$-তে পিথাগোরাসের উপপাদ্য প্রয়োগ করে:\n$$OC^2 = OD^2 + CD^2$$\n$$OC^2 = (OA + AD)^2 + CD^2$$\n$$R^2 = (P + Q\\cos\\alpha)^2 + (Q\\sin\\alpha)^2$$\n$$R^2 = P^2 + 2PQ\\cos\\alpha + Q^2\\cos^2\\alpha + Q^2\\sin^2\\alpha$$\n$$R^2 = P^2 + 2PQ\\cos\\alpha + Q^2(\\cos^2\\alpha + \\sin^2\\alpha)$$\n$$R^2 = P^2 + Q^2 + 2PQ\\cos\\alpha \\quad [\\because \\cos^2\\alpha + \\sin^2\\alpha = 1]$$\n\n$$\\mathbf{R = \\sqrt{P^2 + Q^2 + 2PQ\\cos\\alpha}}$$\n\n### ৬.৩ লব্ধির দিক ($\\theta$) নির্ণয়ের প্রতিপাদন\nধরি, লব্ধি $\\vec{R}$ ভেক্টরটি $\\vec{P}$ ভেক্টরের সাথে $\\theta$ কোণ তৈরি করেছে ($\\angle COD = \\theta$)।\nসমকোণী ত্রিভুজ $\\triangle OCD$ হতে:\n$$\\tan\\theta = \\frac{CD}{OD} = \\frac{CD}{OA + AD}$$\n$$\\mathbf{\\tan\\theta = \\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}}$$\n$$\\mathbf{\\theta = \\tan^{-1}\\left(\\frac{Q\\sin\\alpha}{P + Q\\cos\\alpha}\\right)}$$\n\n> **লব্ধির দিক সংক্রান্ত সোনালি নিয়ম:**\n> লব্ধি $R$ যার সাথে $\\theta$ কোণ তৈরি করবে (এখানে $P$), সে হরে একাকী বসে থাকবে। আর অপর ভেক্টরটি ($Q$) উপরে $\\sin\\alpha$ এবং নিচে $\\cos\\alpha$ নিয়ে গুণ থাকবে।\n> যদি লব্ধি $Q$ ভেক্টরের সাথে $\\theta_Q$ কোণ তৈরি করে:\n> $$\\tan\\theta_Q = \\frac{P\\sin\\alpha}{Q + P\\cos\\alpha}$$\n\n---\n\n## ৭. লব্ধির বিশেষ ক্ষেত্রসমূহ (Special Cases Table)\n\n| কেস | মধ্যবর্তী কোণ ($\\alpha$) | $\\cos\\alpha$ ও $\\sin\\alpha$ | লব্ধির মান ($R$) | লব্ধির দিক ($\\theta$) | ভৌত তাৎপর্য |\n| :---: | :---: | :---: | :---: | :---: | :--- |\n| **১. একই দিকে (সমরেখ)** | $\\alpha = 0^\\circ$ | $\\cos 0^\\circ = 1$<br>$\\sin 0^\\circ = 0$ | $\\mathbf{R_{\\max} = P + Q}$ | $\\theta = 0^\\circ$ | লব্ধির মান সর্বোচ্চ হয়। |\n| **২. বিপরীত দিকে** | $\\alpha = 180^\\circ$ | $\\cos 180^\\circ = -1$<br>$\\sin 180^\\circ = 0$ | $\\mathbf{R_{\\min} = \\|P - Q\\|}$ | $\\theta = 0^\\circ$ (বৃহত্তর বলের দিকে) | লব্ধির মান সর্বনিম্ন হয়। |\n| **৩. পরস্পর লম্বভাবে** | $\\alpha = 90^\\circ$ | $\\cos 90^\\circ = 0$<br>$\\sin 90^\\circ = 1$ | $\\mathbf{R = \\sqrt{P^2 + Q^2}}$ | $\\tan\\theta = \\frac{Q}{P}$ | সমকোণে ক্রিয়ারত পিথাগোরাস কেস। |\n| **৪. সমান মানের ভেক্টর** | $P = Q$ | যেকোনো $\\alpha$ | $\\mathbf{R = 2P\\cos\\left(\\frac{\\alpha}{2}\\right)}$ | $\\theta = \\frac{\\alpha}{2}$ | লব্ধি মধ্যবর্তী কোণকে সমদ্বিখণ্ডিত করে। |\n| **৫. লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব** | $\\theta = 90^\\circ$ ($P$-এর ওপর) | $\\tan 90^\\circ = \\infty$ | $\\mathbf{R = \\sqrt{Q^2 - P^2}}$ | $\\cos\\alpha = -\\frac{P}{Q}$ | এখানে অবশ্যই $Q > P$ হতে হবে। |\n\n### প্রমাণ: সমান মানের ভেক্টরের ক্ষেত্রে $R = 2P\\cos(\\alpha/2)$\n$$R = \\sqrt{P^2 + P^2 + 2P^2\\cos\\alpha} = \\sqrt{2P^2(1 + \\cos\\alpha)}$$\nত্রিকোণমিতিক সূত্রমতে $1 + \\cos\\alpha = 2\\cos^2(\\alpha/2)$\n$$R = \\sqrt{2P^2 \\cdot 2\\cos^2(\\alpha/2)} = \\sqrt{4P^2\\cos^2(\\alpha/2)} = \\mathbf{2P\\cos\\left(\\frac{\\alpha}{2}\\right)}$$\n\n---\n\n## ৮. টাইপভিত্তিক সমাধানকৃত গাণিতিক সমস্যা (Worked Examples)\n\n### 📌 টাইপ ১: দ্বিমাত্রিক ও ত্রিমাত্রিক ভেক্টরের মান ও একক ভেক্টর\n**সমস্যা ১:** একটি ৩D ভেক্টর $\\vec{P} = 2\\hat{i} - 3\\hat{j} + 6\\hat{k}$ দেওয়া আছে।\n১. ভেক্টরটির পরম মান $|\\vec{P}|$ কত?\n২. $\\vec{P}$-এর দিক বরাবর একক ভেক্টর $\\hat{p}$ নির্ণয় করো।\n\n**সমাধান:**\n- **ধাপ ১ (সহগ চিহ্নিতকরণ):** $P_x = 2$, $P_y = -3$, $P_z = 6$\n- **ধাপ ২ (মান নির্ণয়):**\n  $$|\\vec{P}| = \\sqrt{(2)^2 + (-3)^2 + (6)^2} = \\sqrt{4 + 9 + 36} = \\sqrt{49} = \\mathbf{7\\text{ একক}}$$\n- **ধাপ ৩ (একক ভেক্টর):**\n  $$\\hat{p} = \\frac{\\vec{P}}{|\\vec{P}|} = \\frac{2\\hat{i} - 3\\hat{j} + 6\\hat{k}}{7} = \\mathbf{\\frac{2}{7}\\hat{i} - \\frac{3}{7}\\hat{j} + \\frac{6}{7}\\hat{k}}$$\n\n---\n\n### 📌 টাইপ ২: দুটি বিন্দুর স্থানাঙ্ক থেকে সরণ ভেক্টর\n**সমস্যা ২:** ত্রিমাত্রিক স্থানে দুটি বিন্দু $A(1, 2, 3)$ এবং $B(4, 6, 8)$। সরণ ভেক্টর $\\vec{AB}$ এবং এর মান নির্ণয় করো।\n\n**সমাধান:**\n- **ধাপ ১ (সরণ ভেক্টর গঠন):**\n  $$\\vec{AB} = (x_2 - x_1)\\hat{i} + (y_2 - y_1)\\hat{j} + (z_2 - z_1)\\hat{k}$$\n  $$\\vec{AB} = (4 - 1)\\hat{i} + (6 - 2)\\hat{j} + (8 - 3)\\hat{k} = \\mathbf{3\\hat{i} + 4\\hat{j} + 5\\hat{k}}$$\n- **ধাপ ২ (মান নির্ণয়):**\n  $$|\\vec{AB}| = \\sqrt{3^2 + 4^2 + 5^2} = \\sqrt{9 + 16 + 25} = \\sqrt{50} = \\mathbf{5\\sqrt{2}\\text{ একক}}$$\n\n---\n\n### 📌 টাইপ ৩: সামান্তরিক সূত্রের সাধারণ প্রয়োগ\n**সমস্যা ৩:** $3\\text{ N}$ এবং $4\\text{ N}$ মানের দুটি বল একটি বিন্দুতে $60^\\circ$ কোণে ক্রিয়ারত। লব্ধির মান ও দিক নির্ণয় করো।\n\n**সমাধান:**\nদেওয়া আছে: $P = 3\\text{ N}$, $Q = 4\\text{ N}$, $\\alpha = 60^\\circ$\n1. **লব্ধির মান:**\n   $$R = \\sqrt{3^2 + 4^2 + 2(3)(4)\\cos 60^\\circ} = \\sqrt{9 + 16 + 24(0.5)} = \\sqrt{25 + 12} = \\sqrt{37} \\approx \\mathbf{6.08\\text{ N}}$$\n2. **লব্ধির দিক ($P$-এর সাথে কোণ):**\n   $$\\tan\\theta = \\frac{4\\sin 60^\\circ}{3 + 4\\cos 60^\\circ} = \\frac{4(0.866)}{3 + 4(0.5)} = \\frac{3.464}{5} = 0.6928$$\n   $$\\theta = \\tan^{-1}(0.6928) \\approx \\mathbf{34.71^\\circ}$$\n\n---\n\n### 📌 টাইপ ৪: দুটি সমান বল ও ১২০° কোণ\n**সমস্যা ৪:** $5\\text{ N}$ ও $5\\text{ N}$ মানের দুটি বল $120^\\circ$ কোণে ক্রিয়ারত থাকলে এদের লব্ধির মান ও দিক কত?\n\n**সমাধান:**\nযেহেতু $P = Q = 5\\text{ N}$ এবং $\\alpha = 120^\\circ$:\n$$R = 2P\\cos\\left(\\frac{\\alpha}{2}\\right) = 2(5)\\cos 60^\\circ = 10 \\times 0.5 = \\mathbf{5\\text{ N}}$$\n$$\\theta = \\frac{\\alpha}{2} = \\frac{120^\\circ}{2} = \\mathbf{60^\\circ}$$\n> **গুরুত্বপূর্ণ সিদ্ধান্ত:** দুটি সমান মানের ভেক্টর $120^\\circ$ কোণে ক্রিয়া করলে তাদের লব্ধির মান বলদ্বয়ের যেকোনো একটির মানের সমান হয়।\n\n---\n\n### 📌 টাইপ ৫: বুয়েট / এডমিশন স্পেশাল (লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব)\n**সমস্যা ৫:** দুটি বলের লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব এবং এর মান বৃহত্তর বলের মানের এক-তৃতীয়াংশ। বলদ্বয়ের মানের অনুপাত কত?\n\n**সমাধান:**\nধরি ক্ষুদ্রতর বল $P$ এবং বৃহত্তর বল $Q$। লব্ধি $\\vec{R} \\perp \\vec{P}$, অর্থাৎ $\\theta = 90^\\circ$।\nশর্তমতে: $R = \\frac{1}{3}Q$\nআমরা জানি, যখন লব্ধি ক্ষুদ্রতর বলের ওপর লম্ব হয়:\n$$R^2 = Q^2 - P^2$$\n$$\\left(\\frac{1}{3}Q\\right)^2 = Q^2 - P^2 \\implies \\frac{1}{9}Q^2 = Q^2 - P^2$$\n$$P^2 = Q^2 - \\frac{1}{9}Q^2 = \\frac{8}{9}Q^2 \\implies \\frac{P^2}{Q^2} = \\frac{8}{9}$$\n$$\\mathbf{\\frac{P}{Q} = \\frac{\\sqrt{8}}{3} = \\frac{2\\sqrt{2}}{3}}$$\n" },
+            { id: "p1_c2_m2", title: "মডিউল ০২: উপাংশ বিভাজন ও মেকানিক্স", duration: "২০ মিনিট", tag: "বলবিদ্যা", md: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০২: ভেক্টরের উপাংশ বিভাজন, লম্বাংশের উপপাদ্য ও মেকানিক্স\n\n---\n\n## ১. ভেক্টরের বিভাজন ও উপাংশের মূল ধারণা\n\n### ১.১ বাস্তব জীবনের উদাহরণ (ট্রলি ব্যাগের মেকানিক্স)\nতুমি যখন স্টেশনে একটি ভারী চাকাযুক্ত ট্রলি ব্যাগ টেনে নিয়ে যাও, তখন হ্যান্ডেল ধরে কোণাকুণি (তির্যকভাবে) ওপরের দিকে বল $F$ প্রয়োগ করো। কিন্তু ব্যাগটি শূন্যে উড়ে যায় না, বরং মাটির সমান্তরালে সোজা সামনে এগিয়ে যায়।\n\nএখানে তোমার প্রযুক্ত একক তির্যক বলটি ভেতরে ভেতরে একই সাথে দুটি স্বতন্ত্র কাজের জন্ম দেয়:\n1. বলের একটি অংশ ব্যাগকে মাটির সমান্তরালে সোজা সামনে টেনে নিয়ে যায় (**অনুভূমিক উপাংশ**)।\n2. বলের আরেকটি অংশ ব্যাগকে ওপরের দিকে তুলে মাটি থেকে কিছুটা হালকা করে (**উলম্ব উপাংশ**)।\n\n```\n                  F sin θ ↑   ↗ F (প্রযুক্ত টান বল)\n                          │  /\n                          │ / θ\n        ──────────────────•──────────────────► F cos θ (সামনে নেওয়ার কার্যকর বল)\n                          │\n                          ↓ W = mg (ব্যাগের প্রকৃত ওজন)\n```\n\n- **ভেক্টরের বিভাজন (Resolution of Vectors):** একটি ভেক্টর রাশিকে দুই বা ততোধিক রাশিতে বিভক্ত করার প্রক্রিয়াকে ভেক্টরের বিভাজন বলে।\n- **উপাংশ (Components):** বিভক্ত অংশগুলোর প্রত্যেকটিকে মূল ভেক্টরের উপাংশ বলা হয়।\n\n---\n\n## ২. যেকোনো কোণে ভেক্টর বিভাজন (Non-orthogonal Resolution)\n\nযখন কোনো ভেক্টরকে এমন দুটি দিকে বিভক্ত করতে হয় যা পরস্পর সমকোণে ($90^\\circ$) নেই।\n\n```\n                         Y ▲\n                          /\n                         /   . C\n                     Y  /   /\n                       /   /  R⃗ (মূল ভেক্টর)\n                      / β /\n                     O───┴───────────► X (১ম উপাংশ)\n                           α\n```\n\n### ২.১ কোণের পরিচয়\n- মূল ভেক্টর = $\\vec{R}$\n- ১ম উপাংশ = $\\vec{X}$, যা মূল ভেক্টর $\\vec{R}$-এর সাথে $\\alpha$ কোণে ক্রিয়ারত।\n- ২য় উপাংশ = $\\vec{Y}$, যা মূল ভেক্টর $\\vec{R}$-এর সাথে $\\beta$ কোণে ক্রিয়ারত।\n- $X$ ও $Y$ উপাংশদ্বয়ের মধ্যবর্তী মোট কোণ $= (\\alpha + \\beta)$।\n\n### ২.২ সাইন সূত্র (Sine Rule) দিয়ে গাণিতিক প্রমাণ\nত্রিভুজ সূত্রানুসারে $\\vec{X}$ এবং $\\vec{Y}$ উপাংশদ্বয়ের ভেক্টর যোগফল $\\vec{R}$। অতএব, $X$, $Y$ এবং $R$ বাহু তিনটি দ্বারা একটি ত্রিভুজ $\\triangle OAC$ গঠিত হয়, যার তিনটি কোণ:\n- $\\angle AOC = \\alpha$ ($Y$ বাহুর বিপরীত কোণ)\n- $\\angle ACO = \\beta$ ($X$ বাহুর বিপরীত কোণ)\n- $\\angle OAC = 180^\\circ - (\\alpha + \\beta)$ ($R$ বাহুর বিপরীত কোণ)\n\nত্রিকোণমিতির সাইন সূত্র অনুযায়ী:\n$$\\frac{\\text{বাহুর দৈর্ঘ্য}}{\\text{বিপরীত কোণের সাইন}} = \\text{ধ্রুবক}$$\n$$\\frac{X}{\\sin\\beta} = \\frac{Y}{\\sin\\alpha} = \\frac{R}{\\sin(180^\\circ - (\\alpha + \\beta))} = \\frac{R}{\\sin(\\alpha + \\beta)}$$\n\nঅতএব, উপাংশদ্বয়ের মান:\n$$\\mathbf{X = \\frac{R\\sin\\beta}{\\sin(\\alpha + \\beta)}}$$\n$$\\mathbf{Y = \\frac{R\\sin\\alpha}{\\sin(\\alpha + \\beta)}}$$\n\n> **মনে রাখার কৌশল:**\n> $X$ উপাংশ নির্ণয়ের সময় লবে বিপরীত দিকের কোণ ($\\beta$)-এর সাইন বসে।\n> $Y$ উপাংশ নির্ণয়ের সময় লবে বিপরীত দিকের কোণ ($\\alpha$)-এর সাইন বসে।\n> এবং হরে সর্বদা উভয় কোণের সমষ্টির সাইন $\\sin(\\alpha + \\beta)$ থাকে।\n\n---\n\n## ৩. পরস্পর লম্ব উপাংশে বিভাজন (Orthogonal Resolution)\n\n```\n                Y ▲\n                  │          C (x, y)\n                  │         /│\n                  │        / │\n              Y⃗  │    R⃗  /  │ Y = R sin α\n                  │      /   │\n                  │     /α   │\n                  O────┴─────┴──────► X\n                   X = R cos α\n```\n\n### ৩.১ সূত্র প্রতিপাদন\nযখন দুটি উপাংশ পরস্পর সমকোণে ($90^\\circ$) থাকে, তখন $\\alpha + \\beta = 90^\\circ \\implies \\beta = 90^\\circ - \\alpha$।\nসাধারণ সূত্রে মান বসিয়ে:\n$$X = \\frac{R\\sin(90^\\circ - \\alpha)}{\\sin 90^\\circ} = \\frac{R\\cos\\alpha}{1} = \\mathbf{R\\cos\\alpha}$$\n$$Y = \\frac{R\\sin\\alpha}{\\sin 90^\\circ} = \\frac{R\\sin\\alpha}{1} = \\mathbf{R\\sin\\alpha}$$\n\n### ৩.২ 🔑 সোনালি মাস্টার রুল\n> **\"কোণ ($\\theta$) যে অক্ষের সাথে যুক্ত থাকবে, সেদিকে উপাংশ হবে $\\cos\\theta$; এবং তার লম্ব দিকে উপাংশ হবে $\\sin\\theta$।\"**\n\n| কোণ কার সাথে দেওয়া আছে | অনুভূমিক উপাংশ ($F_x$) | উলম্ব উপাংশ ($F_y$) |\n| :--- | :---: | :---: |\n| **অনুভূমিকের সাথে $\\theta$ কোণ** | $\\mathbf{F\\cos\\theta}$ | $\\mathbf{F\\sin\\theta}$ |\n| **উলম্বের সাথে $\\theta$ কোণ (ট্র্যাপ!)** | $\\mathbf{F\\sin\\theta}$ | $\\mathbf{F\\cos\\theta}$ |\n\n---\n\n## ৪. উপাংশের বাস্তব প্রয়োগ ও গতিবিজ্ঞান (Real-World Applications)\n\n### 🚜 ৪.১ লন রোলার — টানা সহজ কিন্তু ঠেলা কঠিন কেন?\nরোলারের ভর $m$, তাই তার প্রকৃত ওজন $W = mg$ সর্বদা খাড়া নিচের দিকে ক্রিয়া করে।\n\n```\n        (ক) লন রোলার টানা (Pulling)                (খ) লন রোলার ঠেলা (Pushing)\n            F sin θ ↑   ↗ F (টানা বল)                    F cos θ\n                    │  /                               ─────────────•─────────────►\n                    │ / θ                                           │        ─────────────•─────────────► F cos θ                        │  \\ θ\n                    │                                               │   ↘ F (ঠেলা বল)\n                    │ W = mg (নিচের দিকে)                            ↓ F sin θ\n                                                                    ↓ W = mg\n```\n\n#### কেস ১: বল অনুভূমিকের সাথে $\theta$ কোণে প্রযুক্ত হলে\n- **টানার সময় (Pulling):**\n  - উলম্ব উপাংশ $F\\sin\\theta$ ওপরের দিকে কাজ করে ওজনকে হালকা করে।\n  - আপাত ওজন: $\\mathbf{W_{pull} = mg - F\\sin\\theta}$\n- **ঠেলার সময় (Pushing):**\n  - উলম্ব উপাংশ $F\\sin\\theta$ নিচের দিকে কাজ করে ওজনকে বাড়িয়ে দেয়।\n  - আপাত ওজন: $\\mathbf{W_{push} = mg + F\\sin\\theta}$\n- **আপাত ওজনের পার্থক্য:**\n  $$\\mathbf{\\Delta W = W_{push} - W_{pull} = 2F\\sin\\theta}$$\n\n#### 🚨 কেস ২: ট্র্যাপ কেস — বল উলম্বের সাথে $\theta$ কোণে প্রযুক্ত হলে!\nযদি কোণ $\\theta$ উল্লম্বের সাথে দেওয়া থাকে:\n- টানার সময় আপাত ওজন: $\\mathbf{W_{pull} = mg - F\\cos\\theta}$\n- ঠেলার সময় আপাত ওজন: $\\mathbf{W_{push} = mg + F\\cos\\theta}$\n- আপাত ওজনের পার্থক্য: $\\mathbf{\\Delta W = 2F\\cos\\theta}$\n\n---\n\n### ⛵ ৪.২ নৌকার গুণ টানা (Towing a Boat with Rope)\nনদীর তীর থেকে দড়ি বেঁধে নৌকা টেনে সামনে নিয়ে যাওয়াকে গুণ টানা বলে।\n\n```\n                নদীর তীর (Shore)\n    ───────────────────────────────────────\n             \\  θ (কোণ)\n              \\   F (দড়ির টান বল)\n                               •  নৌকা\n                ├───► Fx = F cos θ (সামনে এগিয়ে নেওয়ার কার্যকর বল)\n                │\n                ↓ Fy = F sin θ (নৌকাকে তীরের দিকে টেনে আনার বল)\n```\n\n- **অনুভূমিক উপাংশ ($F_x = F\\cos\\theta$):** নৌকাকে নদীর দৈর্ঘ্য বরাবর সোজা সামনের দিকে এগিয়ে নিয়ে যায়।\n- **উলম্ব উপাংশ ($F_y = F\\sin\\theta$):** নৌকাকে তীরের দিকে আছড়ে ফেলতে চায়। মাঝিরা হালের সাহায্যে এই উপাংশকে নিষ্ক্রিয় (Cancel) করেন।\n- **দড়ি যত লম্বা করা হয়, নৌকা টানা তত সহজ হয় কেন?**\n  - দড়ির দৈর্ঘ্য বৃদ্ধি পেলে তীরের সাথে দড়ির কোণ $\\theta$ ছোট হয় ($\theta \\downarrow$)।\n  - কোণ $\\theta$ কমলে $\\cos\\theta$-র মান বৃদ্ধি পায় ($\\cos\\theta \\uparrow$), ফলে সামনে এগিয়ে নেওয়ার কার্যকর বল $\\mathbf{F\\cos\\theta}$ বৃদ্ধি পায়।\n  - একই সাথে ক্ষতিকর উপাংশ $F\\sin\\theta$ হ্রাস পায়।\n  - তাই দড়ি যত লম্বা হবে, গুণ টেনে নৌকা চালানো তত দ্রুত ও সহজ হবে।\n\n---\n\n### 🕊️ ৪.৩ পাখির ডানা ঝাপটানো ও আকাশে ওড়া\nপাখি যখন আকাশে ওড়ে, তখন তার দুটি ডানা দিয়ে বায়ুর ওপর তির্যকভাবে পেছনের দিকে বল $F_1$ ও $F_2$ প্রয়োগ করে।\n- নিউটনের ৩য় সূত্রানুসারে বায়ু পাখির ডানার ওপর সমান ও বিপরীতমুখী প্রতিক্রিয়া বল $R_1$ ও $R_2$ প্রয়োগ করে।\n- প্রতিক্রিয়া বলগুলোর উলম্ব উপাংশ $R\\sin\\theta$ পাখির ওজনকে প্রশমিত করে আকাশে ভাসিয়ে রাখে।\n- প্রতিক্রিয়া বলগুলোর অনুভূমিক উপাংশ $2R\\cos\\theta$ পাখিকে দ্রুত সামনের দিকে উড়ে যেতে সাহায্য করে।\n\n---\n\n## ৫. লম্বাংশের উপপাদ্য (Law of Components)\n\n### ৫.১ বিবৃতি\n> যেকোনো নির্দিষ্ট দিক বরাবর সমতলীয় কতগুলো ভেক্টরের উপাংশের বীজগণিতীয় যোগফল, ওই নির্দিষ্ট দিক বরাবর এদের লব্ধির উপাংশের সমান।\n\n### ৫.২ গাণিতিক সমাধানের ৪টি ধাপ\nধরা যাক, $F_1, F_2, F_3, \\dots$ বলসমূহ $X$-অক্ষের সাথে যথাক্রমে $\\theta_1, \\theta_2, \\theta_3, \\dots$ কোণে ক্রিয়ারত।\n1. **$X$-অক্ষ বরাবর মোট উপাংশ:**\n   $$R_x = \\sum F_x = F_1\\cos\\theta_1 + F_2\\cos\\theta_2 + F_3\\cos\\theta_3 + \\dots$$\n2. **$Y$-অক্ষ বরাবর মোট উপাংশ:**\n   $$R_y = \\sum F_y = F_1\\sin\\theta_1 + F_2\\sin\\theta_2 + F_3\\sin\\theta_3 + \\dots$$\n3. **একক লব্ধির মান ($R$):**\n   $$\\mathbf{R = \\sqrt{R_x^2 + R_y^2}}$$\n4. **লব্ধির দিক ($\\theta$):**\n   $$\\mathbf{\\theta = \\tan^{-1}\\left(\\frac{R_y}{R_x}\\right)}$$\n\n---\n\n## ৬. ল্যামির উপপাদ্য (Lami's Theorem)\n\n```\n                     P\n                     ↑\n                     │\n          γ        . │ .       β\n                 .   │   .\n               .     │     .\n             Q ──────•────── R\n                   α\n```\n\n### ৬.১ উপপাদ্যের বিবৃতি\n> কোনো বিন্দুতে একই সমতলে ক্রিয়ারত তিনটি ভেক্টর বল যদি বস্তুকে সাম্যাবস্থায় (Equilibrium) রাখে, তবে প্রতিটি বলের মান অপর দুটি বলের মধ্যবর্তী কোণের সাইনের (Sine) সমানুপাতিক।\n\n### ৬.২ গাণিতিক সমীকরণ\n$$\\mathbf{\\frac{P}{\\sin\\alpha} = \\frac{Q}{\\sin\\beta} = \\frac{R}{\\sin\\gamma}}$$\n- $P$-এর বিপরীত কোণ = $Q$ ও $R$-এর মধ্যবর্তী কোণ ($\u0007lpha$)\n- $Q$-এর বিপরীত কোণ = $P$ ও $R$-এর মধ্যবর্তী কোণ ($\beta$)\n- $R$-এর বিপরীত কোণ = $P$ ও $Q$-এর মধ্যবর্তী কোণ ($\\gamma$)\n\n---\n\n## ৭. সমাধানকৃত গাণিতিক সমস্যা ও বোর্ড সিকিউ (Worked CQ Problems)\n\n### 📌 সমস্যা ১: লন রোলার বোর্ড সিকিউ (উলম্ব কোণ ট্র্যাপ)\n**প্রশ্ন:** $15\\text{ kg}$ ভরের একটি লন রোলারকে উলম্বের সাথে $30^\\circ$ কোণে $98\\text{ N}$ বল প্রয়োগ করে একজন মালী প্রথমে ঠেললেন এবং পরে একই বলে টানলেন ($g = 9.8\\text{ m/s}^2$)।\n(গ) লন রোলারটিকে টানার সময় এর আপাত ওজন কত হবে?\n(ঘ) মালী রোলারটিকে ঠেলার বদলে টেনে নেওয়া সুবিধাজনক মনে করলেন কেন?—গাণিতিকভাবে বিশ্লেষণ করো।\n\n**সমাধান:**\n- **প্রদত্ত মান:** $m = 15\\text{ kg}$, $W = mg = 15 \\times 9.8 = 147\\text{ N}$, $F = 98\\text{ N}$, উলম্বের সাথে কোণ $\\theta = 30^\\circ$\n- **(গ) টানার সময় আপাত ওজন:**\n  যেহেতু কোণ উলম্বের সাথে, উলম্ব উপাংশ $= F\\cos 30^\\circ = 98 \\times 0.866 = 84.87\\text{ N}$\n  $$W_{pull} = W - F\\cos 30^\\circ = 147 - 84.87 = \\mathbf{62.13\\text{ N}}$$\n- **(ঘ) ঠেলার সময় আপাত ওজন ও তুলনা:**\n  $$W_{push} = W + F\\cos 30^\\circ = 147 + 84.87 = \\mathbf{231.87\\text{ N}}$$\n  সামনে নেওয়ার বল উভয় ক্ষেত্রে সমান ($F_x = F\\sin 30^\\circ = 49\\text{ N}$)।\n  আপাত ওজনের পার্থক্য $\\Delta W = 231.87 - 62.13 = \\mathbf{169.74\\text{ N}}$।\n  ঠেলার সময় মেঝেতে চাপ $169.74\\text{ N}$ বেশি হওয়ায় ঘর্ষণ বল মারাত্মক বৃদ্ধি পায়, ফলে ঠেলে নেওয়া কঠিন কিন্তু টেনে নেওয়া সুবিধাজনক।\n\n---\n\n### 📌 সমস্যা ২: লম্বাংশের উপপাদ্যে বহু-বলের লব্ধি\n**প্রশ্ন:** একটি বিন্দুতে তিনটি বল ক্রিয়ারত: $F_1 = 10\\text{ N}$ ($0^\\circ$), $F_2 = 20\\text{ N}$ ($60^\\circ$), $F_3 = 15\\text{ N}$ ($120^\\circ$)। লব্ধির মান ও দিক নির্ণয় করো।\n\n**সমাধান:**\n- $R_x = 10\\cos 0^\\circ + 20\\cos 60^\\circ + 15\\cos 120^\\circ = 10(1) + 20(0.5) + 15(-0.5) = \\mathbf{12.5\\text{ N}}$\n- $R_y = 10\\sin 0^\\circ + 20\\sin 60^\\circ + 15\\sin 120^\\circ = 0 + 20(0.866) + 15(0.866) = \\mathbf{30.31\\text{ N}}$\n- লব্ধির মান: $R = \\sqrt{(12.5)^2 + (30.31)^2} = \\sqrt{156.25 + 918.70} = \\sqrt{1074.95} \\approx \\mathbf{32.78\\text{ N}}$\n- লব্ধির দিক: $\\theta = \\tan^{-1}\\left(\\frac{30.31}{12.5}\\right) = \\tan^{-1}(2.4248) \\approx \\mathbf{67.58^\\circ}$\n" },
+            { id: "p1_c2_m3", title: "মডিউল ০৩: নদী-নৌকা ও BUET কেস", duration: "৩০ মিনিট", tag: "অ্যাডমিশন", md: "# পদার্থবিজ্ঞান ১ম পত্র — অধ্যায় ২: ভেক্টর | মডিউল ০৩: নদী-নৌকার গতিবিদ্যা, লব্ধি বেগ ও BUET স্পেশাল কেস\n\n---\n\n## ১. নদী-নৌকা সিস্টেমের মৌলিক স্থানাঙ্ক কাঠামো ও উপাংশ বিশ্লেষণ\n\n```\n                                      Y ▲ (নদীর প্রস্থ d)\n       ─────────────────────────────────┼─────────────────────────────── (ওপাড়)\n                                        │          ↗ w⃗ (লব্ধি বেগ)\n                                        │         /\n                                        │     v⃗  / \n                                        │       /\n                                        │      / α (যাত্রার কোণ)\n       ─────────────────────────────────•──────┴──────────────────────── (এপাড়)\n                                       O ──────► X (স্রোতের বেগ u⃗)\n```\n\n### ১.১ রাশির পরিচয়\n- $u$ = নদীর স্রোতের বেগ (সর্বদা $+X$ অক্ষ বরাবর অনুভূমিক)\n- $v$ = স্থির পানিতে নৌকার নিজস্ব বেগ / মাঝির দাঁড় টানার বেগ\n- $\\alpha$ = স্রোতের বেগের সাথে নৌকার যাত্রা শুরুর কোণ\n- $d$ = নদীর প্রকৃত প্রস্থ ($Y$-অক্ষ বরাবর উলম্ব দূরত্ব)\n- $\\vec{w}$ = নৌকা ও স্রোতের লব্ধি বেগ\n\n### ১.২ বেগের অক্ষভিত্তিক উপাংশ বিভাজন\n- **$X$-অক্ষ বরাবর (নদীর দৈর্ঘ্য বা স্রোত বরাবর) বেগ:**\n  $$v_x = u + v\\cos\\alpha$$\n- **$Y$-অক্ষ বরাবর (নদীর প্রস্থ বা পারাপার বরাবর) বেগ:**\n  $$v_y = v\\sin\\alpha$$\n\n---\n\n## ২. নদী পারাপারের সার্বজনীন সময় সূত্র (Universal Time Formula)\n\n> **মৌলিক নীতি:** নদীর প্রস্থ ($d$) হলো খাড়া উলম্ব ($Y$-অক্ষ) বরাবর দূরত্ব। সুতরাং নদী পার হতে প্রয়োজনীয় সময় নির্ভর করবে কেবল $Y$-অক্ষ বরাবর বেগের উপাংশের ($v_y = v\\sin\\alpha$) ওপর। স্রোতের বেগ ($u$) নদীর প্রস্থ পার হতে কোনো ভূমিকা রাখে না!\n\n$$\\mathbf{t = \\frac{d}{v_y} = \\frac{d}{v\\sin\\alpha}}$$\n\n### লব্ধি বেগ ($w$) ও লব্ধির দিক ($\\theta$)\n- **লব্ধি বেগ:**\n  $$\\mathbf{w = \\sqrt{u^2 + v^2 + 2uv\\cos\\alpha} = \\sqrt{v_x^2 + v_y^2}}$$\n- **স্রোতের সাথে লব্ধির কোণ ($\\theta$):**\n  $$\\mathbf{\\tan\\theta = \\frac{v\\sin\\alpha}{u + v\\cos\\alpha} \\implies \\theta = \\tan^{-1}\\left(\\frac{v\\sin\\alpha}{u + v\\cos\\alpha}\\right)}$$\n\n---\n\n## ৩. কেস ১: সর্বনিম্ন সময়ে নদী পারাপার (Shortest Time Case)\n\n```\n       ─────────────────────────────────┬─────────────────────────────── (ওপাড়)\n                                        │              ↗ w⃗\n                                        │             /\n                                      d │         v⃗  / \n                                        │           / \n                                        │          / α = 90°\n       ─────────────────────────────────•─────────┴───────────────────── (এপাড়)\n                                       O ─────────► u⃗\n                                        |◄── x ──►| (Drift)\n```\n\n### ৩.১ শর্ত ও প্রতিপাদন\nসময় $t = \\frac{d}{v\\sin\\alpha}$ সর্বনিম্ন ($t_{\\min}$) হবে যখন হরের $\\sin\\alpha$ সর্বোচ্চ হবে।\n$$\\sin\\alpha = 1 \\implies \\mathbf{\\alpha = 90^\\circ}$$\nঅর্থাৎ স্রোতের সাথে ঠিক সমকোণে ($90^\\circ$) সোজা ওপাড়ে নৌকা চালাতে হবে।\n\n### ৩.২ সূত্রাবলী\n1. **সর্বনিম্ন সময়:**\n   $$\\mathbf{t_{\\min} = \\frac{d}{v}}$$\n2. **লব্ধি বেগ:**\n   $$\\mathbf{w = \\sqrt{u^2 + v^2}}$$\n3. **পার্শ্ব সরণ / ড্রিফটিং (Drift - $x$):**\n   স্রোতের টানে নৌকাটি সোজা ওপাড়ে না গিয়ে কিছুটা ডানে সরে পৌঁছাবে:\n   $$\\mathbf{x = u \\cdot t_{\\min} = u \\left(\\frac{d}{v}\\right) = \\frac{ud}{v}}$$\n4. **অতিক্রান্ত প্রকৃত পথ ($s$):**\n   $$\\mathbf{s = \\sqrt{d^2 + x^2} = w \\cdot t_{\\min}}$$\n\n---\n\n## ৪. কেস ২: সর্বনিম্ন দূরত্বে / সোজাসুজি ওপাড়ে পৌঁছানো (Shortest Distance Case)\n\n```\n       ─────────────────────────────────▲ B (ঠিক বিপরীত বিন্দু, x = 0)\n                                        │\n                                        │ w⃗ = √(v² - u²) (লব্ধি)\n                                      d │  \n                                v⃗ ↖     │  \n                                   \\ α  │ θ = 90°\n       ─────────────────────────────•───┴─────────────────────────────── (এপাড়)\n                                   O ───► u⃗\n```\n\n### ৪.১ শর্ত ও প্রতিপাদন\nসোজাসুজি ঠিক বিপরীত বিন্দু $B$-তে পৌঁছাতে হলে পার্শ্ব সরণ বা ড্রাফট শূন্য হতে হবে ($x = 0$)।\n$$x = (u + v\\cos\\alpha)t = 0 \\implies u + v\\cos\\alpha = 0$$\n$$\\mathbf{\\cos\\alpha = -\\frac{u}{v} \\implies \\alpha = \\cos^{-1}\\left(-\\frac{u}{v}\\right) > 90^\\circ}$$\n\n> **বাস্তবতার শর্ত:** $\\cos\\alpha$ সংজ্ঞায়িত হওয়ার জন্য অবশ্যই **$\\mathbf{v > u}$ (নৌকার বেগ স্রোতের বেগের চেয়ে বেশি)** হতে হবে!\n\n### ৪.২ সূত্রাবলী\n1. **প্রয়োজনীয় যাত্রার কোণ:**\n   $$\\mathbf{\\alpha = 90^\\circ + \\sin^{-1}\\left(\\frac{u}{v}\\right) = \\cos^{-1}\\left(-\\frac{u}{v}\\right)}$$\n2. **লব্ধি বেগ (পিথাগোরাস সমকোণী ত্রিভুজ থেকে):**\n   $$\\mathbf{w = \\sqrt{v^2 - u^2}}$$\n3. **নদী পার হতে প্রয়োজনীয় সময়:**\n   $$\\mathbf{t = \\frac{d}{w} = \\frac{d}{\\sqrt{v^2 - u^2}}}$$\n4. **সর্বনিম্ন দূরত্ব:**\n   $$\\mathbf{s_{\\min} = d}$$\n\n---\n\n## ৫. কেস ৩: স্রোত নৌকার চেয়ে বেশি হলে সর্বনিম্ন ড্রাফট ($u > v$ BUET কেস)\n\nযখন স্রোতের বেগ নৌকার চেয়ে বেশি ($u > v$), তখন মাঝির পক্ষে সোজাসুজি ওপাড়ে পৌঁছানো ($x=0$) অসম্ভব। এক্ষেত্রে একটি নির্দিষ্ট কোণে চালালে পার্শ্ব সরণ বা ড্রাফট সর্বনিম্ন ($x_{\\min}$) করা যায়।\n\n### ৫.১ ক্যালকুলাস দিয়ে প্রতিপাদন\nপার্শ্ব সরণ: $x = (u + v\\cos\\alpha)t = \\frac{d(u + v\\cos\\alpha)}{v\\sin\\alpha}$\nসর্বনিম্ন সরণের শর্ত: $\\frac{dx}{d\\alpha} = 0$\n$$\\frac{d}{d\\alpha}\\left[\\frac{u + v\\cos\\alpha}{\\sin\\alpha}\\right] = 0$$\n$$\\frac{(-v\\sin\\alpha)(\\sin\\alpha) - (u + v\\cos\\alpha)(\\cos\\alpha)}{\\sin^2\\alpha} = 0$$\n$$-v\\sin^2\\alpha - u\\cos\\alpha - v\\cos^2\\alpha = 0$$\n$$-v(\\sin^2\\alpha + \\cos^2\\alpha) - u\\cos\\alpha = 0 \\implies -v - u\\cos\\alpha = 0$$\n$$\\mathbf{\\cos\\alpha = -\\frac{v}{u} \\implies \\alpha = \\cos^{-1}\\left(-\\frac{v}{u}\\right)}$$\n\n### ৫.২ সর্বনিম্ন ড্রাফটের মান\n$$\\mathbf{x_{\\min} = d \\frac{\\sqrt{u^2 - v^2}}{v}}$$\n\n---\n\n## ৬. কেস ৪: ত্বরান্বিত নদীর নৌকা (Accelerated Boat Mechanics)\n\nনৌকাটি যদি স্থির বেগ $v$-এর বদলে সুষম ত্বরণ $a$ নিয়ে $\\alpha$ কোণে যাত্রা করে:\n- $Y$-অক্ষ বরাবর ত্বরণ: $a_y = a\\sin\\alpha$\n- $Y$-অক্ষ বরাবর অতিক্রান্ত দূরত্ব:\n  $$d = v_0\\sin\\alpha \\cdot t + \\frac{1}{2}(a\\sin\\alpha)t^2$$\n- **স্থির অবস্থান থেকে যাত্রা শুরু করলে ($v_0 = 0$):**\n  $$d = \\frac{1}{2}(a\\sin\\alpha)t^2 \\implies \\mathbf{t = \\sqrt{\\frac{2d}{a\\sin\\alpha}}}$$\n\n---\n\n## ৭. কেস ৫: পুলিশ-চোর তাড়া করার সমস্যা (River Pursuit Problem)\n\n```\n                চোরের দৌড়ের দিক ───► w_thief\n   ───────────────────────────────────────────────── (ওপাড়)\n                                  ▲ (এখানে ধরা পড়বে)\n                                 /\n                   l   w (লব্ধি) /\n                     ↖          /\n                       ↖       /\n                         ↖ α  /\n  ─────────────────────────•──────────────────────── (এপাড়)\n                 স্রোতের বেগ u⃗\n```\n\nনদীর একপাড়ে চোর পাড় বরাবর $w_{thief}$ বেগে দৌড়াচ্ছে। ওপর পাড় থেকে পুলিশ $v$ বেগে স্রোতের ($u$) সাথে $\u0007lpha$ কোণে নৌকা চালিয়ে চোরকে ধরতে চায়।\n\n### চোর ধরার শর্ত\nএকটি নির্দিষ্ট সময় $t$ পর পুলিশ চোরকে ধরতে পারবে যদি এবং কেবল যদি পাড় বরাবর চোরের সরণ ($x_{thief}$) এবং পুলিশের নৌকার পাড় বরাবর লব্ধি সরণ ($x_{police}$) হুবহু সমান হয়:\n$$x_{thief} = x_{police}$$\n$$w_{thief} \\cdot t = (u + v\\cos\\alpha) \\cdot t$$\n$$\\mathbf{w_{thief} = u + v\\cos\\alpha}$$\n$$\\mathbf{\\alpha = \\cos^{-1}\\left(\\frac{w_{thief} - u}{v}\\right)}$$\n\n---\n\n## ৮. সমাধানকৃত গাণিতিক সমস্যা (Worked Problems)\n\n### 📌 সমস্যা ১: সর্বনিম্ন সময় বনাম সর্বনিম্ন দূরত্ব\n**প্রশ্ন:** একটি নদীর প্রস্থ $500\\text{ m}$, স্রোতের বেগ $3\\text{ m/s}$ এবং নৌকার বেগ $6\\text{ m/s}$।\n১. সর্বনিম্ন সময়ে নদী পার হতে কত সময় লাগবে এবং ড্রাফট কত হবে?\n২. সোজাসুজি ওপাড়ে পৌঁছাতে মাঝিকে কোন কোণে নৌকা চালাতে হবে এবং কত সময় লাগবে?\n\n**সমাধান:**\n- **১. সর্বনিম্ন সময় ($t_{\\min}$):**\n  $$t_{\\min} = \\frac{d}{v} = \\frac{500}{6} = \\mathbf{83.33\\text{ s}}$$\n  ড্রাফট: $x = u \\cdot t_{\\min} = 3 \\times 83.33 = \\mathbf{250\\text{ m}}$\n- **২. সোজাসুজি ওপাড়ে পৌঁছানো ($x = 0$):**\n  $$\\cos\\alpha = -\\frac{u}{v} = -\\frac{3}{6} = -0.5 \\implies \\alpha = \\cos^{-1}(-0.5) = \\mathbf{120^\\circ}$$\n  লব্ধি বেগ: $w = \\sqrt{v^2 - u^2} = \\sqrt{6^2 - 3^2} = \\sqrt{27} \\approx 5.20\\text{ m/s}$\n  পারাপারের সময়: $t = \\frac{d}{w} = \\frac{500}{\\sqrt{27}} = \\mathbf{96.23\\text{ s}}$\n\n---\n\n### 📌 সমস্যা ২: $u > v$ ক্ষেত্রে সর্বনিম্ন ড্রাফট\n**প্রশ্ন:** নদীর স্রোতের বেগ $5\\text{ m/s}$, নৌকার বেগ $3\\text{ m/s}$ এবং নদীর প্রস্থ $400\\text{ m}$। সর্বনিম্ন ড্রাফটের জন্য মাঝিকে কোন কোণে নৌকা চালাতে হবে এবং সর্বনিম্ন ড্রাফট কত হবে?\n\n**সমাধান:**\n- প্রয়োজনীয় কোণ:\n  $$\\cos\\alpha = -\\frac{v}{u} = -\\frac{3}{5} = -0.6 \\implies \\alpha = \\cos^{-1}(-0.6) \\approx \\mathbf{126.87^\\circ}$$\n- সর্বনিম্ন ড্রাফট:\n  $$x_{\\min} = d \\frac{\\sqrt{u^2 - v^2}}{v} = 400 \\times \\frac{\\sqrt{5^2 - 3^2}}{3} = 400 \\times \\frac{4}{3} = \\mathbf{533.33\\text{ m}}$$\n" }
+          ]
+        },
+        {
+          id: "ch3_kinematics",
+          number: "০৩",
+          name: "গতিবিদ্যা (Kinematics)",
+          icon: "🚀",
+          modules: [
+            { id: "p1_c3_m1", title: "মডিউল ০১: প্রক্ষেপক ও প্রাস", duration: "আসন্ন", tag: "শীঘ্রই আসছে", disabled: true }
+          ]
+        }
+      ]
+    }
+  ]
 };
 
-let currentModule = 'module1';
+let currentSubjectId = "physics1";
+let currentChapterId = "ch2_vector";
+let currentModuleId = "p1_c2_m1";
 let currentFontSize = 16;
 
-// ── THEME SWITCHER (Creme ⇄ Chocolate Brown) ──
+// ── THEME MANAGEMENT (Creme ⇄ Chocolate Brown) ──
 function initTheme() {
   const savedTheme = localStorage.getItem('app-theme') || 'light';
   document.documentElement.setAttribute('data-theme', savedTheme);
@@ -923,7 +1303,7 @@ function toggleTheme() {
   updateThemeIcon(target);
   showToast(target === 'dark' ? '🍫 চকলেট ব্রাউন থিম সক্রিয়' : '🍦 ক্রিম থিম সক্রিয়');
   
-  if (currentModule === 'simulators') {
+  if (currentModuleId === 'simulators') {
     calculateRiverBoat();
     calculateParallelogram();
     calculateLawnRoller();
@@ -937,50 +1317,130 @@ function updateThemeIcon(t) {
   }
 }
 
-// ── FONT SIZE ADJUSTMENT ──
+// ── FONT RESIZING ──
 function adjustFontSize(delta) {
   currentFontSize = Math.min(22, Math.max(14, currentFontSize + delta));
   const el = document.querySelector('.markdown-body');
   if (el) {
-    el.style.fontSize = `${currentFontSize / 16 * 1.04}rem`;
+    el.style.fontSize = `${currentFontSize / 16 * 1.05}rem`;
   }
   showToast(`ফন্ট সাইজ: ${currentFontSize}px`);
 }
 
-// ── MODULE SWITCHER ──
-function switchModule(modKey) {
-  currentModule = modKey;
+// ── MOBILE DRAWER TOGGLE ──
+function toggleMobileDrawer() {
+  const sidebar = document.getElementById('app-sidebar');
+  const backdrop = document.getElementById('drawer-backdrop');
+  sidebar.classList.toggle('open');
+  backdrop.classList.toggle('open');
+}
+
+// ── HIERARCHICAL SIDEBAR BUILDER ──
+function renderSidebar() {
+  const container = document.getElementById('chapter-tree-container');
+  const subject = PLATFORM_DATABASE.subjects.find(s => s.id === currentSubjectId);
+  if (!subject) return;
+
+  container.innerHTML = '';
+
+  subject.chapters.forEach(ch => {
+    const isExpanded = ch.id === currentChapterId;
+    const block = document.createElement('div');
+    block.className = 'chapter-block';
+
+    block.innerHTML = `
+      <div class="chapter-title" onclick="toggleChapter('${ch.id}')">
+        <span>${ch.icon} অধ্যায় ${ch.number}: ${ch.name}</span>
+        <span class="chapter-badge">${ch.modules.length} টি মডিউল</span>
+      </div>
+      <ul class="module-nav-list" id="mod-list-${ch.id}" style="${isExpanded ? '' : 'display:none'}">
+        ${ch.modules.map(m => `
+          <li class="module-nav-item ${m.id === currentModuleId ? 'active' : ''}">
+            <a href="javascript:void(0)" onclick="${m.disabled ? 'showUpcomingToast()' : `switchModule('${m.id}')`}">
+              <span>${m.title}</span>
+              <span class="tag">${m.tag}</span>
+            </a>
+          </li>
+        `).join('')}
+      </ul>
+    `;
+    container.appendChild(block);
+  });
+}
+
+function toggleChapter(chId) {
+  currentChapterId = chId;
+  renderSidebar();
+}
+
+function showUpcomingToast() {
+  showToast('⏳ এই মডিউলটির কাজ চলছে, শীঘ্রই যুক্ত হবে!');
+}
+
+function handleSubjectChange(subjId) {
+  currentSubjectId = subjId;
+  const subj = PLATFORM_DATABASE.subjects.find(s => s.id === subjId);
+  if (subj && subj.chapters.length > 0) {
+    currentChapterId = subj.chapters[0].id;
+    if (subj.chapters[0].modules.length > 0 && !subj.chapters[0].modules[0].disabled) {
+      switchModule(subj.chapters[0].modules[0].id);
+    }
+  }
+  renderSidebar();
+}
+
+// ── MODULE SWITCHER & RENDERER ──
+function switchModule(modId) {
+  currentModuleId = modId;
   
-  // Update Tab buttons
-  document.querySelectorAll('.nav-tab').forEach(b => b.classList.remove('active'));
-  const activeTab = document.getElementById(`tab-${modKey}`);
-  if (activeTab) activeTab.classList.add('active');
+  // Close mobile drawer if open
+  const sidebar = document.getElementById('app-sidebar');
+  const backdrop = document.getElementById('drawer-backdrop');
+  if (sidebar) sidebar.classList.remove('open');
+  if (backdrop) backdrop.classList.remove('open');
 
   const container = document.getElementById('rendered-content');
+  const footerContainer = document.getElementById('module-nav-footer');
 
-  if (modKey === 'simulators') {
+  // Handle Simulators View
+  if (modId === 'simulators') {
+    document.getElementById('breadcrumb-active').textContent = 'পদার্থবিজ্ঞান সিমুলেটর ল্যাব';
+    document.getElementById('reading-badge').textContent = '⚡ ৩টি ইন্টারেক্টিভ টুল';
     renderSimulators(container);
-    buildSimulatorsTOC();
+    footerContainer.innerHTML = '';
     window.scrollTo({top: 0, behavior: 'smooth'});
+    renderSidebar();
     return;
   }
 
-  let contentMd = '';
-  if (modKey === 'all') {
-    contentMd = `${MODULE_DATA.module1}\n\n---\n\n${MODULE_DATA.module2}\n\n---\n\n${MODULE_DATA.module3}`;
-  } else {
-    contentMd = MODULE_DATA[modKey] || '';
-  }
+  // Find Module in Database
+  let foundMod = null;
+  let foundChap = null;
+  let allMods = [];
 
-  // Parse Markdown with Marked
-  marked.setOptions({
-    gfm: true,
-    breaks: true
+  PLATFORM_DATABASE.subjects.forEach(s => {
+    s.chapters.forEach(ch => {
+      ch.modules.forEach((m, idx) => {
+        if (!m.disabled) allMods.push({ mod: m, chap: ch, subj: s });
+        if (m.id === modId) {
+          foundMod = m;
+          foundChap = ch;
+        }
+      });
+    });
   });
-  
-  container.innerHTML = marked.parse(contentMd);
 
-  // Wrap tables for horizontal scroll on mobile
+  if (!foundMod || !foundMod.md) return;
+
+  // Update Breadcrumbs
+  document.getElementById('breadcrumb-active').textContent = foundMod.title;
+  document.getElementById('reading-badge').textContent = `⏱️ ${foundMod.duration} পাঠ`;
+
+  // Parse Markdown
+  marked.setOptions({ gfm: true, breaks: true });
+  container.innerHTML = marked.parse(foundMod.md);
+
+  // Wrap Tables for smooth touch scroll
   container.querySelectorAll('table').forEach(tbl => {
     const wrap = document.createElement('div');
     wrap.className = 'table-wrap';
@@ -988,7 +1448,7 @@ function switchModule(modKey) {
     wrap.appendChild(tbl);
   });
 
-  // Render LaTeX with KaTeX
+  // Render KaTeX Math
   if (window.renderMathInElement) {
     renderMathInElement(container, {
       delimiters: [
@@ -1001,74 +1461,105 @@ function switchModule(modKey) {
     });
   }
 
-  // Build Dynamic Table of Contents
-  buildTOC(container);
+  // Render Footer Next / Prev Navigation
+  const curIdx = allMods.findIndex(item => item.mod.id === modId);
+  let footerHtml = '';
+  
+  if (curIdx > 0) {
+    const prev = allMods[curIdx - 1];
+    footerHtml += `
+      <div class="nav-footer-btn" onclick="switchModule('${prev.mod.id}')">
+        <span class="direction">← পূর্ববর্তী মডিউল</span>
+        <span class="title">${prev.mod.title}</span>
+      </div>
+    `;
+  } else {
+    footerHtml += `<div></div>`;
+  }
+
+  if (curIdx < allMods.length - 1) {
+    const next = allMods[curIdx + 1];
+    footerHtml += `
+      <div class="nav-footer-btn" onclick="switchModule('${next.mod.id}')" style="text-align:right">
+        <span class="direction">পরবর্তী মডিউল →</span>
+        <span class="title">${next.mod.title}</span>
+      </div>
+    `;
+  }
+
+  footerContainer.innerHTML = footerHtml;
+
+  renderSidebar();
   window.scrollTo({top: 0, behavior: 'smooth'});
 }
 
-// ── DYNAMIC TABLE OF CONTENTS GENERATOR ──
-function buildTOC(container) {
-  const tocList = document.getElementById('toc-container');
-  const tocCount = document.getElementById('toc-count');
-  if (!tocList) return;
-  tocList.innerHTML = '';
-
-  const headings = container.querySelectorAll('h2, h3');
-  if (tocCount) tocCount.textContent = `${headings.length} টপিক`;
-
-  headings.forEach((h, idx) => {
-    const id = `sec-${idx}`;
-    h.id = id;
-
-    const li = document.createElement('li');
-    li.className = 'toc-item';
-    if (h.tagName.toLowerCase() === 'h3') {
-      li.style.paddingLeft = '10px';
-      li.style.fontSize = '0.78rem';
-    }
-
-    const a = document.createElement('a');
-    a.href = `#${id}`;
-    a.textContent = h.textContent.replace(/^[০-৯\d\.\s]+/, '').trim() || h.textContent;
-    a.onclick = (e) => {
-      e.preventDefault();
-      h.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    };
-
-    li.appendChild(a);
-    tocList.appendChild(li);
-  });
+// ── SEARCH MODAL FUNCTIONALITY (CTRL+K) ──
+function openSearchModal() {
+  const modal = document.getElementById('search-modal');
+  modal.classList.add('open');
+  setTimeout(() => document.getElementById('modal-search-input').focus(), 100);
 }
 
-// ── SEARCH LOGIC ──
-function handleSearch(query) {
-  const q = query.trim().toLowerCase();
-  const container = document.getElementById('rendered-content');
-  if (!container) return;
+function closeSearchModal(e) {
+  const modal = document.getElementById('search-modal');
+  modal.classList.remove('open');
+}
 
+document.addEventListener('keydown', (e) => {
+  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'k') {
+    e.preventDefault();
+    openSearchModal();
+  }
+  if (e.key === 'Escape') {
+    closeSearchModal();
+  }
+});
+
+function handleModalSearch(query) {
+  const q = query.trim().toLowerCase();
+  const resultsContainer = document.getElementById('search-modal-results');
   if (!q) {
-    container.querySelectorAll('p, li, h2, h3, tr').forEach(p => {
-      p.style.backgroundColor = 'transparent';
-    });
+    resultsContainer.innerHTML = `
+      <div style="padding:20px;text-align:center;color:var(--text-dim);font-size:0.88rem">
+        অনুসন্ধান করতে কীওয়ার্ড টাইপ করুন...
+      </div>
+    `;
     return;
   }
 
-  const paragraphs = container.querySelectorAll('p, li, h2, h3, tr');
-  let firstFound = null;
-
-  paragraphs.forEach(p => {
-    if (p.textContent.toLowerCase().includes(q)) {
-      if (!firstFound) firstFound = p;
-      p.style.backgroundColor = 'var(--accent-light)';
-      p.style.borderRadius = '4px';
-    } else {
-      p.style.backgroundColor = 'transparent';
-    }
+  let results = [];
+  PLATFORM_DATABASE.subjects.forEach(s => {
+    s.chapters.forEach(ch => {
+      ch.modules.forEach(m => {
+        if (!m.md) return;
+        if (m.title.toLowerCase().includes(q) || m.md.toLowerCase().includes(q)) {
+          // Extract matching snippet
+          let snippet = '';
+          const idx = m.md.toLowerCase().indexOf(q);
+          if (idx !== -1) {
+            snippet = m.md.substring(Math.max(0, idx - 40), Math.min(m.md.length, idx + 80)).replace(/#/g, '');
+          }
+          results.push({ mod: m, chap: ch, snippet });
+        }
+      });
+    });
   });
 
-  if (firstFound) {
-    firstFound.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  if (results.length === 0) {
+    resultsContainer.innerHTML = `
+      <div style="padding:20px;text-align:center;color:var(--text-dim);font-size:0.88rem">
+        কোনো ফলাফল পাওয়া যায়নি! অন্য কোনো শব্দ দিয়ে চেষ্টা করুন।
+      </div>
+    `;
+    return;
   }
+
+  resultsContainer.innerHTML = results.map(r => `
+    <div class="search-result-item" onclick="switchModule('${r.mod.id}'); closeSearchModal();">
+      <div class="item-title">${r.chap.name} • ${r.mod.title}</div>
+      <div class="item-snippet">...${r.snippet}...</div>
+    </div>
+  `).join('');
 }
 
 // ── SIMULATORS TAB RENDERING ──
@@ -1076,7 +1567,7 @@ function renderSimulators(container) {
   container.innerHTML = `
     <div class="simulators-container">
       <div>
-        <h1 style="border:none;margin-bottom:4px">🧮 পদার্থবিজ্ঞান সিমুলেটর ও ক্যালকুলেটর</h1>
+        <h1 style="border:none;margin-bottom:4px">🧮 ফিজিক্স সিমুলেটর ও ক্যালকুলেটর</h1>
         <p style="color:var(--text-muted);font-size:0.92rem">মান বসিয়ে সরাসরি হিসাব ও লাইভ ভেক্টর ডায়াগ্রাম পর্যবেক্ষণ করুন।</p>
       </div>
 
@@ -1085,7 +1576,7 @@ function renderSimulators(container) {
         <div class="sim-card" id="sim-river">
           <div class="sim-card-header">
             <span style="font-size:20px">🛶</span>
-            <h3>নদী-নৌকা ও লব্ধি বেগ</h3>
+            <h3>নদী-নৌকা ও লব্ধি বেগ ক্যালকুলেটর</h3>
           </div>
           <div class="sim-form-group">
             <div class="input-field">
@@ -1121,7 +1612,7 @@ function renderSimulators(container) {
         <div class="sim-card" id="sim-parallelogram">
           <div class="sim-card-header">
             <span style="font-size:20px">📐</span>
-            <h3>সামান্তরিক সূত্র লব্ধি</h3>
+            <h3>সামান্তরিক সূত্র লব্ধি ক্যালকুলেটর</h3>
           </div>
           <div class="sim-form-group">
             <div class="input-field">
@@ -1153,7 +1644,7 @@ function renderSimulators(container) {
         <div class="sim-card" id="sim-roller">
           <div class="sim-card-header">
             <span style="font-size:20px">⚙️</span>
-            <h3>লন রোলার আপাত ওজন</h3>
+            <h3>লন রোলার আপাত ওজন তুলক</h3>
           </div>
           <div class="sim-form-group">
             <div class="input-field">
@@ -1197,27 +1688,8 @@ function renderSimulators(container) {
   }, 60);
 }
 
-function buildSimulatorsTOC() {
-  const tocList = document.getElementById('toc-container');
-  const tocCount = document.getElementById('toc-count');
-  if (tocCount) tocCount.textContent = '৩টি টুল';
-  if (tocList) {
-    tocList.innerHTML = `
-      <li class="toc-item"><a href="#sim-river" onclick="scrollToSim('sim-river')">🛶 নদী-নৌকা ক্যালকুলেটর</a></li>
-      <li class="toc-item"><a href="#sim-parallelogram" onclick="scrollToSim('sim-parallelogram')">📐 সামান্তরিক সূত্র ক্যালকুলেটর</a></li>
-      <li class="toc-item"><a href="#sim-roller" onclick="scrollToSim('sim-roller')">⚙️ লন রোলার আপাত ওজন</a></li>
-    `;
-  }
-}
-
-function scrollToSim(id) {
-  const el = document.getElementById(id);
-  if (el) el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-}
-
 // ── CALCULATION LOGIC ──
 
-// 1. River Boat Calculation & Live Canvas
 function calculateRiverBoat() {
   const u = parseFloat(document.getElementById('nb-u').value) || 0;
   const v = parseFloat(document.getElementById('nb-v').value) || 0;
@@ -1260,13 +1732,11 @@ function drawRiverCanvas(u, v, alpha, vx, vy) {
 
   ctx.clearRect(0, 0, w, h);
 
-  // River Banks
-  ctx.fillStyle = isDark ? '#1a110c' : '#e6dccb';
+  ctx.fillStyle = isDark ? '#1a100a' : '#e6dccb';
   ctx.fillRect(0, 0, w, 20);
   ctx.fillRect(0, h - 20, w, 20);
 
-  // Water Surface
-  ctx.strokeStyle = isDark ? 'rgba(226, 155, 82, 0.12)' : 'rgba(184, 106, 36, 0.15)';
+  ctx.strokeStyle = isDark ? 'rgba(226, 155, 82, 0.12)' : 'rgba(181, 105, 32, 0.15)';
   ctx.lineWidth = 1;
   for (let i = 28; i < h - 20; i += 16) {
     ctx.beginPath();
@@ -1280,17 +1750,11 @@ function drawRiverCanvas(u, v, alpha, vx, vy) {
   const maxSpeed = Math.max(1, u + v);
   const scale = (w * 0.42) / maxSpeed;
 
-  // Stream Vector u (Amber)
   drawArrow(ctx, sx, sy, sx + u * scale, sy, '#f59e0b', 'u', 2.5);
-
-  // Boat Vector v (Sky Blue)
   drawArrow(ctx, sx, sy, sx + v * Math.cos(alpha) * scale, sy - v * Math.sin(alpha) * scale, '#38bdf8', 'v', 2.5);
-
-  // Resultant Vector w (Emerald)
   drawArrow(ctx, sx, sy, sx + vx * scale, sy - vy * scale, '#10b981', 'w (লব্ধি)', 3);
 }
 
-// 2. Parallelogram Calculation & Live Canvas
 function calculateParallelogram() {
   const p = parseFloat(document.getElementById('pl-p').value) || 0;
   const q = parseFloat(document.getElementById('pl-q').value) || 0;
@@ -1334,7 +1798,6 @@ function drawParallelogramCanvas(p, q, alpha, r, theta) {
   const rx = sx + (p + q * Math.cos(alpha)) * scale;
   const ry = sy - q * Math.sin(alpha) * scale;
 
-  // Dashed lines
   ctx.strokeStyle = isDark ? 'rgba(255,255,255,0.2)' : 'rgba(0,0,0,0.2)';
   ctx.setLineDash([4, 4]);
   ctx.beginPath();
@@ -1344,17 +1807,11 @@ function drawParallelogramCanvas(p, q, alpha, r, theta) {
   ctx.stroke();
   ctx.setLineDash([]);
 
-  // Vector P
   drawArrow(ctx, sx, sy, px, py, '#f59e0b', 'P', 2.5);
-
-  // Vector Q
   drawArrow(ctx, sx, sy, qx, qy, '#38bdf8', 'Q', 2.5);
-
-  // Resultant R
   drawArrow(ctx, sx, sy, rx, ry, '#10b981', 'R', 3);
 }
 
-// 3. Lawn Roller Calculation & Live Canvas
 function calculateLawnRoller() {
   const m = parseFloat(document.getElementById('lr-m').value) || 0;
   const f = parseFloat(document.getElementById('lr-f').value) || 0;
@@ -1388,7 +1845,6 @@ function drawRollerCanvas(type, theta) {
 
   ctx.clearRect(0, 0, w, h);
 
-  // Ground Line
   ctx.strokeStyle = isDark ? '#4a382e' : '#bfaaa0';
   ctx.lineWidth = 2;
   ctx.beginPath();
@@ -1396,7 +1852,6 @@ function drawRollerCanvas(type, theta) {
   ctx.lineTo(w - 10, h - 18);
   ctx.stroke();
 
-  // Roller Circle
   const cx = w * 0.45;
   const cy = h - 48;
   const r = 28;
@@ -1414,7 +1869,6 @@ function drawRollerCanvas(type, theta) {
   ctx.arc(cx, cy, 3, 0, 2 * Math.PI);
   ctx.fill();
 
-  // Pull / Push Force Arrows
   const fx = 48 * Math.cos(theta);
   const fy = 48 * Math.sin(theta);
   drawArrow(ctx, cx, cy, cx + fx, cy - fy, '#10b981', 'টান', 2.5);
@@ -1451,7 +1905,7 @@ function drawArrow(ctx, fromx, fromy, tox, toy, color, label, width) {
 }
 
 function varColor(name) {
-  return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#b86a24';
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim() || '#b56920';
 }
 
 // ── TOAST HELPER ──
@@ -1481,7 +1935,8 @@ window.addEventListener('scroll', () => {
 // Initialize on Load
 document.addEventListener('DOMContentLoaded', () => {
   initTheme();
-  switchModule('module1');
+  renderSidebar();
+  switchModule('p1_c2_m1');
 });
 </script>
 </body>
